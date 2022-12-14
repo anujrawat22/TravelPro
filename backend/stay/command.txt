@@ -1,0 +1,7 @@
+https://sore-plum-spider-hem.cyclic.app/hotels    => all hotels data
+https://sore-plum-spider-hem.cyclic.app/admin/signup  => admin signup
+https://sore-plum-spider-hem.cyclic.app/admin/login  => admin login
+https://sore-plum-spider-hem.cyclic.app/user/signup  => user signup
+https://sore-plum-spider-hem.cyclic.app/user/login   => user Login
+https://sore-plum-spider-hem.cyclic.app/admin/hotel/create   => create hotel data
+https://sore-plum-spider-hem.cyclic.app/admin/hotel/update   =>update hotel data
