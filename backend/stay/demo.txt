@@ -1,0 +1,37 @@
+{
+    "poster":"https://images.trvl-media.com/hotels/32000000/31060000/31054200/31054148/fe5729de.jpg?impolicy=resizecrop&rw=455&ra=fit",
+    "hotel_name":"Hotel WTI Airport",
+    "city":"Delhi",
+    "hotel_address":"2.36 mi from Indira Gandhi Intl.(DEL)",
+    "distance":"2.36",
+    "rating":"7.0",
+    "star_rating":"3",
+    "review":"Good",
+    "review_count":"73",
+    "price":"58",
+    "discount":"33",
+    "reserve_Status":false,
+    "other_images" :["https://images.trvl-media.com/lodging/32000000/31060000/31054200/31054148/fe5729de.jpg?impolicy=resizecrop&rw=1200&ra=fit","https://images.trvl-media.com/lodging/32000000/31060000/31054200/31054148/9dc0bb25.jpg?impolicy=resizecrop&rw=1200&ra=fit","https://images.trvl-media.com/lodging/32000000/31060000/31054200/31054148/5b6a1e3d.jpg?impolicy=resizecrop&rw=1200&ra=fit","https://images.trvl-media.com/lodging/32000000/31060000/31054200/31054148/w1004h682x9y0-3e20d5b4.jpg?impolicy=resizecrop&rw=1200&ra=fit"],
+    "explore_neighbourhood":["Central Mall","Nelson Mandela Road","DLF Promenade Vasant Kunj","Delhi (DEL-Indira Gandhi Intl.)"],
+    "room_left":4,
+    "property_type":"Hotel",
+    "amenities":["Breakfast included"],
+    "meals_type":["Breakfast included"],
+    "payment_type":["Reserve now, pay later"],
+    "Accessibility":["Elevator"],
+    "room_avail":4
+    "rooms":[
+        {
+            "is_available":true,
+            "room_image":["https://images.trvl-media.com/hotels/32000000/31060000/31054200/31054148/60becf98.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium","https://images.trvl-media.com/hotels/32000000/31060000/31054200/31054148/42f0eb0d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium","https://images.trvl-media.com/hotels/32000000/31060000/31054200/31054148/9321ed20.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium","https://images.trvl-media.com/hotels/32000000/31060000/31054200/31054148/26b486d7.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"],
+            "room_title":"Superior Twin Room, 1 Bedroom",
+            "room_size":"220 sq ft",
+            "member":2,
+            "room_amenit":["1 Double Bed","Free WiFi","Free breakfast","Free self parking"],
+            "room_refund_policy":["Non-Refundable","Fully refundable"],
+            "room_price":28,
+            "room_discount":51,
+            "room_total_dis":31,
+            "Reserve":true
+            }]
+}
