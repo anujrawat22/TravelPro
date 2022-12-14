@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, sans-serif;
+
+}
+/* content */
+#body{
+border: 1px solid red;
+width: 80vw;
+height: 4000px;
+margin: auto;
+display: flex;
+justify-content: space-around;
+}
+
+
+/* main */
+#main{
+width: 67vw;
+height: 100%;
+border: 1px solid blue;
+}
+
+
+/* search */
+#search{
+    border: 1px solid black;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    margin-top: 1%;
+}
+
+
+/* searchinput */
+
+
+#searchinput{
+    width: 33%;
+    border: 1px solid red;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.icons{
+    width: 14%;
+    border: 1px solid blue;
+}
+
+.labels{
+    color: gray;
+    font-size: 12px;
+}
+
+.destidetail{
+width: 86%;
+height: 100%;
+border: 1px solid black;
+padding: 0 5%;
+}
+.destidetail>p{
+    margin: 0%;
+    margin-top: 2%;
+}
+
+
+/* datepicker and search btn*/
+#datepicker{
+width: 66%;
+height: 100%;
+display: flex;
+/* border: 1px solid black; */
+box-sizing: border-box;
+margin-left: 1%;
+justify-content: space-around;
+}
+
+.datepicker1{
+    width: 25%;
+    border: 1px solid red;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.datepicker2{
+    width: 25%;
+    border: 1px solid red;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.travelers{
+    width: 25%;
+    border: 1px solid red;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+.searchbtn{
+    width: 18%;
+    border: 1px solid red;
+    background-color: #C83259;
+}
+.searchbtn>button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #C83259;
+    color: white;
+    font-size: 16px;
+}
+
+.datepicker_icons{
+    border: 1px solid blue;
+    width: 30%;
+    height: 100%;
+    
+}
+
+
+/* hoteldiv */
+
+
+#hoteldiv{
+    width: 100%;
+    height: 3000px;
+    border: 1px solid red;
+    margin-top: 2%;
+    box-sizing: border-box;
+    display: flex
+}
+
+/* sidediv */
+
+#sidediv{
+    width: 18vw;
+    border: 1px solid blue;
+}
+
+/* hotelcontent */
+#hotelcontent{
+    width: 60vw;
+    border: 1px solid blue;
+    height: auto;
+}
+
+#sorting{
+    width: 100%;
+    height: 3vw;
+    border: 1px solid red;
+}
+
+#displayhotels{
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.hotelmaindiv{
+    width: 100%;
+    height: 190px;
+    border: 1px solid blue;
+    display: flex;
+    margin-top: 2%;
+}
+
+.div1{
+    width: 32%;
+    border: 1px solid green;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.div2{
+width: 68%;
+height: 100%;
+border: 1px solid green;
+box-sizing: border-box;
+}
+
+.hotelname{
+  width: 100%;
+  height: 50%;
+  border: 1px solid yellow;  
+}
+
+.hoteldetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hoteldetails>:nth-child(1){
+    width: 50%;
+    height: 100%;
+    background-color: rgb(183, 240, 238);
+    box-sizing: border-box;
+}
+
+.payment_type{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(85, 202, 206);
+}
+
+/* ads div */
+#ads{
+width: 11vw;
+border: 1px solid blue;
+height: 100%;
+}
+
+#ads>div{
+    border: 1px solid red;
+    height: 78vh;
+    margin-top: 10%;
+    width: 95%;
+}
+.adsimg{
+    width: 100%;
+    height: 100%;
+}
+
