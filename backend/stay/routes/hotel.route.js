@@ -64,5 +64,18 @@ hotelRouter.delete("/delete/:appId", async(req,res)=>{
         
 })
 
+//get by city
+hotelRouter.get("/search",async(req,res)=>{
+    const q = req.query
+    console.log(q)
+    try{
+        let data = await HotelModel.find({"city":{$regex: '^' + q.city, $options: 'i'}})
+        console.log("done")
+        res.send(data)
+    }
+    catch(err){
+        res.send(err)
+    }
+})
 
 module.exports = {hotelRouter}
