@@ -227,6 +227,7 @@
   background-color: var(--bs-search-bg);
   padding: 10px 13px;
   border-radius: 15px;
+  position: relative;
 }
 #mainbar > #navbar #user {
   /* display: flex; */
