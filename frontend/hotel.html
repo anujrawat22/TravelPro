@@ -7,7 +7,8 @@
     <title>Hotels</title>
     <link rel="stylesheet" href="./css/hotel.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="bootstrap-datepicker.standalone.css">
+    
 </head>
 <body>
     <!-- navbar -->
@@ -31,23 +32,29 @@
                     <div class="destidetail">
                         <label class="labels">Going to</label>
                         <p>Mumbai,Maharashtra,India</p>
+                        <div id="hotelsearchdiv">
+                            <div id="inputdiv">
+                                <input type="text" placeholder="Where are you going?" id="hotelinput">
+                                
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
                 <div id="datepicker">
                     <div class="datepicker1">
                         <div class="datepicker_icons">
-                        
+                            
                         </div>
                         <div class="destidetail"><label class="labels">Check-in</label>
                             <p id="checkin"></p></div>
                     </div>
                     <div class="datepicker2">
                         <div class="datepicker_icons">
-                        
+                            
                         </div>
                         <div class="destidetail">
-                            <label class="labels">Check-in</label>
+                            <label class="labels">Check-Out</label>
                             <p id="checkout"></p></div>
                     </div>
                     <div class="travelers">
@@ -69,31 +76,29 @@
 
                  </div>
                  <div id="hotelcontent">
-                    <div id="sorting"></div>
+                    <div id="sorting">
+                        <div id="properties">
+                            <p>1395 properties</p>
+                            <p>What we area paid impacts our sort order</p>
+                        </div>
+                        <div id="sortingselect">
+                            <div>
+                                <label for="select">Sort by</label>
+                                <select id="select">
+                                    <option value="Recommended">Recommended</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Distance form downtown">Distance form downtown</option>
+                                    <option value="Guest Rating + Our Picks">Guest Rating + Our Picks</option>
+                                    <option value="Price + Our Tour">Price + Our Tour</option>
+                                    <option value="Star Rating">Star Rating</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
                     <div id="displayhotels">
                         <div class="hotelmaindiv">
-                            <div class="div1">
-                                 
-                            </div>
-                            <div class="div2">
-                              <div class="hotelname">
-                                <h3>Trident Bandra Kurla Mumbai</h3>
-                                <p>Bandra Kurla Complex</p>
-
-                              </div>
-                              <div class="hoteldetails">
-                                  <div >
-                                    <p class="payment_type">Fully refundable</p>
-                                    <p class="payment_type">Reserve now,pay later</p>
-                                    <p class="reviews">7.8</p>
-                                  </div>
-                                  <div >
-                                    <p class="discount">10% off</p>
-                                    <p class="price">price</p>
-                                    <p>total</p>
-                                  </div>
-                              </div>
-                            </div>
+                            
                         </div>
                     </div>
                  </div>

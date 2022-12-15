@@ -66,6 +66,40 @@ padding: 0 5%;
 }
 
 
+#hotelsearchdiv{
+    position: absolute;
+    border: 1px solid red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 19vw;
+    height: 50vh;
+    top: 11%;
+    left: 13%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+#inputdiv{
+    width: 100%;
+    border: 1px solid blue;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputdiv>input{
+    width: 90%;
+    height: 70%;
+    outline: none;
+    border: none;
+    
+}
+
+#inputdiv>div{
+
+}
+
 /* datepicker and search btn*/
 #datepicker{
 width: 66%;
@@ -148,44 +182,127 @@ justify-content: space-around;
     height: auto;
 }
 
+/* 
+sorting */
+
+
+
 #sorting{
     width: 100%;
     height: 3vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
 }
 
+#properties{
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#properties>:nth-child(1){
+    margin: 0;
+    height: 50%;
+    /* border: 1px solid green; */
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+#properties>:nth-child(2){
+    margin: 0;
+    height: 50%;
+    /* border: 1px solid green; */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+#sortingselect{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sortingselect>div{
+    border: 2px solid rgb(18, 130, 178);
+    
+    width: 95%;
+    height: 95%;
+    padding-left: 2%;
+}
+
+#sortingselect>div>label{
+    font-size: 12px;
+    width: 98%;
+}
+
+#sortingselect>div>select{
+    width: 98%;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+/* displayhotels */
 #displayhotels{
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    overflow: hidden;
 }
 
 .hotelmaindiv{
     width: 100%;
     height: 190px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     margin-top: 2%;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1%;
+
+}
+
+.hotelmaindiv:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 1px solid rgb(18, 130, 178);
 }
 
 .div1{
     width: 32%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 100%;
     box-sizing: border-box;
+}
+
+.hotelimg{
+    width: 100%;
+    height: 100%;
 }
 
 .div2{
 width: 68%;
 height: 100%;
-border: 1px solid green;
+/* border: 1px solid green; */
 box-sizing: border-box;
 }
 
 .hotelname{
   width: 100%;
   height: 50%;
-  border: 1px solid yellow;  
+  /* border: 1px solid yellow;   */
+  padding:0 10px;
 }
 
 .hoteldetails{
@@ -195,22 +312,75 @@ box-sizing: border-box;
 
 .hoteldetails>:nth-child(1){
     width: 50%;
-    height: 100%;
-    background-color: rgb(183, 240, 238);
-    box-sizing: border-box;
+    height: 92px;
+    /* background-color: rgb(183, 240, 238); */
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 0 10px;
 }
 
 .payment_type{
     margin: 0;
-    margin-bottom: 10px;
+    margin-top: 5px;
     font-size: 14px;
     color: rgb(85, 202, 206);
+    /* border: 1px solid red; */
 }
+
+.reviews{
+    margin-bottom: 10%;
+    font-size: 14px;
+    /* border: 1px solid red; */
+    color: rgb(137, 65, 17);
+}
+
+.hoteldetails>:nth-child(2){
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-items: flex-end;
+    padding: 0 5%;
+}
+
+.discount{
+    margin: 0;
+   /* border: 1px solid red; */
+     width: auto;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     background-color: green;
+     color: white;
+     padding: 0 10px;
+     border-radius: 3px;
+}
+
+#price{
+    margin: 0;
+    /* border: 1px solid red; */
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+
+
+
 
 /* ads div */
 #ads{
 width: 11vw;
-border: 1px solid blue;
+border: 1px solid rgb(0, 238, 255);
 height: 100%;
 }
 
