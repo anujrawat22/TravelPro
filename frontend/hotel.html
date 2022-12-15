@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="./css/hotel.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="bootstrap-datepicker.standalone.css">
+    
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+
+      
+    </div>
+    
+    <!-- content -->
+    <div id="body">
+
+        <!-- mainbody -->
+        <div id="main">
+
+            <!-- searchsaction -->
+            <div id="search">
+                <div id="searchinput" >
+                    <div class="icons">
+                        
+                    </div>
+                    <div class="destidetail">
+                        <label class="labels">Going to</label>
+                        <p>Mumbai,Maharashtra,India</p>
+                        <div id="hotelsearchdiv">
+                            <div id="inputdiv">
+                                <input type="text" placeholder="Where are you going?" id="hotelinput">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="datepicker">
+                    <div class="datepicker1">
+                        <div class="datepicker_icons">
+                            
+                        </div>
+                        <div class="destidetail"><label class="labels">Check-in</label>
+                            <p id="checkin"></p></div>
+                    </div>
+                    <div class="datepicker2">
+                        <div class="datepicker_icons">
+                            
+                        </div>
+                        <div class="destidetail">
+                            <label class="labels">Check-Out</label>
+                            <p id="checkout"></p></div>
+                    </div>
+                    <div class="travelers">
+                        <div class="datepicker_icons">
+                        
+                        </div>
+                        <div class="destidetail"><label class="labels">Travelers</label>
+                            <p id="travelers">1 room,2 trav...</p></div>
+                    </div>
+                    <div class="searchbtn">
+                         <button>Search</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="hoteldiv">
+                 <div id="sidediv">
+
+                 </div>
+                 <div id="hotelcontent">
+                    <div id="sorting">
+                        <div id="properties">
+                            <p>1395 properties</p>
+                            <p>What we area paid impacts our sort order</p>
+                        </div>
+                        <div id="sortingselect">
+                            <div>
+                                <label for="select">Sort by</label>
+                                <select id="select">
+                                    <option value="Recommended">Recommended</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Distance form downtown">Distance form downtown</option>
+                                    <option value="Guest Rating + Our Picks">Guest Rating + Our Picks</option>
+                                    <option value="Price + Our Tour">Price + Our Tour</option>
+                                    <option value="Star Rating">Star Rating</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="displayhotels">
+                        <div class="hotelmaindiv">
+                            
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+
+        <!-- ads -->
+        <div id="ads">
+            <div>
+                <img src="https://tpc.googlesyndication.com/simgad/11723856113829410814?" alt="" class="adsimg">
+            </div>
+            <div>
+                <img src="https://tpc.googlesyndication.com/simgad/13935326300549511757?" alt="" class="adsimg">
+            </div>
+            <div>
+                <img src="https://tpc.googlesyndication.com/simgad/639399848064383204?" alt="" class="adsimg">
+            </div>
+            <div>
+                <img src="https://tpc.googlesyndication.com/simgad/9022942323053452713?" alt="" class="adsimg">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script type="module" src="./scripts/hotel.js"></script>
