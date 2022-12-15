@@ -1,4 +1,4 @@
-import { navbar } from "../reusable_components/navbar.js";
+import { navbar } from "../components/navbar.js";
 
 document.getElementById("navbar").innerHTML = navbar()
 
