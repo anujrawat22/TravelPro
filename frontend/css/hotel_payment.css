@@ -1,0 +1,99 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+}
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border: 0px red solid;
+    padding: 5px;
+    background-color: #00253c;
+}
+#navbar img{
+    width: 5%;
+    height: 50px;
+    margin-left: 40px;
+}
+#signin{
+    display: flex;
+    color: #00b1ff;
+}
+#signin h3{
+    margin:15px 60px 0px 10px;
+}
+#signin h3:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+#signin span{
+    margin:15px 0px 10px 10px;
+}
+
+#text{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #344347;
+    font-weight: bold;
+}
+
+#top{
+    display: flex;
+    border: 0px solid red;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffffff;
+}
+#top span{
+    margin-left: 10px;
+    margin: 20px;
+    background-color: #ededed;
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+}
+#top p{
+    margin-left: 15px;
+}
+#top p:nth-child(1){
+    font-weight: bold;
+}
+
+#mid_left-1{
+    display: flex;
+    border: 0px solid red;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffffff;
+    width: 60%;
+    font-size: 20px;
+}
+#mid_left-1 span{
+    margin: 10px;
+    color: black;
+    padding: 10px;
+}
+
+#mid_left-1 p{
+   color: #00b1ff;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+#mid_left-1 span:nth-child(3){
+    color: #00b1ff;
+}
+
+#name{
+    display: flex;
+}
+
+
