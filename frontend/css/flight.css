@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Major+Mono+Display&display=swap');
 
 body{
     margin: 0;
@@ -56,7 +56,7 @@ body{
     position: absolute;
     height: 28px;
     left: 160px;
-    top: 104px;
+    top: 108px;
 }
 .img-right{
     left: 567px;
@@ -149,7 +149,7 @@ input{
 
 .promotion>p{
   color: black;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Major Mono Display', monospace;
 }
 .promotion{
     position: absolute;
