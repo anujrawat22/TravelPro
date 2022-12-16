@@ -165,7 +165,11 @@
 /* now time to work on main bar */
 /* navbar*/
 /* #main */
+#mainbar {
+  background-color: var(--bs-navbar-bg);
+}
 #mainbar > #navbar {
+  width: 80vw;
   margin-left: 18vw;
   padding-left: 2vw;
   display: flex;
@@ -173,6 +177,8 @@
   justify-content: space-between;
   height: 90px;
   background-color: var(--bs-navbar-bg);
+  position: fixed;
+  top: 0;
 
   /* flex-direction: column; */
 }

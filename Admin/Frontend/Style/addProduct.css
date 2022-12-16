@@ -1,0 +1,106 @@
+/* main part after navbar inputs */
+
+#mainbar > #main {
+  padding-top: 30px;
+  margin-top: 90px;
+  margin-left: 18vw;
+}
+#mainbar > #main h1 {
+  color: var(--bs-white);
+}
+
+#mainbar > #main > #genral-detail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+  grid-template-areas:
+    "h_nam h_nam h_add h_add"
+    "city city poster poster"
+    "stat dist prc discount";
+}
+
+#mainbar > #main > #genral-detail #hotel_name {
+  border: 1px solid red;
+  grid-area: h_nam;
+}
+#mainbar > #main > #genral-detail #hotel_address {
+  border: 1px solid red;
+  grid-area: h_add;
+}
+#mainbar > #main > #genral-detail #city {
+  border: 1px solid red;
+  grid-area: city;
+}
+#mainbar > #main > #genral-detail #poster {
+  border: 1px solid red;
+  grid-area: poster;
+}
+#mainbar > #main > #genral-detail #reserve_Status {
+  border: 1px solid red;
+  grid-area: stat;
+}
+#mainbar > #main > #genral-detail #distance {
+  border: 1px solid red;
+  grid-area: dist;
+}
+#mainbar > #main > #genral-detail #price {
+  border: 1px solid red;
+  grid-area: prc;
+}
+#mainbar > #main > #genral-detail #discount {
+  border: 1px solid red;
+  grid-area: discount;
+}
+
+#mainbar > #main > #extra-detail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(100, 100px);
+  gap: 20px;
+  grid-template-areas:
+    "oth_img oth_img neigh neigh"
+    "amen amen acc acc"
+    "meal meal pay pay"
+    "rm_left prop rm_typ rm_typ2";
+}
+#mainbar > #main > #extra-detail #other_images {
+  border: 1px solid green;
+  grid-area: oth_img;
+}
+#mainbar > #main > #extra-detail #explore_neighbourhood {
+  border: 1px solid green;
+  grid-area: neigh;
+}
+#mainbar > #main > #extra-detail #amenities {
+  border: 1px solid green;
+  grid-area: amen;
+}
+#mainbar > #main > #extra-detail #Accessibility {
+  border: 1px solid green;
+  grid-area: acc;
+}
+#mainbar > #main > #extra-detail #meals_type {
+  border: 1px solid green;
+  grid-area: meal;
+}
+#mainbar > #main > #extra-detail #payment_types {
+  border: 1px solid green;
+  grid-area: pay;
+}
+#mainbar > #main > #extra-detail #room_left {
+  border: 1px solid green;
+  grid-area: rm_left;
+}
+#mainbar > #main > #extra-detail #property_type {
+  border: 1px solid red;
+  grid-area: prop;
+}
+#mainbar > #main > #extra-detail #room_type {
+  border: 1px solid green;
+  grid-area: rm_typ;
+}
+#mainbar > #main > #extra-detail #room_type2 {
+  border: 1px solid green;
+  grid-area: rm_typ2;
+}
