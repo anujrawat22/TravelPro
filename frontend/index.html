@@ -7,149 +7,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/hom2.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Home Page</title>
 </head>
 
 <body>
 
-    <div id="ak_navbar"></div>
+    <div id="navbar"></div>
 
-    <div id="ak_home_con">
-        <div id="ak_top_card">
+    <div id="ak_bg_img">
+        <div id="search-box">
+            <div id="travel-category">
+                <ul>
+                    <li>
+                        <p href="" class="ak_animation">
+                           <span>Stays</span> 
+                        </p>
+                    </li>
+                    <li>
+                        <p href="" id="ak_flight" class="ak_animation">
+                            <span>Flight</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p href="" class="ak_animation">
+                            <span>Cars</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p href="" class="ak_animation">
+                            <span>Package</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p href="" class="ak_animation">
+                            <span>Things to do</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p href="" class="ak_animation">
+                            <span>Cruises</span>
+                        </p>
+                    </li>
+                </ul>
+                <hr id="ak_hr_line">
+            </div>
+            <!--  -->
             <div>
-                <a href="#"><img src="./Images/card1.png" alt=""></a>
-            </div>
-            <div>
-                <a href="#"><img src="./Images/card2.png" alt=""></a>
-            </div>
-            <div>
-                <a href="#"><img src="./Images//card3.png" alt=""></a>
-            </div>
-        </div>
-        <!--  -->
-        <div id="ak_head">
-            <h2>Featured offers</h2>
-        </div>
-        <div id="ak_featured_off">
-            <div class="ak_box1">
-                <h2>Last-minute deals</h2>
-                <p>Getaway today</p>
-            </div>
-            <div class="ak_box2">
-                <h2>All-inclusive resort</h2>
-                <p>Enjoy sun and fun</p>
-            </div>
-            <div class="ak_box3">
-                <h2>Insider Price</h2>
-                <p>Members get rewarded</p>
-            </div>
-            <div class="ak_box4">
-                <h2>Jet and reset</h2>
-                <p>Fly south for the winter</p>
-            </div>
-        </div>
-        <!--  -->
-        <div id="ak_head">
-            <h2>Here to help keep you on the move</h2>
-        </div>
-        <div id="ak_middle_card">
-            <div class="ak_middile_child">
+                <!-- ************** -->
                 <div>
-                    <h4>Change or cancel a trip</h4>
-                    <p>Make updates to your itineray or cancel a booking</p>
+                    <form action="" id="ak_form_stays">
+                        <div id="input-section">
+                            <input type="text" name="" id="select-Cont" placeholder="Going to">
+                            <div class="date" id="d1">
+                                <i class="fa-regular fa-calendar"></i>
+                                <div>
+                                    <p>Check-in</p>
+                                    <input id="cd1" type="date">
+                                </div>
+                            </div>
+                            <div class="date" id="d2">
+                                <i class="fa-regular fa-calendar"></i>
+                                <div>
+                                    <p>Check-out</p>
+                                    <input id="cd2" type="date">
+                                </div>
+                            </div>
+                            <div id="travelers">
+                                <div id="ak_trv_child1">
+                                    <svg class="uitk-icon uitk-field-icon uitk-icon-medium" aria-hidden="true"
+                                        width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM4 18c0-2.66 5.33-4 8-4s8 1.34 8 4v2H4v-2z"
+                                            clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                                <div id="ak_trv_child2">
+                                    <p>Travelers</p>
+                                    <div id="counters">
+                                        <div>
+                                            <p>1 room ,</p>
+                                        </div>
+                                        <div>
+                                            <p>2 travelers</p>
+                                        </div>
+                                        <!-- <div>
+                                        <button id="reset">Reset</button>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="checkbox">
+                            <input id="flight-check" type="checkbox"> <label for="flight-check">Add a Flight</label>
+                            <input id="car-check" type="checkbox"> <label for="car-check">Add a Car</label>
+                        </div>
+                        <div id="search-btn">
+                            <input type="button" value="Search">
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__mode_edit.svg"
-                        alt="">
-                </div>
-            </div>
-            <div class="ak_middile_child">
-                <div>
-                    <h4>Use a credit or coupon</h4>
-                    <p>Apply a coupon code or credit to a new trip</p>
-                </div>
-                <div>
-                    <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__monetization_on.svg"
-                        alt="">
-                </div>
-            </div>
-            <div class="ak_middile_child">
-                <div>
-                    <h4>Track your refund</h4>
-                    <p>Check the status of a refund currently in progress</p>
-                </div>
-                <div>
-                    <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__chat.svg"
-                        alt="">
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div id="ak_head">
-            <h2>Traveling tips</h2>
-        </div>
-        <div id="ak_travel_div">
-            <div id="ak_travel_child1">
-                <h2>National Parks</h2>
-                <p>There's plenty to keep you busy</p>
-                <p class="ak_btn">Learn more</p>
-            </div>
-            <div id="ak_travel_child2">
-                <h2>The perfect road tip</h2>
-                <p>Find an adventure for every season</p>
-                <p class="ak_btn">Read on</p>
-            </div>
-        </div>
-        <!--  -->
-        <div id="ak_rewards">
-            <div id="ak_rewards_img_div">
-                <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg"alt="">
-            </div>
-            <div id="ak_rewards_child2">
-                <div>
-                    <h2>Rewards are waiting for you in the Travel Pro app</h2>
-                    <ul>
-                        <li>Earn 4% back when you book your hotel in app, vs 3% on site</li>
-                        <li>Get flight status and gate number notifications</li>
-                        <li>Have questions about your stay? Message your hotel right in the app</li>
-                    </ul>
-                </div>
-                <h3>Text yourself a download link</h3>
-                <div class="ak_selAndno">
-                    <div>
-                        <select>
-                            <option>India +91</option>
-                            <option>United Kingdom +44</option>
-                            <option>Hong Kong, SAR +852</option>
-                            <option>Indonesia +62</option>
-                            <option>Japan +81</option>
-                            <option>Maldives +960</option>
-                            <option>Mexico +52</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="number" placeholder="Phone number">
-                    </div>
-                    <div>
-                        <button id="ak_rewards_btn">Get the app</button>
-                    </div>
-                </div>
-                <p>By providing your number, you agree to receive a one-time automated text message with a link to get
-                    the app. Standard text message rates may apply.</p>
-            </div>
-            <div id="ak_bar_code_img">
-                <img
-                    src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png"
-                    alt="">
-                <h4 id="ak_scan_the_qr">Scan the QR code</h4>
             </div>
         </div>
 
-        <!--  -->
-        <div id="ak_head">
-            <h2>More destinations</h2>
-        </div>
-        <div id="ak_more_des">
+        <!-- ********** -->
+        <!-- <form action="" id="ak_form_flight">
+            <div id="input-section">
+                <input type="text" name="" id="select-Cont" placeholder="Going to">
+                <div class="date" id="d1">
+                    <i class="fa-regular fa-calendar"></i>
+                    <div>
+                        <p>Check-in</p>
+                        <input id="cd1" type="date">
+                    </div>
+                </div>
+                <div class="date" id="d2">
+                    <i class="fa-regular fa-calendar"></i>
+                    <div>
+                        <p>Check-out</p>
+                        <input id="cd2" type="date">
+                    </div>
+                </div>
+                <div id="travelers">
+                    <div id="ak_trv_child1">
+                        <svg class="uitk-icon uitk-field-icon uitk-icon-medium" aria-hidden="true" width="28"
+                            height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill-rule="evenodd"
+                                d="M16 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM4 18c0-2.66 5.33-4 8-4s8 1.34 8 4v2H4v-2z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div id="ak_trv_child2">
+                        <p>Travelers</p>
+                        <div id="counters">
+                            <div>
+                                <p>1 room ,</p>
+                            </div>
+                            <div>
+                                <p>2 travelers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="checkbox">
+                <input id="flight-check" type="checkbox"> <label for="flight-check">Add a Flight</label>
+                <input id="car-check" type="checkbox"> <label for="car-check">Add a Car</label>
+            </div>
+            <div id="search-btn">
+                <input type="button" value="Search">
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    </div> -->
+
+        <!-- ********** -->
+
+        <div id="ak_home_con">
+            <div id="ak_top_card">
+                <div>
+                    <a href="#"><img src="./Images/card1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./Images/card2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./Images//card3.png" alt=""></a>
+                </div>
+            </div>
+            <!--  -->
+            <div id="ak_head">
+                <h2>Featured offers</h2>
+            </div>
+            <div id="ak_featured_off">
+                <div class="ak_box1">
+                    <h2>Last-minute deals</h2>
+                    <p>Getaway today</p>
+                </div>
+                <div class="ak_box2">
+                    <h2>All-inclusive resort</h2>
+                    <p>Enjoy sun and fun</p>
+                </div>
+                <div class="ak_box3">
+                    <h2>Insider Price</h2>
+                    <p>Members get rewarded</p>
+                </div>
+                <div class="ak_box4">
+                    <h2>Jet and reset</h2>
+                    <p>Fly south for the winter</p>
+                </div>
+            </div>
+            <!--  -->
+            <div id="ak_head">
+                <h2>Here to help keep you on the move</h2>
+            </div>
+            <div id="ak_middle_card">
+                <div class="ak_middile_child">
+                    <div>
+                        <h4>Change or cancel a trip</h4>
+                        <p>Make updates to your itineray or cancel a booking</p>
+                    </div>
+                    <div>
+                        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__mode_edit.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="ak_middile_child">
+                    <div>
+                        <h4>Use a credit or coupon</h4>
+                        <p>Apply a coupon code or credit to a new trip</p>
+                    </div>
+                    <div>
+                        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__monetization_on.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="ak_middile_child">
+                    <div>
+                        <h4>Track your refund</h4>
+                        <p>Check the status of a refund currently in progress</p>
+                    </div>
+                    <div>
+                        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/08/icon__chat.svg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div id="ak_head">
+                <h2>Traveling tips</h2>
+            </div>
+            <div id="ak_travel_div">
+                <div id="ak_travel_child1">
+                    <h2>National Parks</h2>
+                    <p>There's plenty to keep you busy</p>
+                    <p class="ak_btn">Learn more</p>
+                </div>
+                <div id="ak_travel_child2">
+                    <h2>The perfect road tip</h2>
+                    <p>Find an adventure for every season</p>
+                    <p class="ak_btn">Read on</p>
+                </div>
+            </div>
+            <!--  -->
+
+            <div id="ak_rewards"></div>
+
+            <!--  -->
+            <div id="ak_head">
+                <h2>More destinations</h2>
+            </div>
+            <div id="ak_more_des">
                 <div class="flex_div">
                     <div>
                         <select>
@@ -211,11 +330,11 @@
                         </select>
                     </div>
                 </div>
-          </div>
+            </div>
 
-    <div id="ak_footer"></div>
+            <div id="ak_footer"></div>
 
-    </div>
+        </div>
 
 </body>
 
