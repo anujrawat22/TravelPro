@@ -1,7 +1,7 @@
 import { navbar } from "../components/navbar.js";
-
+import footer  from "../components/footer.js"
 document.getElementById("navbar").innerHTML = navbar()
-
+document.getElementById("footer").innerHTML = footer()
 const url = "https://sore-plum-spider-hem.cyclic.app/hotels"
 
 
@@ -44,8 +44,10 @@ function append(data){
 
        let h3 = document.createElement("h3")
        h3.innerText = el.hotel_name
+       h3.setAttribute("class","hotelnameh3")
        let p = document.createElement("p")
        p.innerText = el.hotel_address
+       p.setAttribute("class","hoteladdressp")
        hotelname.append(h3,p)
 
        let hoteldetails = document.createElement("div")
