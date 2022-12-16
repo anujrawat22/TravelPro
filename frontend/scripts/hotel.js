@@ -23,6 +23,10 @@ function append(data){
     data.forEach((el)=>{
         let maindiv = document.createElement("div")
         maindiv.setAttribute("class","hotelmaindiv")
+        maindiv.addEventListener("click",()=>{
+            addtolocalstorage(el)
+        })
+
 
        let div1 = document.createElement("div")
        div1.setAttribute("class","div1")
@@ -92,7 +96,13 @@ function append(data){
 }
 
 
+//addingdatainlocalstorage
 
+ function addtolocalstorage(el){
+    localStorage.setItem("hoteldata",JSON.stringify(el))
+
+    window.location.href = "hoteldetail.html"
+ }
 
 
 
@@ -178,7 +188,3 @@ function sortonrating(data){
 }
 
 
-$('.datepicker').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '-3d'
-});
