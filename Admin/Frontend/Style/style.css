@@ -173,7 +173,7 @@
   margin-left: 18vw;
   padding-left: 2vw;
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   justify-content: space-between;
   height: 90px;
   background-color: var(--bs-navbar-bg);
@@ -292,4 +292,47 @@
   /* background-color: var(--bs-gray-dark); */
 }
 #mainbar > #navbar > #right #search span {
+}
+#mainbar
+  > #main
+  > div
+  > div:not(.rooms, #add-room > div, .material-symbols-outlined, .ignore),
+#rooms-detail > .rooms > div {
+  background-color: var(--bs-search-bg);
+  padding-left: 20px;
+  color: white;
+  border-radius: 10px;
+}
+#mainbar > #main > div > div input,
+label > textarea {
+  background-color: var(--bs-search-bg);
+  font-size: 14px;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 96%;
+  outline-color: red;
+  /* outline-style: solid; */
+  /* border: 1px solid red; */
+}
+#mainbar > #main > div > div input::placeholder,
+label > textarea::placeholder {
+  color: rgb(144, 144, 144);
+  /* font-size: 18px; */
+}
+#mainbar > #main > div > div input:focus,
+label > textarea:focus {
+  outline: none;
+  /* outline-color: red; */
+}
+#mainbar > #main > div > div:focus {
+  /* outline-color: red; */
+}
+#mainbar > #main > div > div label {
+  display: block;
+  height: 100%;
+}
+label > textarea {
+  height: 70%;
+  resize: none;
 }

@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./Style/animation.css" />
     <link rel="stylesheet" href="./Style/addProduct.css" />
+    <link rel="stylesheet" href="./Style/addRoom.css">
   </head>
   <body>
     <div id="sidebar">
@@ -298,101 +299,228 @@
         </div>
       </div>
       <div id="main">
-        <h1>Genral Detail</h1>
+        <h2 id="fst-header">General Details</h2>
         <div id="genral-detail">
           <div id="hotel_name">
-            <div id="label"></div>
-            <input type="text" placeholder="Name of your hotel" />
+            <label for="hot_nm" name="hotel_name">
+              <div class="label">Name</div>
+              <input type="text" id="hot_nm" placeholder="Name of your hotel..." />
+            </label>
           </div>
+
           <div id="hotel_address">
-            <div id="label"></div>
-            <input type="text" placeholder="Hotel address" />
+            <label for="ht_adr">
+              <div class="label">Address</div>
+              <input type="text" id="ht_adr" placeholder="Hotel address..." />
+            </label>
           </div>
           <div id="city">
-            <div id="label"></div>
-            <input type="text" placeholder="City" />
+            <label for="cty">
+              <div class="label">City</div>
+              <input type="text" id="cty" placeholder="Enter city..." />
+            </label>
           </div>
           <div id="poster">
-            <div id="label"></div>
-            <input type="text" placeholder="Single image" />
+            <label for="pst">
+              <div class="label">Image</div>
+              <input type="text" id="pst" placeholder="Single image..." />
+            </label>
           </div>
           <div id="reserve_Status">
-            <div id="label"></div>
-            <input type="text" placeholder="Reserve status" />
+            <label for="rsSt">
+              <div class="label">Reserved</div>
+              <input type="text" id="rsSt" placeholder="Reserve status..." />
+            </label>
           </div>
           <div id="distance">
-            <div id="label"></div>
-            <input type="text" placeholder="Distance" />
+            <label for="dst">
+              <div class="label">Distance</div>
+              <input type="text" id="dst" placeholder="Distance from nearby airport..." />
+            </label>
           </div>
           <div id="price">
-            <div id="label"></div>
-            <input type="text" placeholder="Price in Dollor" />
+            <label for="lbl">
+              <div class="label">Price</div>
+              <input type="text" id="lbl" placeholder="Price in Dollor..." />
+            </label>
           </div>
           <div id="discount">
-            <div id="label"></div>
-            <input type="text" placeholder="Discount in percentage" />
+            <label for="dsc">
+              <div class="label">Discount</div>
+              <input type="text" id="dsc" placeholder="Discount in percentage..." />
+            </label>
           </div>
         </div>
 
-        <h1>Extra Detail</h1>
+        <h2>Other Details</h2>
         <div id="extra-detail">
           <div id="other_images">
-            <div id="label"></div>
-            <textarea placeholder="List of images of your hotel"></textarea>
+            <label for="oth_img">
+              <div class="label">Images</div>
+              <textarea id="oth_img" placeholder="List of images of your hotel..."></textarea>
+            </label>
           </div>
           <div id="explore_neighbourhood">
-            <div id="label"></div>
-            <textarea placeholder="Places near by"></textarea>
+            <label for="nebrhd">
+              <div class="label">Neighbourhood</div>
+              <textarea id="nebrhd" placeholder="Places near by..."></textarea>
+            </label>
           </div>
 
           <div id="amenities">
-            <div id="label"></div>
-            <textarea placeholder="All amenities"></textarea>
+            <label for="amenit">
+              <div class="label">Amenities</div>
+              <textarea id="amenit" placeholder="All amenities..."></textarea>
+            </label>
           </div>
           <div id="Accessibility">
-            <div id="label"></div>
-            <textarea placeholder="Accessibility"></textarea>
+            <label for="accsblty">
+              <div class="label">Accessibility</div>
+              <textarea id="accsblty" placeholder="Accessibility..."></textarea>
+            </label>
           </div>
 
           <div id="room_left">
-            <div id="label"></div>
-            <input type="text" placeholder="Total available room" />
+            <label for="rm_left">
+              <div class="label">Count</div>
+              <input id="rm_left" type="text" placeholder="Total available room..." />
+            </label>
           </div>
           <div id="property_type">
-            <div id="label"></div>
-            <input type="text" placeholder="Property type" />
+            <label for="prop_type">
+              <div class="label">Property Type</div>
+              <input id="prop_type" type="text" placeholder="Property type..." />
+            </label>
           </div>
           <div id="room_type">
-            <div id="label"></div>
-            <input type="text" placeholder="Room type" />
-          </div>
-          <div id="room_type2">
-            <div id="label"></div>
-            <input type="text" placeholder="Room type" />
+            <label for="rmm_type">
+              <div class="label">Room Type</div>
+              <input id="rmm_type" type="text" placeholder="Room type..." />
+            </label>
           </div>
 
           <div id="meals_type">
-            <div id="label"></div>
-            <textarea placeholder="Avilable Meals"></textarea>
+            <label for="meal_type">
+              <div class="label">Meals</div>
+              <textarea id="meal_type" placeholder="Avilable Meals..."></textarea>
+            </label>
           </div>
           <div id="payment_types">
-            <div id="label"></div>
-            <textarea placeholder="Payment Methods"></textarea>
+            <label for="paym_type">
+              <div class="label">Payment</div>
+              <textarea id="paym_type" placeholder="Payment Methods..."></textarea>
+              <!-- <label>
+                Cash on deleivery
+                <input type="checkbox">
+              </label>
+              <label>
+                Online payment
+                <input type="checkbox">
+              </label>
+              <label>
+                Cart payment
+                <input type="checkbox">
+              </label> -->
+            </label>
           </div>
         </div>
-        <div id="rooms-detail"></div>
+
+        <div id="rooms-detail">
+
+          <h2>Room 1</h2>
+          <div class="rooms">
+
+            <div class="room_title">
+              <label for="rmm_tit">
+                <div class="label">Name</div>
+                <input id="rmm_tit" type="text" placeholder="Name of the room..."></input>
+              </label>
+            </div>
+            <div class="room_size">
+              <label for="rmm_siz">
+                <div class="label">Size</div>
+                <input id="rmm_siz" type="text" placeholder="Give the room size..."></input>
+              </label>
+            </div>
+
+            <div class="room_image">
+              <label for="rmm_img">
+                <div class="label">Image</div>
+                <textarea id="rmm_img" placeholder="Give all the images of particular room..."></textarea>
+              </label>
+            </div>
+            <div class="room_amenities">
+              <label for="rmm_amen">
+                <div class="label">Amenities</div>
+                <textarea id="rmm_amen" placeholder="Amenities of particular room..."></textarea>
+              </label>
+            </div>
+            
+
+            <div class="member">
+              <label for="mem">
+                <div class="label">People count</div>
+                <input id="mem" type="text" placeholder="How many people can stay on single room..."></input>
+              </label>
+            </div>
+            <div class="room_price">
+              <label for="rmm_prc">
+                <div class="label">Price</div>
+                <input id="rmm_prc" type="text" placeholder="Price of particular room..."></input>
+              </label>
+            </div>
+            <div class="room_discount">
+              <label for="rmm_disc">
+                <div class="label">Discount</div>
+                <input id="rmm_disc" type="text" placeholder="Discount in percentage..."></input>
+              </label>
+            </div>
+            <div class="room_total_dis">
+              <label for="rm_tt_dis">
+                <div class="label">Total Discount</div>
+                <input id="rm_tt_dis" type="text" placeholder="Total discount..."></input>
+              </label>
+            </div>
+            
+            <div class="room_refund_policy">
+              <label for="rm_rf_p">
+                <div class="label">Refund</div>
+                <textarea id="rm_rf_p" placeholder="Room refund policy..."></textarea>
+              </label>
+            </div>
+            <div class="Reserve">
+              <label for="rsve">
+                <div class="label">Reserve</div>
+                <input id="rsve" type="text" placeholder="Is room reserved true/false..."></input>
+              </label>
+            </div>
+            <div class="room_avail">
+              <label for="rom_avl">
+                <div class="label">availability</div>
+                <input id="rom_avl" type="text" placeholder="Number of room of this category..."></input>
+              </label>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div id="add-room">
+          <div>
+            <h2>Add Room</h2>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">
+              add_circle
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
 
-<script>
-  let sectionObj = document.getElementById("sections").children;
-  for (let sec in sectionObj) {
-    sectionObj[sec].onclick = () => {
-      // console.log(sectionObj[sec].children[1].innerText);
-      document.getElementById("page-name").innerText =
-        sectionObj[sec].children[1].innerText;
-    };
-  }
-</script>
+<script src="./Script/main.js"></script>
+<script type="module" src="./Script/roomComponent.js"></script>

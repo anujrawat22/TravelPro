@@ -1,19 +1,22 @@
-/* main part after navbar inputs */
+:root {
+  --primary: #dc3545;
+}
+
+/* main part a
+ter navbar inputs */
 
 #mainbar > #main {
-  padding-top: 30px;
+  padding-top: 1px;
   margin-top: 90px;
-  margin-left: 18vw;
-}
-#mainbar > #main h1 {
-  color: var(--bs-white);
+  margin-left: 20vw;
+  margin-right: 1.8vw;
 }
 
 #mainbar > #main > #genral-detail {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  gap: 20px;
+  grid-template-rows: repeat(3, 80px);
+  gap: 25px;
   grid-template-areas:
     "h_nam h_nam h_add h_add"
     "city city poster poster"
@@ -21,86 +24,170 @@
 }
 
 #mainbar > #main > #genral-detail #hotel_name {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: h_nam;
 }
 #mainbar > #main > #genral-detail #hotel_address {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: h_add;
 }
 #mainbar > #main > #genral-detail #city {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: city;
 }
 #mainbar > #main > #genral-detail #poster {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: poster;
 }
 #mainbar > #main > #genral-detail #reserve_Status {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: stat;
 }
 #mainbar > #main > #genral-detail #distance {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: dist;
 }
 #mainbar > #main > #genral-detail #price {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: prc;
 }
 #mainbar > #main > #genral-detail #discount {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: discount;
 }
 
 #mainbar > #main > #extra-detail {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(100, 100px);
-  gap: 20px;
+  grid-template-rows: repeat(7, 80px);
+  gap: 25px;
   grid-template-areas:
     "oth_img oth_img neigh neigh"
+    "oth_img oth_img neigh neigh"
     "amen amen acc acc"
+    "amen amen acc acc"
+    "meal meal pay pay"
     "meal meal pay pay"
     "rm_left prop rm_typ rm_typ2";
 }
 #mainbar > #main > #extra-detail #other_images {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: oth_img;
 }
 #mainbar > #main > #extra-detail #explore_neighbourhood {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: neigh;
 }
 #mainbar > #main > #extra-detail #amenities {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: amen;
 }
 #mainbar > #main > #extra-detail #Accessibility {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: acc;
 }
 #mainbar > #main > #extra-detail #meals_type {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: meal;
 }
 #mainbar > #main > #extra-detail #payment_types {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: pay;
 }
 #mainbar > #main > #extra-detail #room_left {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: rm_left;
 }
 #mainbar > #main > #extra-detail #property_type {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   grid-area: prop;
 }
 #mainbar > #main > #extra-detail #room_type {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: rm_typ;
 }
 #mainbar > #main > #extra-detail #room_type2 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: rm_typ2;
+}
+
+#rooms-detail .rooms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 80px);
+  gap: 25px;
+  grid-template-areas:
+    "rm_tit rm_tit rm_sz rm_sz"
+    "rm_img rm_img rm_amen rm_amen"
+    "rm_img rm_img rm_amen rm_amen"
+    "member rm_price rm_dis rm_tot_dis"
+    "rm_rfnd_policy rm_rfnd_policy res rm_av"
+    "rm_rfnd_policy rm_rfnd_policy resd rm_avf";
+}
+
+#rooms-detail .rooms .room_title {
+  /* border: 1px solid blue; */
+  grid-area: rm_tit;
+}
+#rooms-detail .rooms .room_size {
+  /* border: 1px solid blue; */
+  grid-area: rm_sz;
+}
+#rooms-detail .rooms .room_image {
+  /* border: 1px solid blue; */
+  grid-area: rm_img;
+}
+#rooms-detail .rooms .room_amenities {
+  /* border: 1px solid blue; */
+  grid-area: rm_amen;
+}
+#rooms-detail .rooms .member {
+  /* border: 1px solid blue; */
+  grid-area: member;
+}
+#rooms-detail .rooms .room_price {
+  /* border: 1px solid blue; */
+  grid-area: rm_price;
+}
+#rooms-detail .rooms .room_discount {
+  /* border: 1px solid blue; */
+  grid-area: rm_dis;
+}
+#rooms-detail .rooms .room_total_dis {
+  /* border: 1px solid blue; */
+  grid-area: rm_tot_dis;
+}
+#rooms-detail .rooms .room_refund_policy {
+  /* border: 1px solid blue; */
+  grid-area: rm_rfnd_policy;
+}
+#rooms-detail .rooms .Reserve {
+  /* border: 1px solid blue; */
+  grid-area: res;
+}
+#rooms-detail .rooms .room_avail {
+  /* border: 1px solid blue; */
+  grid-area: rm_av;
+}
+
+#main h2:not(#add-room > div > h2) {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: var(--bs-white);
+  padding-left: 20px;
+}
+body #mainbar > #main > #fst-header {
+  margin-top: 30px;
+}
+
+/* #fst-header{
+  margin-top: 30px;
+} */
+#mainbar > #main .label {
+  height: 40px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+  /* color: var(--); */
 }
