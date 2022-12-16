@@ -8,7 +8,7 @@ body{
 #body{
 border: 1px solid red;
 width: 80vw;
-height: 4000px;
+height: auto;
 margin: auto;
 display: flex;
 justify-content: space-around;
@@ -18,7 +18,7 @@ justify-content: space-around;
 /* main */
 #main{
 width: 67vw;
-height: 100%;
+height: auto;
 border: 1px solid blue;
 }
 
@@ -158,7 +158,7 @@ justify-content: space-around;
 
 #hoteldiv{
     width: 100%;
-    height: 3000px;
+    height: auto;
     border: 1px solid red;
     margin-top: 2%;
     box-sizing: border-box;
@@ -343,6 +343,14 @@ box-sizing: border-box;
     box-sizing: border-box;
     align-items: flex-end;
     padding: 0 5%;
+}
+
+.hotelnameh3{
+    font-size: 21px;
+}
+
+.hoteladdressp{
+    font-size: 13px;
 }
 
 .discount{

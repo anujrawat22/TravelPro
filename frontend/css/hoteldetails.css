@@ -2,5 +2,407 @@ body{
     margin: 0;
     padding: 0;
     font-family:  Arial, sans-serif;
+   background-color: rgb(245,245,245);
+}
+
+
+
+/* body div */
+
+#body{
+    width: 77vw;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 4000px;
+    margin-top: 15px;
+    display: flex;
+}
+
+
+
+/* main */
+#main{
+  width: 85%;
+/* border: 1px solid blue; */
+margin-right: 1%;
+border-radius: 5px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+overflow: hidden;
+}
+
+/* topdiv */
+#topdiv{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 0 2%;
+    align-items: center;
+    background-color: #fff;
+}
+
+#topdiv>a{
+    display: flex;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    width: 20%;
+    font-size: .8rem;
+}
+
+#topdiv>a>svg{
+    width: 10%;
+    height: 100%;
+}
+
+
+
+#save{
+    width: 10%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1%;
+    font-size: .8rem;
+
+}
+
+#save>svg{
+    width:30%;
+    height: 100%;
+    
+}
+
+#save>svg:hover{
+    cursor: pointer;
+    
+}
+
+
+/* hotelimages */
+
+#hotelimages{
+    width: 100%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 1%;
+}
+
+
+/* mainimg */
+
+#mainimg{
+    width: 49.5%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-origin: 1px solid blue; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+#mainimg>img{
+    height: 200%;
+    width: 100%;
+    
+}
+
+/* imggrid */
+
+#imggrid{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2px;
+    box-sizing: border-box;
+}
+
+#imggrid>div{
+    /* border: 1px solid blue; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#imggrid>div>img{
+    width: 100%;
+    height: auto;
+}
+
+/* reserve a room */
+
+#reserve{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 1%;
+}
+
+#reserve>:nth-child(1){
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+#reserve>:nth-child(1)>div{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9em;
+}
+
+#reserve>:nth-child(2){
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reserve>:nth-child(2)>button{
+    width: 90%;
+    height: 80%;
+    background-color: #C83259;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: .9rem;
+}
+
+
+/* hoteldetails */
+
+#hoteldetails{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
+}
+
+#hotelnamediv{
+    width: 68%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding: 1% 4%;
+    box-sizing: border-box;
+}
+
+#hotelnamediv>h1{
+font-size: 28px;
+margin: 0;
+}
+
+#paymenttypediv{
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+}
+
+
+#star{
+    margin: 0;
+    font-size: 14px;
+    
+}
+
+#paylater{
+    font-size: 16px;
+    color: green;
+}
+
+#refund{
+    font-size: 16px;
+    color: green;
+}
+
+#rating{
+    font-size: 18px;
+font-weight: 600;
+}
+
+#reviews{
+    font-size: 15px;
+    color: rgb(16, 164, 164);
+    text-decoration: underline;
+}
+
+#reviews:hover{
+    cursor: pointer;
+}
+
+#amenities{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+}
+
+#amenities>p{
+    font-size: 13px;
+    color:  rgb(16, 164, 164);
+    text-decoration: underline;
+}
+
+#amenities>p:hover{
+    cursor: pointer;
+}
+
+#showamenities{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,30px);
+    gap: 10px;
+}
+
+#showamenities>div{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    color: rgb(119, 119, 119);
+}
+
+
+/* explore */
+
+#explore{
+    width: 32%;
+    /* border: 1px solid red; */
+    height:100%;
+    box-sizing: border-box;
+    padding: 0 2%;
+}
+
+
+#exploregrid{
+    /* border: 1px solid blue; */
+    height: auto;
+    
+}
+
+#exploregrid>div{
+    height: 30px;
+    font-size: 14px;
+}
+
+
+/* booktoday */
+
+#booktoday{
+    width: 100%;
+    margin-top: 1%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+}
+
+#lockicon{
+/* border: 1px solid red; */
+width: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#lockicon>img{
+    width: 70%;
+    height: 65%;
+}
+
+#booktodaycontent{
+    /* border: 1px solid red; */
+    padding: 5px 1%;
+}
+
+#booktodaycontent>:nth-child(1){
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+#booktodaycontent>:nth-child(2){
+    margin: 0;
+    font-size: 13px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+#booktodaycontent>:nth-child(3){
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+#booktodaycontent>:nth-child(3)>:nth-child(1){
+    margin-right: 5%;
+}
+
+
+/* choose your room */
+
+#chooseroom{
+    width: 100%;
+    margin-top: 2%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    height: 90px;
+}
+
+#chooseroom>h2{
+    margin: 0;
+}
+
+#chooseroominput{
+    width: 100%;
+    border: 1px solid red;
+    height: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#chooseroominput>:nth-child(1){
+    width: 20%;
+    border: 1px solid blue;
+    height: 70%;
+
+}
+
+#chooseroominput>:nth-child(2){
+    width: 20%;
+    border: 1px solid blue;
+    height: 70%;
+
+}
+
+#chooseroominput>:nth-child(3){
+    width: 32%;
+    border: 1px solid blue;
+    height: 70%;
+
+}
+
+#chooseroominput>:nth-child(4){
+    width: 20%;
+    border: 1px solid blue;
+    height: 70%;
 
 }
