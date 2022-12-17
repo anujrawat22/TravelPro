@@ -1,0 +1,211 @@
+
+
+
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#ak_bg_img{
+    background: white;
+    background-repeat: no-repeat;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    max-width: 100%;
+    height: 350px;
+    background-size: 100% 500px;
+    padding-top: 25px;
+}
+#search-box{
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 1px 15px 1px #7a7a7a;
+    padding-top:15px;
+}
+#travel-category{
+    margin: auto;
+    max-width: 92%;
+    text-align: center;
+}
+#travel-category>ul{
+    margin: auto;
+    margin-top: 10px;
+    max-width: 50%;
+    line-height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#travel-category li{
+    cursor: pointer;
+}
+#travel-category p{
+    text-decoration: none;
+    color: #616161;
+    font-size: 14px;
+    font-weight: 700;
+}
+#travel-category p:hover{
+    color: #187e93;
+
+}
+
+form{
+    margin: auto;
+    max-width: 90%;
+    height: 250px;
+    margin-top: -10px;
+}
+#input-section{
+    margin-top: 20px;
+    display: flex;
+    color: #777575;
+}
+#select-Cont, .date{
+    margin: 7px;
+    height: 42px;
+    text-align: start;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+#ak_trv_child2 p{
+    font-size: 11px;
+}
+#travelers{
+    border: 1px solid #999999;
+    margin: 7px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+#select-Cont{
+    min-width: 40%;
+}
+.date{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+.date>div, #travelers>div{
+    line-height: 3px;
+}
+.date>div>input{
+    border: none;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.date>i, #travelers>i{
+    width: 15%;
+    margin-left: 8px;
+}
+.date>div>p, #travelers>div>p, #counters{
+    font-size:small;
+    letter-spacing: 0.5px;
+}
+#travelers{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 25px;
+    cursor: default;
+}
+#travelers>div>div{
+    display: flex;
+}
+#counters>div{
+    margin-top: 4px;
+    display: flex;
+
+}
+
+#counters p{
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+#checkbox>input:last-child{
+    margin-left: 20px;
+}
+#checkbox{
+    margin-top: 10px;
+}
+#checkbox>input{
+    cursor: pointer;
+}
+
+#search-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+
+#search-btn>input{
+    background-color: #C83259;
+    color: #FFFFFF;
+    border-radius: 2px;
+    width: 15%;
+    font-size: 16px;
+    min-height: 45px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+#search-btn>input:hover{
+    background-color: #cc5171;
+}
+#select-Cont::placeholder{
+   padding: 25px;
+}
+
+#ak_hr_line{
+    margin-top: -5px;
+    border-top: 1px solid rgb(166, 166, 166);
+}
+/* for underlining */
+.ak_animation {
+    display: inline-block;
+    position: relative;
+  }
+  .ak_animation:after {
+    content: "";
+    position: absolute;
+    width: 140%;
+    transform: scaleX(0);
+    height: 2.5px;
+    bottom: -9px;
+    left: -6px;
+    background-color: #6e919e;
+    /* color: #000000; */
+    transform-origin: center;
+    transition: transform 0.05s ease-out;
+  }
+  .ak_animation:hover:after {
+    transform: scaleX(1);
+  }
+  
+
+
+
+
+/*  */
+
+#ak_form_stays{
+    border: 5px solid red;
+}
+
+#ak_form_flight{
+    display: none;
+    border: 5px solid green;
+    position: absolute;
+    top: 165px;
+    left: 120px;
+    width:80%
+
+}
