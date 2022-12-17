@@ -20,7 +20,7 @@ SignUPbtn.onclick=async (e)=>{
         }
         if(massage.userDetails[0].first_name){
         localStorage.setItem('first_name',JSON.stringify(massage.userDetails[0].first_name))
-        }
+         }
         console.log(massage)
         alert(massage.MSG)
 

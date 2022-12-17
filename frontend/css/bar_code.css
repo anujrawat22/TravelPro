@@ -1,0 +1,75 @@
+
+#ak_rewards_img_div>img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#ak_rewards {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+#ak_rewards_child2 {
+    margin: 0px 10px;
+}
+
+.ak_selAndno {
+    display: flex;
+}
+
+.ak_selAndno>div {
+    margin: 0px 10px;
+}
+
+.ak_selAndno select,
+.ak_selAndno input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#ak_rewards_btn {
+    width: 150px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
+    background-color: #c83258;
+    color: white;
+}
+
+#ak_rewards_btn:hover {
+    cursor: pointer;
+    background-color: green;
+
+}
+
+#ak_bar_code_img>img {
+    margin-top: 60px;
+    width: 160px;
+}
+
+#ak_rewards li,
+#ak_rewards p,
+#ak_rewards h4,
+#ak_rewards h3,
+#ak_rewards h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#ak_rewards p {
+    font-size: 13px;
+}
+
+#ak_rewards li {
+    font-size: 15px;
+    color: #5b5b5b;
+    line-height: 35px;
+}
+
+#ak_scan_the_qr {
+    margin-left: 15px;
+    margin-top: -0px;
+}
