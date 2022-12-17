@@ -323,14 +323,16 @@ label > textarea::placeholder {
 #mainbar > #main > div > div input:focus,
 label > textarea:focus {
   outline: none;
-  /* outline-color: red; */
 }
 #mainbar > #main > div > div:focus {
   /* outline-color: red; */
+  outline-color: red;
+  outline-style: solid;
 }
 #mainbar > #main > div > div label {
   display: block;
   height: 100%;
+  cursor: text;
 }
 label > textarea {
   height: 70%;
