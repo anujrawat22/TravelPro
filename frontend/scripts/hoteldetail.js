@@ -29,10 +29,16 @@ let star = document.getElementById("star")
 star.innerText = `${hoteldata.star_rating} - star property`
 
 let paylater = document.getElementById("paylater")
-paylater.innerText = hoteldata.payment_type[0]
+if(hoteldata.payment_type[0]){
+    paylater.innerText = hoteldata.payment_type[0]
+}
+
 
 let refund = document.getElementById("refund")
-refund.innerText = hoteldata.payment_type[1]
+if(hoteldata.payment_type[1]){
+    refund.innerText = hoteldata.payment_type[1]
+}
+
 
 let rating = document.getElementById("rating")
 rating.innerText = `${hoteldata.rating} /10 ${hoteldata.review}`
@@ -73,4 +79,17 @@ arr.forEach((el)=>{
 
     document.getElementById("exploregrid").append(div)
 })
+}
+
+
+// appnding room data to room cards
+let rooms = hoteldata.rooms
+console.log(rooms)
+
+roomcards(rooms)
+function roomcards(arr){
+
+    arr.forEach((el)=>{
+      
+    })
 }
