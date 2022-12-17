@@ -1,7 +1,12 @@
 import { navbar } from "../components/navbar.js";
 import footer  from "../components/footer.js"
+import barcode from "../components/bar_code.js";
+
+
+
 document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("footer").innerHTML = footer()
+document.getElementById("barcode").innerHTML = barcode()
 const url = "https://sore-plum-spider-hem.cyclic.app/hotels"
 
 
@@ -10,14 +15,60 @@ async function  hoteldata(){
      
     let res = await fetch(url)
     let data = await res.json()
-    console.log(data)
-    append(data)
+    // console.log(data)
+    appendhotel(data)
 
 }
 
 
+
+let visiblebtn = document.getElementById("destidetail")
+visiblebtn.addEventListener("click",searchvisibility)
+
+
+// searchdivvisibility
+function searchvisibility(){
+    document.getElementById("hotelsearchdiv").style.visibility = "visible"
+}
+
+
+
+let cancelbtn = document.getElementById("cancelbtn")
+cancelbtn.addEventListener("click",hotelsearchdiv)
+
+
+//hotelsearchdiv visibility none 
+function hotelsearchdiv(){
+   
+    document.getElementById("hotelsearchdiv").style.visibility = "hidden"
+}
+
+
+let hotelinput = document.getElementById("hotelinput")
+hotelinput.addEventListener("input",searchhotels)
+
+async  function searchhotels(){
+
+    let res = await fetch(`${url}/search?city=${hotelinput.value}`)
+    let data = await res.json()
+    console.log(data)
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //append function
-function append(data){
+function appendhotel(data){
+    
    let hoteldiv  =   document.getElementById("displayhotels")
    hoteldiv.innerHTML = null
     data.forEach((el)=>{
@@ -144,7 +195,7 @@ function sortrecommended(data){
    })
 
    console.log(data)
-   append(data)
+   appendhotel(data)
 }
 
 function sortprice(data){
@@ -154,7 +205,7 @@ function sortprice(data){
     })
 
     console.log(data)
-    append(data)
+    appendhotel(data)
 }
 
 function sortdistance(data){
@@ -164,7 +215,7 @@ function sortdistance(data){
         return a.distance-b.distance
     })
 
-    append(data)
+    appendhotel(data)
 }
 
 function sortonguestrating(data){
@@ -174,7 +225,7 @@ function sortonguestrating(data){
         return b.rating-a.rating
     })
 
-    append(data)
+    appendhotel(data)
 }
 
 
@@ -186,7 +237,7 @@ function sortonrating(data){
         return b.star_rating-a.star_rating
     })
 
-    append(data)
+    appendhotel(data)
 }
 
 

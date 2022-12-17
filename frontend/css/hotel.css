@@ -6,12 +6,13 @@ body{
 }
 /* content */
 #body{
-border: 1px solid red;
+/* border: 1px solid red; */
 width: 80vw;
 height: auto;
 margin: auto;
 display: flex;
 justify-content: space-around;
+margin-bottom: 100px;
 }
 
 
@@ -19,13 +20,13 @@ justify-content: space-around;
 #main{
 width: 67vw;
 height: auto;
-border: 1px solid blue;
+/* border: 1px solid blue; */
 }
 
 
 /* search */
 #search{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 6vh;
     display: flex;
@@ -38,7 +39,7 @@ border: 1px solid blue;
 
 #searchinput{
     width: 33%;
-    border: 1px solid red;
+    border: 1px solid black;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -46,7 +47,10 @@ border: 1px solid blue;
 
 .icons{
     width: 14%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .labels{
@@ -54,34 +58,52 @@ border: 1px solid blue;
     font-size: 12px;
 }
 
-.destidetail{
+#destidetail{
 width: 86%;
 height: 100%;
-border: 1px solid black;
+/* border: 1px solid black; */
 padding: 0 5%;
 }
-.destidetail>p{
-    margin: 0%;
-    margin-top: 2%;
+
+
+#destidetail:hover{
+    cursor: pointer;
 }
+
+#destidetail>label{
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+
+#destidetail>p{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    
+}
+
 
 
 #hotelsearchdiv{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 19vw;
-    height: 50vh;
-    top: 11%;
+    height: 400px;
+    top: 10.5%;
     left: 13%;
     background-color: #fff;
     border-radius: 10px;
-    display: none;
+    visibility: hidden;
+    z-index: 30;
+    overflow: hidden;
 }
 
 #inputdiv{
     width: 100%;
-    border: 1px solid blue;
+    border-bottom: 1px solid black;
     height: 11%;
     display: flex;
     align-items: center;
@@ -89,11 +111,33 @@ padding: 0 5%;
 }
 
 #inputdiv>input{
-    width: 90%;
+    width: 80%;
     height: 70%;
     outline: none;
     border: none;
-    
+    margin-right: 2%;
+}
+
+#inputdiv>button{
+    width: 10%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inputdiv>button>div{
+/* border: 1px solid red; */
+height: 40%;
+width: 100%;
+border-radius: 50%;
+background-color: rgb(231, 231, 231);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 12px;
 }
 
 
@@ -108,32 +152,57 @@ margin-left: 1%;
 justify-content: space-around;
 }
 
-.datepicker1{
+#datepicker1{
     width: 25%;
-    border: 1px solid red;
+    border: 1px solid black;
     height: 100%;
     box-sizing: border-box;
     display: flex;
 }
 
-.datepicker2{
+#datepicker2{
     width: 25%;
-    border: 1px solid red;
+    border: 1px solid black;
     height: 100%;
     box-sizing: border-box;
     display: flex;
+}
+
+
+.destidetail{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+    
+}
+.labels{
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+/* date */
+
+.date{
+    width: 100%;
+    height: 40%;
+    font-size: 12px;
+    border: none;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .travelers{
     width: 25%;
-    border: 1px solid red;
+    border: 1px solid black;
     height: 100%;
     box-sizing: border-box;
     display: flex;
 }
 .searchbtn{
     width: 18%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #C83259;
 }
 .searchbtn>button{
@@ -146,10 +215,12 @@ justify-content: space-around;
 }
 
 .datepicker_icons{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 30%;
     height: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -159,7 +230,7 @@ justify-content: space-around;
 #hoteldiv{
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 2%;
     box-sizing: border-box;
     display: flex
@@ -168,16 +239,170 @@ justify-content: space-around;
 /* sidediv */
 
 #sidediv{
-    width: 18vw;
-    border: 1px solid blue;
+    width: 20vw;
+    /* border: 1px solid blue; */
+    height: auto;
 }
+
+#sidediv>:nth-child(1){
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+
+#map{
+width: 100%;
+/* border: 1px solid red; */
+height: 150px;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+
+#map>img{width: 100%;}
+
+#viewinmap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(85, 202, 206);
+    /* border: 1px solid red; */
+    height: 48px;
+    box-sizing: border-box;
+}
+
+#viewinmap>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* property */
+#property{
+    width: 90%;
+    height: 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#property>h5{
+    font-size: 18px;
+}
+
+#property>div{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#searchicon{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#searchicon+p{
+    margin: 0;
+}
+
+/* filter */
+
+#filter>p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    margin:0 3%;
+    
+}
+
+
+/* price per night */
+
+#grating{
+    width: 90%;
+    height: 170px;
+    /* border: 1px solid red; */
+    margin-top: 10%;
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#grating>div{
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* starrating */
+
+
+#starrating{
+    width: 90%;
+    height: 120px;
+    /* border: 1px solid red; */
+    margin: 10% 0;
+}
+
+#starrating>div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.stars{
+    width: 30%;
+    border: 1px solid black;
+    height: 30%;
+    text-align: center;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+
+/* payment type */
+
+#propertytype{
+    margin: 10% 0;
+}
+
+#experience{
+    margin-bottom: 10%;
+}
+
+#see{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(85, 202, 206);
+    margin-left: 4%;
+    margin-top: 10%;
+}
+
 
 /* hotelcontent */
 #hotelcontent{
     width: 60vw;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: auto;
+    
 }
+
+
+
+
 
 /* 
 sorting */
@@ -255,7 +480,7 @@ sorting */
     width: 100%;
     height: auto;
     /* border: 1px solid red; */
-    overflow: hidden;
+    
 }
 
 .hotelmaindiv{
@@ -385,12 +610,12 @@ box-sizing: border-box;
 /* ads div */
 #ads{
 width: 11vw;
-border: 1px solid rgb(0, 238, 255);
+/* border: 1px solid rgb(0, 238, 255); */
 height: 100%;
 }
 
 #ads>div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 78vh;
     margin-top: 10%;
     width: 95%;
