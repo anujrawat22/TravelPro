@@ -360,7 +360,7 @@ justify-content: center;
 #chooseroom{
     width: 100%;
     margin-top: 2%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     height: 90px;
     margin-bottom: 2%;
@@ -372,7 +372,7 @@ justify-content: center;
 
 #chooseroominput{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 70%;
     box-sizing: border-box;
     display: flex;
@@ -383,23 +383,43 @@ justify-content: center;
 
 #chooseroominput>:nth-child(1){
     width: 20%;
-    border: 1px solid blue;
+    border: 1px solid black;
     height: 70%;
-
+    display: flex;
+    background-color: #fff;
 }
 
+.datediv{
+    height: 100%;
+    width: 80%;
+    box-sizing: border-box;
+    
+}
+#datepicker1{
+    width: 90%;height: 90%;
+    border: none;
+    outline: none;
+}
+
+#datepicker2{
+    width: 90%;
+    height: 90%;
+    border: none;
+    outline: none;
+}
 #chooseroominput>:nth-child(2){
     width: 20%;
-    border: 1px solid blue;
+    border: 1px solid black;
     height: 70%;
-
+    display: flex;
+    background-color: #fff;
 }
 
 #chooseroominput>:nth-child(3){
     width: 32%;
-    border: 1px solid blue;
+    border: 1px solid black;
     height: 70%;
-
+    background-color: #fff;
 }
 
 #chooseroominput>:nth-child(4){
@@ -420,6 +440,16 @@ justify-content: center;
 }
 
 
+.icons{
+    height: 100%;
+    /* border: 1px solid red; */
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* hotelroomcard */
 
 #hotelroomcard{
@@ -439,9 +469,14 @@ justify-content: center;
 
 /* hotelroomimg */
 
-#hotelroomimg{
+.hotelroomimg{
     width: 100%;
     height: 35%;
     border: 1px solid red;
     box-sizing: border-box;
+}
+
+.roomimg{
+    width: 100%;
+    height: 100%;
 }
