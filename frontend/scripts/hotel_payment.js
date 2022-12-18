@@ -77,5 +77,94 @@ function show_signin(){
   x.style.display = "block"
 }
 
+const getdata = ()=>{
+  let data = JSON.parse(localStorage.getItem('roomsdata'))
+  showdetails(data)
+}
+getdata()
+
+const showdetails = (el)=>{
+  let room_img = document.getElementById("hotel_img")
+  room_img.src = el.room_img
+
+  let room_name = document.getElementById("room_name")
+  room_name.innerText = el.room_title
+
+  let checkin = document.getElementById("check_in")
+  checkin.innerText = el.checkin
+
+  let checkout = document.getElementById("check_out")
+  checkout.innerText = el.checkout
+
+  let r_price = document.getElementById("r_price")
+  r_price.innerText = el.room_price
+
+  let total = document.getElementById("total")
+  total.innerText = (+el.room_price)+8
+      
+}
+
+
+
+//submit
+let btn = document.getElementById("btn");
+
+btn.onclick=()=>{
+  
+    let fname = document.getElementById("first_name").value;
+    let lname = document.getElementById("last_name").value;
+    let mobile = document.getElementById("mobile_number").value
+    let email = document.getElementById("email_id").value;
+    let cardname =document.getElementById("four_3in").value;
+    let cardnumber = document.getElementById("four_4in").value
+    let expdate = document.getElementById("four_5in").value
+    let  securityCode = document.getElementById("four_6in").value
+    let zipcode = document.getElementById("four_6_2in").value
+
+    let password = document.getElementById("pass").value;
+    let confirmpassword = document.getElementById("cpass").value
+    let roomprice = document.getElementById("r_price").innerHTML
+    let tax = document.getElementById("r_tax").textContent
+    rprice = (+roomprice)
+    t = (+tax)
+    let total =  (rprice) + (+t)
+
+    let obj = {
+        fname,
+        lname,
+        mobile,
+        email,
+        password,
+        confirmpassword,
+        roomprice : rprice,
+        tax:t,
+        total,
+        card:{
+          cardname,
+          cardnumber,
+          expdate,
+          securityCode,
+          zipcode
+        }
+
+    }
+    console.log(obj)
+
+    fetch("https://sore-plum-spider-hem.cyclic.app/payment/create",{
+        method:"POST",
+        body : JSON.stringify(obj),
+        headers : {
+            'Content-Type': 'application/json'
+        },
+        mode: 'no-cors'
+    })
+    .then((res) => res.json())
+    .then((res) => {
+        console.log(res)     
+    })
+    .catch((err) => console.log(err))
+    
+        
+}
 
 
