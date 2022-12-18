@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signin Page</title>
+    <link rel="stylesheet" href="./Style/signin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/loader.css" />
+    <!-- <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/button.css" /> -->
+  </head>
+  <body>
+    <div>
+      <img src="./img/new logo.png" alt="" />
+    </div>
+    <form action="" id="loginform" onsubmit="Login(event)">
+      <h1>Login</h1>
+      <div id="error">lsdfalskjdflasjfalsf jslfaksfjalksf</div>
+      <label for="email">Email</label>
+      <br />
+      <input type="email" id="email" placeholder="Enter email" required />
+
+      <br />
+      <label for="Password">Password</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        required
+      />
+      <br />
+      <input
+        type="submit"
+        class="button-36"
+        name=""
+        id="signin"
+        value="SIGN IN"
+      />
+      <br />
+      <p>dont have an account <a href="signup.html">sign up</a></p>
+    </form>
+    <div id="loder">
+      <div id="spin"></div>
+    </div>
+  </body>
+  <span class="spinner spinner-large"></span>
+</html>
+<script src="./Script/auth.js"></script>
+<!-- <script src="./script/signin.js"></script> -->

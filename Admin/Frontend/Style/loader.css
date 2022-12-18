@@ -2,10 +2,10 @@
   /* Spinner size and color */
   width: 1.5rem;
   height: 1.5rem;
-  border-top-color: #444;
-  border-left-color: #444;
-  border-top-color: white;
-  border-left-color: white;
+  border-top-color: #a4eaef;
+  border-left-color: #a4eaef;
+  /* border-top-color: white;
+  border-left-color: white; */
 
   /* Additional spinner styles */
   animation: spinner 400ms linear infinite;
@@ -18,8 +18,8 @@
   display: inline-block;
   vertical-align: middle;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 48vw;
   visibility: hidden;
 }
 
