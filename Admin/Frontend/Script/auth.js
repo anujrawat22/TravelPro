@@ -124,9 +124,10 @@ class user {
             })
 
             const data = await response.json()
-            // loader()
-            console.log(data, 'skjdf')
-            location = './index.html'
+            localStorage.setItem('token', JSON.stringify(data.token))
+            loader()
+            console.log(data, data.token)
+            // location = './index.html'
             return data
         }
         catch (err) {
@@ -155,6 +156,7 @@ class user {
     }
 
     async profileDetail(username, token) {
+        console.log(token, 'tokennnn');
         try {
             const profile_api = `https://masai-api-mocker.herokuapp.com/user/${username}`
 
