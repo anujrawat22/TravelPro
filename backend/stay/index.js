@@ -12,6 +12,8 @@ const {hotelRouter} = require("./routes/hotel.route")
 const {HotelModel} = require("./models/hotel.model")
 const {UserModel} = require("./models/user.model")
 
+const {paymentRouter} = require('./routes/payment.route')
+
 app.use(express.json());
 app.use(cors({
     origin:"*"
@@ -20,6 +22,7 @@ app.use(cors({
 app.get("/",(req,res)=>{
     res.send("welcome")
 })
+app.use("/payment",paymentRouter)
 
 app.get("/hotels",async(req,res)=>{
     const data = await HotelModel.find()
