@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/hoteldetails.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bar_code.css">
 </head>
 <body>
     <div id="navbar">
@@ -126,7 +127,20 @@
                     </div>
                     <div>
                         <div class="icons"><i class="fa fa-user" style="font-size:22px"></i></div>
+                        <div id="travelersdiv">
+                            <div>
+                                <label for="rooms">Rooms</label>
+                                <input type="number" name="rooms" id="rooms">
+                            </div>
+                            
+                            <div>
+                                <label for="travelers">Travelers</label>
+                            <input type="travelers" id="travelers">
+                            </div>
+                            
+                        </div>
                     </div>
+
                     <div><button>Check availability</button></div>
                 </div>
             </div>
@@ -159,5 +173,10 @@
     </div>
 </body>
 </html>
+
+
+<div id="barcode">
+
+</div>
 
 <script src="./scripts/hoteldetail.js" type="module"></script>
