@@ -1,9 +1,13 @@
 
 import { navbar } from "../components/navbar.js";
 import barcode from "../components/bar_code.js";
+import footer from "../components/footer.js";
+
+
 
 document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("barcode").innerHTML = barcode()
+document.getElementById("footer").innerHTML = footer()
 let hoteldata = JSON.parse(localStorage.getItem("hoteldata")) || {}
 
 console.log(hoteldata)
@@ -136,7 +140,7 @@ function roomcards(arr){
      
      let price = document.createElement("p")
      price.setAttribute("class","roomprice")
-     price.innerText = `Price -$${el.room_price}`
+     price.innerText = `Price -  $${el.room_price}`
      
       let reservebtn = document.createElement("button")
       reservebtn.setAttribute("class","reservebtn")

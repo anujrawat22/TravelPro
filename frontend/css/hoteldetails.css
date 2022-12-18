@@ -496,7 +496,7 @@ outline: none;
 #hotelroomcard{
     display: grid;
     width: 100%;
-    height:  auto;
+    height:  1000px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,450px);
     /* border: 1px solid red; */
@@ -573,4 +573,17 @@ outline: none;
 .reservebtn:hover{
     cursor: pointer;
     background-color: #ad2b4e
+}
+
+
+/* barcode */
+
+#barcode{
+    display: flex;
+    width: 77%;
+    margin: auto;
+    border: 1px solid rgb(216, 216, 216);
+    overflow: hidden;
+    margin-top: 80px ;
+    margin-bottom: 80px;
 }
