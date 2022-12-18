@@ -7,7 +7,7 @@ SignUPbtn.onclick=async (e)=>{
     let password = document.getElementById("ak_password").value   
     if(email&&password){
         let form={email,password}
-        const res=await fetch(`https://sore-plum-spider-hem.cyclic.app/user/login`,{
+        const res=await fetch(`https://dull-ruby-cockroach-wrap.cyclic.app/login`,{
             method:"POST",
             body:JSON.stringify(form),
             headers:{
@@ -23,6 +23,9 @@ SignUPbtn.onclick=async (e)=>{
          }
         console.log(massage)
         alert(massage.MSG)
+        if(massage.MSG=='Login sueccesfull'){
+            window.location.href='index.html'
+        }
 
     }else if(!email||!password){
        alert("Please fill all details")
