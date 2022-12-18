@@ -157,26 +157,39 @@ class user {
 
     async profileDetail(username, token) {
         console.log(token, 'tokennnn');
-        try {
-            const profile_api = `https://masai-api-mocker.herokuapp.com/user/${username}`
+        // Swal.fire({
+        //     title: 'Logged In!',
+        //     text: `You have sussefully logged In`,
+        //     textColor: "white",
+        //     icon: 'success',
+        //     color: 'white',
+        //     // iconColor: 'white',
+        //     showCancelButton: false,
+        //     background: '#202030',
+        //     confirmButtonColor: '#C6604C',
+        //     confirmButtonText: 'Ok'
+        // })
+        location = './index.html'
+        // try {
+        //     const profile_api = `https://masai-api-mocker.herokuapp.com/user/${username}`
 
-            const response = await fetch(profile_api, {
-                headers: {
-                    'Authorization': `Bearer ${token}`,
-                    'Content-Type': 'application/json'
-                }
-            })
+        //     const response = await fetch(profile_api, {
+        //         headers: {
+        //             'Authorization': `Bearer ${token}`,
+        //             'Content-Type': 'application/json'
+        //         }
+        //     })
 
-            let data = await response.json()
-            console.log(data, 'data')
-            localStorage.setItem('userDetail', JSON.stringify(data))
-            location = './index.html'
-            // console.log(username, token)
+        //     let data = await response.json()
+        //     console.log(data, 'data')
+        //     localStorage.setItem('userDetail', JSON.stringify(data))
+        //     location = './index.html'
+        //     // console.log(username, token)
 
-        }
-        catch (err) {
-            console.log('err:', err)
-        }
+        // }
+        // catch (err) {
+        //     console.log('err:', err)
+        // }
 
 
     }

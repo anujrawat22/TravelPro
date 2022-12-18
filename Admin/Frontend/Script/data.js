@@ -1,5 +1,48 @@
+const { send } = require("process")
+
+const sendToServer = async (body) => {
+    const response = await fetch(
+        "https://sore-plum-spider-hem.cyclic.app/hotels/create",
+        {
+            method: "POST",
+            mode: "cors",
+            body: JSON.stringify(body),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        }
+    );
+    // const result = await JSON.parse(response)
+    const result = await response.text();
+    console.log('added to databaseeeee');
+}
+
 const sendData = {}
 // swal()
+
+let allFeild = () => {
+    let truth = true
+    let inp = document.querySelectorAll('input')
+    inp.forEach((el) => {
+        console.log(el);
+        if (el.value == '') {
+            // console.log('yessssssssssssssssssssss');
+            truth = false
+            if (el.parentElement.id == 'search') {
+                truth = true
+            }
+        }
+    })
+    let txtAr = document.querySelectorAll('textarea')
+    txtAr.forEach((el) => {
+        console.log(el);
+        if (el.value == "") {
+            // console.log('yesssssssssssssss');
+            truth = false
+        }
+    })
+    return truth
+}
 
 let loader = () => {
     if (document.querySelector('.spinner').style.visibility == 'visible') {
@@ -8,7 +51,7 @@ let loader = () => {
         document.querySelector('.spinner').style.visibility = 'visible'
     }
 }
-
+let lastDate
 
 let takeData = (obj) => {
 
@@ -99,6 +142,7 @@ let takeData = (obj) => {
     sendData["rooms"] = rooms
     console.log(sendData);
 
+    sendToServer(sendData)
     // send the data to server
 
 }
@@ -108,28 +152,54 @@ let fetching = async () => {
     data = await data.json()
     console.log(data[0]);
     takeData(data[0])
+    loader()
+    let dif = ((Date.now() - lastDate) / 1000).toFixed(1)
+    Swal.fire({
+        title: 'Hey, Good job!!',
+        text: `It takes only ${dif} s to add your hotel`,
+        textColor: "white",
+        icon: 'success',
+        color: 'white',
+        // iconColor: 'white',
+        showCancelButton: false,
+        background: '#202030',
+        confirmButtonColor: '#C6604C',
+        confirmButtonText: 'Ok'
+    })
 }
 
 // [1name,2name,3name] [1siz,2siz,3siz]
 document.getElementById('submitBtn').onclick = () => {
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You want to add this hotel!",
-        icon: 'info',
-        showCancelButton: true,
-        background: '#202030',
-        confirmButtonColor: '#C6604C',
-        cancelButtonColor: "#AAAAAA",
-        confirmButtonText: 'Yes, add this hotel!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            loader()
-            fetching()
-            // Swal.fire(
-            //     'Deleted!',
-            //     'Your file has been deleted.',
-            //     'success'
-            // )
-        }
-    })
+    if (allFeild()) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You want to add this hotel!",
+            icon: 'info',
+            showCancelButton: true,
+            background: '#202030',
+            confirmButtonColor: '#C6604C',
+            cancelButtonColor: "#AAAAAA",
+            confirmButtonText: 'Yes, add this hotel!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                lastDate = Date.now()
+                loader()
+                fetching()
+                // Swal.fire(
+                //     'Deleted!',
+                //     'Your file has been deleted.',
+                //     'success'
+                // )
+            }
+        })
+
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'All feilds are mandatory!',
+            background: '#202030',
+            color: 'white'
+        })
+    }
 }

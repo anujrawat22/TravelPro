@@ -1,9 +1,16 @@
-// import Swal from '../node_modules/sweetalert2'
+let loaderb = () => {
+    if (document.querySelector('.spinner').style.visibility == 'visible') {
+        document.querySelector('.spinner').style.visibility = 'hidden'
+    } else {
+        document.querySelector('.spinner').style.visibility = 'visible'
+    }
+}
 
-// import 'sweetalert2/src/sweetalert2.scss'
-
-// console.log(Swal);
 console.log('khl');
+
+let signInPage = () => {
+    location = './signup.html'
+}
 
 let sectionObj = document.getElementById("sections").children;
 for (let sec in sectionObj) {
@@ -12,4 +19,46 @@ for (let sec in sectionObj) {
         document.getElementById("page-name").innerText =
             sectionObj[sec].children[1].innerText;
     };
+}
+
+
+window.onload = () => {
+    document.getElementById('user').addEventListener('click', signInPage)
+    let dom = document.getElementById('user')
+    if (localStorage.getItem('token')) {
+        // alert('yes logdin')
+        let div = document.createElement('div')
+        div.id = 'logout'
+        let div2 = document.createElement('div')
+        let nameBtn = document.createElement('button')
+        nameBtn.innerText = 'Pratap Sah'
+        // div.innerText = 'PS'
+        // div.style.width = '20px'
+        // div.style.height = '20px'
+        // div.style.borderRadius = '30%'
+        // div.style.backgroundColor = '#202030'
+        div.style.color = '#dc3545'
+        // div.style.padding = '12px'
+        // div.style.fontSize = '20px'
+        div2.style.marginLeft = '10px'
+        nameBtn.style.color = '#dc3545'
+        let sp = document.createElement('spaan')
+        sp.classList = 'material-symbols-outlined'
+        sp.innerText = 'logout'
+        dom.innerHTML = null
+        div.append(sp)
+        div2.append(nameBtn)
+        dom.append(div)
+        dom.append(div2)
+        document.getElementById('user').removeEventListener('click', signInPage)
+
+        // logout
+        document.getElementById('logout').onclick = () => {
+            loaderb()
+            setTimeout(() => {
+                localStorage.removeItem('token')
+                location.reload()
+            }, 2000);
+        }
+    }
 }
