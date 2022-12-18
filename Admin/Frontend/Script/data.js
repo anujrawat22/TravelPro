@@ -98,6 +98,9 @@ let takeData = (obj) => {
     console.log(rooms, 'trooms');
     sendData["rooms"] = rooms
     console.log(sendData);
+
+    // send the data to server
+
 }
 
 let fetching = async () => {
