@@ -109,6 +109,7 @@ class user {
                 password: p,
             }
 
+            loader()
             const login_api = 'https://sore-plum-spider-hem.cyclic.app/admin/login'
 
             const response = await fetch(login_api, {
@@ -123,10 +124,13 @@ class user {
             })
 
             const data = await response.json()
+            // loader()
             console.log(data, 'skjdf')
+            location = './index.html'
             return data
         }
         catch (err) {
+            loader()
             console.log('errrr:', err)
             document.getElementById('error').style.display = 'flex'
             document.getElementById('error').innerText = `Wrong Credentials`
