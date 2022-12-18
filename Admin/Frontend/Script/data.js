@@ -1,4 +1,4 @@
-const { send } = require("process")
+
 
 const sendToServer = async (body) => {
     const response = await fetch(
@@ -14,7 +14,7 @@ const sendToServer = async (body) => {
     );
     // const result = await JSON.parse(response)
     const result = await response.text();
-    console.log('added to databaseeeee');
+    console.log(result, 'added to databaseeeee');
 }
 
 const sendData = {}
