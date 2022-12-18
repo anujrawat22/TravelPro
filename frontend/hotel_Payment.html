@@ -985,9 +985,9 @@
             email address above.
           </p>
           <label for="">Create password</label>
-          <input type="password" name="" id="" placeholder="6 - 30 characyers, no spaces"/>
+          <input type="password" name="" id="pass" placeholder="6 - 30 characyers, no spaces"/>
           <label for="">Confirm password</label>
-          <input type="password" name="" id="" />
+          <input type="password" name="" id="cpass" />
           <p>
             By creating an account, I agree to the
             <a href="">TravelPro Rewards Terms and Conditions.</a>
@@ -1015,7 +1015,7 @@
       <a href=""> Rules and Restrictions</a> and <a href="">Terms of Use</a>
       </p>
       <p style="color: green;">Change of plans? No problem. You can cancel for free a day before</p>
-      <button id="btn" onclick="window.location.href='end.html'" style="background-color: #d32d59; padding: 10px; border: none; border-radius: 10px;font-size: 20px; color: white;">Complete Booking ></button>
+      <button id="btn" style="background-color: #d32d59; padding: 10px; border: none; border-radius: 10px;font-size: 20px; color: white;">Complete Booking ></button>
       <p>
      We use secure transmission and encrypted storage to protect your
      personal information.
@@ -1028,7 +1028,7 @@
         </div>
         <div id="mid_right">
           <div id="hotel_card">
-            <img id="hotel_img" src="https://images.trvl-media.com/hotels/14000000/13090000/13083600/13083538/380e3879.jpg?impolicy=resizecrop&rw=455&ra=fit" alt="">
+            <img id="hotel_img" src="" alt="">
             <div id="hotel_info"> 
             <h3 id="hotel_name">Pride Plaza Hotel Aerocity New Delhi</h3>
             <p id="hotel_rating">7.6/10 Good (765 reviews)</p>
@@ -1042,10 +1042,10 @@
           <div id="hotel_price_card">
             <h3 style="font-size: 25px;">Price details</h3>
             <hr />
-            <p id="r_price">1 room x 1 night</p>
-            <p id="r_tax">Taxes and fees</p>
+            <p>1 room x 1 night <span id="r_price"></span> </p>
+            <p >Taxes and fees: <span id="r_tax">$8</span></p>
             <hr />
-            <h4 id="total" style="font-size: 20px;">Total</h4>
+            <h4  style="font-size: 20px;">Total <span id="total"></span></h4>
             <hr />
             <h5 style="font-size: 15px;">Not included in your total</h5>
             <p style="font-size: 15px; color: grey;">Mandatory charge: Collected at property. <span style="color:rgb(84, 130, 203);">Details</span></p>
