@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/hoteldetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="navbar">
@@ -111,9 +112,21 @@
             <div id="chooseroom">
                 <h2>Choose your room</h2>
                 <div id="chooseroominput">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div >
+                        <div class="icons">
+                            <i class="fa fa-calendar" style="font-size:18px"></i>
+                        </div>
+                        <div class="datediv"><input type="date" id="datepicker1"></div>
+                    </div>
+                    <div >
+                        <div class="icons">
+                            <i class="fa fa-calendar" style="font-size:18px"></i>
+                        </div>
+                        <div class="datediv"><input type="date" id="datepicker2"></div>
+                    </div>
+                    <div>
+                        <div class="icons"><i class="fa fa-user" style="font-size:22px"></i></div>
+                    </div>
                     <div><button>Check availability</button></div>
                 </div>
             </div>
@@ -121,12 +134,7 @@
 
             <!-- hotelroomcard -->
             <div id="hotelroomcard">
-                 <div>
-                    <div id="hotelroomimg"></div>
-                 </div>
-                 <div></div>
-                 <div></div>
-                 <div></div>
+                
             </div>
         </div>
 

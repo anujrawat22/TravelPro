@@ -65,17 +65,30 @@ body{
 #top p:nth-child(1){
     font-weight: bold;
 }
+#mid{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  border: 0px solid red;
+}
+#mid_left{
+  width: 57%;
+  border: 0px solid blue;
+}
 
-#mid_left-1{
-    display: flex;
-    border: 0px solid red;
+#mid_left-1,#mid_left-2,#mid_left-3,#mid_left-4,#mid_left-5,#mid_left-6 {
+    border: 0px solid green;
     margin: 15px;
     margin-left: 50px;
     margin-right: 50px;
     background-color: #ffffff;
-    width: 60%;
-    font-size: 20px;
+    width: 100%;
+    padding: 10px;
 }
+#mid_left-1{
+  display: flex;
+}
+
 #mid_left-1 span{
     margin: 10px;
     color: black;
@@ -86,14 +99,160 @@ body{
    color: #00b1ff;
    font-weight: bold;
    text-decoration: underline;
+   font-size: 20px;
 }
 
 #mid_left-1 span:nth-child(3){
     color: #00b1ff;
 }
 
-#name{
+#mid_left-2>h2{
+    margin-left: 20px;
+    font-size: 30px;
+}
+#two_11{
+    margin-left: 20px;
+}
+#two_1_1{
+    margin-bottom: 10px;
+}
+#two_2_1 {
+    border: 0px solid blue;
+    width: 50%;
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+    margin-top: 15px;
+  }
+
+#two_2_1  label, #two_2_2 label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(97,97,97);
+    font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif
 }
 
+#two_2_1_1 , #two_2_1_2  {
+  width: 40%;
+}
 
+#two_2_2 {
+  border: 0px solid yellow;
+  width: 60%;
+  margin-bottom: 1%;
+  margin-left: 20px;
+}
+
+#two_22{
+  display: flex;
+  border: solid;
+}
+
+#two_2_2 select{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(237,237,237);
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  #two_2_2 input{
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #wrong_first_name, #wrong_last_name , #wrong_number, #four p {
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  #two_2_3 {
+    border: 0px solid red;
+    width: 93%;
+    height: 32%;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  
+  #two_2_3 select{
+    height: 30px;
+    width: 120px;
+    background-color: rgb(219, 219, 219);
+  }
+  #checkbox{
+    margin-left: 20px;
+  }
+
+
+  #three_1_1{
+    display: flex;
+  }
+  #three_1_1 h1{
+    font-size: 30px;
+  }
+
+  #three_1_1 h3{
+    background-color: #558000;
+    color: white;
+    border-radius: 10px;
+    height: 15px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  #three_2{
+    background-color:#d7e5f5;
+    padding: 10px;
+  }
+
+  .touch{
+    display: flex;
+  }
+  .touch p:nth-child(3){
+    margin-left: 35%;
+  }
+
+  
+  #tick1{
+    color: green;
+  }
+  #tick2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: green;
+  }
+  #debit:hover,#paypal:hover,#click:hover{
+    background-color: #59f3f5;
+    cursor: pointer;
+    padding: 2px;
+  }
+
+  #mid_right{
+    width: 31%;
+    margin-right: 50px;
+    padding: 10px;
+    margin-top: 15px;
+    
+  }
+  #hotel_card{
+    border: 0px solid blueviolet;
+    background-color: #ffffff;
+  }
+  #hotel_card img{
+    width: 100%;
+  }
+
+  #hotel_info{
+    margin-left: 10px;
+    padding: 15px;
+  }
+
+  #hotel_price_card{
+    border: 0px solid blueviolet;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+  }

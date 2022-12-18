@@ -90,6 +90,22 @@ roomcards(rooms)
 function roomcards(arr){
 
     arr.forEach((el)=>{
+      let hotelroomcard = document.querySelector("#hotelroomcard")
+
+      let div = document.createElement("div")
+      div.setAttribute("class","hotelroom")
+
+      let div1 = document.createElement("div")
+      div1.setAttribute("class","hotelroomimg")
+      let img = document.createElement("img")
+      img.setAttribute("class","roomimg")
+      img.src = el.room_image[0]
+
+      div1.append(img)
+    
+      div.append(div1)
       
+      hotelroomcard.append(div)
+
     })
 }
