@@ -77,15 +77,10 @@ function show_signin(){
   x.style.display = "block"
 }
 
-const getdata = ()=>{
-  let data = JSON.parse(localStorage.getItem('roomsdata'))
-  showdetails(data)
-}
-getdata()
-
 const showdetails = (el)=>{
+  console.log(el)
   let room_img = document.getElementById("hotel_img")
-  room_img.src = el.room_img
+  room_img.src = el.room_image[0]
 
   let room_name = document.getElementById("room_name")
   room_name.innerText = el.room_title
@@ -103,6 +98,15 @@ const showdetails = (el)=>{
   total.innerText = (+el.room_price)+8
       
 }
+
+const getdata = ()=>{
+  let data = JSON.parse(localStorage.getItem('roomsdata'))
+  //console.log(data)
+  showdetails(data)
+}
+getdata()
+
+
 
 
 
@@ -164,7 +168,7 @@ btn.onclick=()=>{
     })
     .catch((err) => console.log(err))
     
-        
+  window.location.href = "end.html"      
 }
 
 

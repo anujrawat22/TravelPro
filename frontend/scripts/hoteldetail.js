@@ -148,6 +148,10 @@ function roomcards(arr){
       reservebtn.addEventListener("click",()=>{
         reserveroom(el)
       })
+      reservebtn.onclick =()=>{
+        window.location.href = "hotel_payment.html"
+      }
+
       div6.append(price,reservebtn)
       
 
