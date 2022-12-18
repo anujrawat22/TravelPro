@@ -56,7 +56,7 @@ body{
     position: absolute;
     height: 28px;
     left: 160px;
-    top: 108px;
+    top: 173px;
 }
 .img-right{
     left: 567px;
@@ -80,7 +80,7 @@ input{
     height: 400px;
     position: absolute;
     left: 157px;
-    top: 105px;
+    top: 172px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     border-radius: 8px;
     z-index: 2;
@@ -92,7 +92,7 @@ input{
     height: 400px;
     position: absolute;
     left: 563px;
-    top: 105px;
+    top: 172px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     border-radius: 8px;
     z-index: 2;
@@ -210,3 +210,336 @@ input{
     0%, 10% {transform: rotate(0deg);}
     60%, 100% {transform: rotate(-1turn);}
 }
+
+body{
+    cursor: pointer;
+}
+
+/* navbar css */
+
+
+#navbar{
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(0,37,60);
+    display: flex;
+    padding: 0px 10%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#logonddrpdn{
+    /* border: 1px solid red; */
+    width: 20vw;
+    display: flex;
+    
+}
+
+#logo{
+    width: 12vw;
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(2, 43, 69),rgb(85, 157, 158),rgb(174, 211, 214),rgb(226,253,255),rgb(211, 247, 249),rgb(161, 202, 205),rgb(85, 157, 158),rgb(2, 43, 69));
+}
+
+#logo:hover{
+    cursor: pointer;
+    
+}
+#logo>img{
+width: 4.5vw;
+height: 8vh;
+border-radius: 50%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#drpdwn{
+    width: 44%;
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+align-items: center;
+}
+
+#drpdwn>button{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(0,37,60);
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#drpdwn>button:hover{
+    cursor: pointer;
+}
+
+#drpdwn>button>:nth-child(1){
+    font-size: 1vw;
+}
+#drpdwn>button>:nth-child(2){
+    transform: rotate(270deg);
+    font-size: 1vw;
+    
+}
+
+#navigate{
+    /* border: 1px solid red; */
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+#navigate>div{
+ /* border: 1px solid white; */
+ height: 100%;
+ width: auto;
+ box-sizing: border-box;
+ color: white;
+ padding: 0px 1.5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#navigate>div>p{
+font-size: 1vw;
+font-weight: 500;
+}
+#navigate>div>p:hover{
+    color: rgb(47, 113, 205);
+    cursor: pointer;
+}
+
+
+#ak_fly_div{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#ak_tr_head{
+    color: black;
+}
+
+#ak_tr_des{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 7px;
+    margin-bottom: 50px;
+}
+#ak_tr_des div{
+    background-color: white;
+   border-radius: 3px;
+}
+#ak_tr_des h3{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#ak_tr_des img{
+    width: 100%;
+    height: 170px;
+}
+
+
+/* Travel tips from the pros */
+#ak_tr_tips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.ak_img_div{
+    /* border: 2px solid blue; */
+    height: 200px;
+}
+.ak_img_div h4{
+    position: absolute;
+    top: 90%;
+    font-size: larger;
+    font-weight: 19000;
+    margin-left: 10px;
+    color: white;
+}
+
+#ak_img1{
+    background-size: 400px;
+    /* background-size: cover; */
+    /* color: white; */
+    background-blend-mode: overlay;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/airportcode.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+}
+#ak_img2{
+    background-blend-mode: overlay;
+    background-size: 500px;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/planetypes.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+}
+#ak_img3{
+    background-size: 500px;
+    background-blend-mode: overlay;
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+}
+#ak_text_div{
+    margin-top: 50%;
+    background-color: white;
+    /* border: 2px solid yellow; */
+}
+#ak_text_div p{
+    font-size: 14px;
+    padding: 7px;
+    color: rgb(97, 97, 97);
+}
+
+/* featurd offer */
+#ak_ft_off{
+    display: flex;
+    gap: 15px;
+    margin-top: -10px;
+    justify-content: space-between;
+}
+.ak_ft_off{
+    margin-top: 100px;
+}
+#ak_ft_off img{
+    width: 100%;
+}
+#ak_ft_off>div:nth-child(1){
+    width: 140%;
+}
+#ak_ft_off>div:nth-child(2){
+    width: 20%;
+}
+#ak_ft_off>div:nth-child(2) img{
+    height: 100%;
+}
+
+
+/* barcode */
+
+
+#ak_rewards_img_div>img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#ak_rewards {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+#ak_rewards_child2 {
+    margin: 0px 10px;
+}
+
+.ak_selAndno {
+    display: flex;
+}
+
+.ak_selAndno>div {
+    margin: 0px 10px;
+}
+
+.ak_selAndno select,
+.ak_selAndno input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#ak_rewards_btn {
+    width: 150px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
+    background-color: #c83258;
+    color: white;
+}
+
+#ak_rewards_btn:hover {
+    cursor: pointer;
+    background-color: green;
+
+}
+
+#ak_bar_code_img>img {
+    margin-top: 60px;
+    width: 160px;
+}
+
+#ak_rewards li,
+#ak_rewards p,
+#ak_rewards h4,
+#ak_rewards h3,
+#ak_rewards h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#ak_rewards p {
+    font-size: 13px;
+}
+
+#ak_rewards li {
+    font-size: 15px;
+    color: #5b5b5b;
+    line-height: 35px;
+}
+
+#ak_scan_the_qr {
+    margin-left: 15px;
+    margin-top: -0px;
+}
+
+
+
+.flex_div {
+    display: flex;
+}
+
+.flex_div select {
+    outline: none;
+    border: none;
+
+}
+
+.flex_div option {
+    font-weight: lighter;
+}
+
+.flex_div select {
+    padding: 15px 5px;
+    width: 370px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.flex_div div {
+    margin: 10px;
+}
+
+#ak_more_des {
+    margin: auto;
+}
+
+
+::-webkit-scrollbar{
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: black;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 1rem;
+    border: 5px solid transparent;
+    background-clip: content-box;
+  }

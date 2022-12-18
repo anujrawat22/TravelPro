@@ -5,3 +5,4 @@ https://sore-plum-spider-hem.cyclic.app/user/signup  => user signup
 https://sore-plum-spider-hem.cyclic.app/user/login   => user Login
 https://sore-plum-spider-hem.cyclic.app/admin/hotel/create   => create hotel data
 https://sore-plum-spider-hem.cyclic.app/admin/hotel/update   =>update hotel data
+https://sore-plum-spider-hem.cyclic.app/payment/create =>payment

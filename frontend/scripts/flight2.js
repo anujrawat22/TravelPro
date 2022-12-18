@@ -1,5 +1,10 @@
+import { navbar } from "../components/navbar.js";
+import footer from "../components/footer.js";
+console.log(footer)
+
 document.querySelector(".leaving").innerText=JSON.parse(localStorage.getItem("leaving_place"))
 document.querySelector(".going").innerText=JSON.parse(localStorage.getItem("going_place"));
+
 
 
 
@@ -39,7 +44,7 @@ function appenddata(data){
         img.src=name
         para1.append(img)
         let para2=document.createElement("p");
-        para2.innerText=innerText=`${JSON.parse(localStorage.getItem("going_place"))} - ${JSON.parse(localStorage.getItem("leaving_place"))}`;
+        para2.innerText=`${JSON.parse(localStorage.getItem("going_place"))} - ${JSON.parse(localStorage.getItem("leaving_place"))}`;
         para.innerText=`${el.takeof}-${el.landing}`
         div1.append(para,para2,para1);
       
@@ -61,4 +66,27 @@ appendfetch();
 
 
 
-let img_arr=["https://seeklogo.com/images/I/indigo-logo-EDBB4B3C09-seeklogo.com.png","https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg","https://1000logos.net/wp-content/uploads/2020/04/AirAsia-Logo.png"]
+let img_arr=["https://seeklogo.com/images/I/indigo-logo-EDBB4B3C09-seeklogo.com.png","https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg","https://1000logos.net/wp-content/uploads/2020/04/AirAsia-Logo.png"];
+
+
+document.querySelector("#navbar").innerHTML=navbar();
+
+
+let btn=document.querySelector(".time-btn>div:last-child")
+document.querySelector(".time-btn").style.backgroundColor="#c83259"
+let date=new Date();
+// console.log(date.getFullYear())
+btn.innerText=`${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`
+
+document.querySelector(".foot").innerHTML=footer()
+
+
+
+
+
+
+
+
+
+
+

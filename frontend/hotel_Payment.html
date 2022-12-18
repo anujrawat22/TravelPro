@@ -731,8 +731,7 @@
                   </div>
                 </div>
               </div>
-              <div id="checkbox"><input type="checkbox" /> Receive text alerts about this trip.
-                Message and data rates may apply.</div>
+              <div id="checkbox"><input type="checkbox" /> Receive text alerts about this trip Message and data rates may apply.</div>
               <div id="two_2_3"> 
                <div id="smoke1" onclick="show1()">
                   <h5 style="color: blue; font-weight: 400;">
@@ -742,7 +741,7 @@
                       </span>
                   </h5>
                 </div>
-                <div id="hide1">
+                <div id="hide1" style="display: none;">
                   <h5 id="sutta1">
                     Smoking requests cannot be guaranteed. Please contact the
                     property to confirm.
@@ -760,8 +759,8 @@
                     </span>
                   </h5>
                 </div>
-                <div id="hide2">
-                  <h5>
+                <div id="hide2" style=" display: none;">
+                  <h5 >
                     Special/accessibility requests (e.g. roll-away beds, late
                     check-in, and accessible rooms) are not guaranteed. If you
                     don't hear back from the property, you may want to contact
@@ -780,11 +779,11 @@
               </div>
                 </div>
             </div>
-    <div id="mid_left-3">
+            <div id="mid_left-3">
       <div id="three_1">
         <div id="three_1_1"> 
           <span class="material-icons">privacy_tip</span>  
-          <h1>Protect your hotel</h1> 
+          <h1>Protect your Stay</h1> 
           <h3>Recommended</h3>        
         </div>
       </div>
@@ -798,27 +797,263 @@
         </div>
       <div id="three_3">
                 <p style="color: black; font-weight:bold; font-size: 15px;">Why should you protect your trip? </p>
-                <p>1. You get delayed for covered reasons and miss a night of your
-            hotel stay.</p>
-          <p>2. You're sick and don't use all your hotel nights</p>
-          <p>3. You need to extend your trip due to the illness of a travel
-            companion</p>
-          <p>4. You need up to $10,000 for covered medical expenses while on your
-            trip</p>
-            <a href="">View insurance details and disclosures </a>
+                <p style="font-weight: bold;"><span class="material-symbols-outlined" style="color:green;">check</span>COVID-19 reimbursement up to 100%</p>
+                <p>If you're diagnosed with COVID-19 and need to cancel, shorten, or delay your stay</p>
+                <p style="font-weight: bold;"><span class="material-symbols-outlined" style="color:green;">check</span>Trip cancellation up to $5,000 and interruption up to $7,500</p>
+                <p>If you cancel or shorten your trip due to an illness, adverse weather, or other covered events</p>
+                <p style="font-weight: bold;"><span class="material-symbols-outlined" style="color:green;">check</span>Medical expenses up to $100,000</p>
+                <p>If you fall sick, get injured, or need emergency dental treatment during your trip</p>
+                <p style="font-weight: bold;"><span class="material-symbols-outlined" style="color:green;">check</span>Trip inconvenience up to $500</p>
+                <p>If the property is misinterpreted in advertisement shown while booking or you’re denied entry. This coverage may vary for residents of NY, WA, CA, PA</p>
+                <p style="font-weight: bold;"><span class="material-symbols-outlined" style="color:green;">check</span>Trip delay up to $1,500</p>
+                <p>If you arrive or depart late due to quarantine, adverse weather, or other covered events</p>
+            <a href="https://www.generalipartner.com/plan-documents/expedia"  style="margin-top: 15px; margin-bottom: 15px;">View insurance details and disclosures </a>
             <h3 style="font-size: 13px;">Select Yes or No to continue booking <span><sup style="color: red;">*</sup></span></h3>
-            <div class="touch" style="background-color: rgb(237,250,230); font-size: 15px;"> 
-              <input type="radio" name="touch">
-              Yes, I want Hotel Booking Protection Plus for my trip.
+            <div class="touch" style="background-color: rgb(237,250,230); font-size: 15px; padding: 15px;"> 
+              <input type="radio" name="touch" id="yes">
+              <p>Yes, I want Hotel Booking Protection Plus for my trip.</p>
+              <p>$8.00 per person</p>
             </div>
-            <div class="touch" style="background-color: rgb(245,245,245); font-size: 15px;">
-              <input type="radio" name="touch">
+            <div class="touch" style="background-color: rgb(245,245,245); font-size: 15px;padding: 15px;">
+              <input type="radio" name="touch" id="no">
               No, I'm willing to risk my $150.80 trip.
-            </div>
-            <p style="line-height: normal; font-style: italic;">“ Things happened outside of my control which caused the trip to be canceled. The Travel Protection was valuable in reducing the losses to me when we had to cancel the trip. ” - Mr. Rodman</p>
+            </div>      
       </div>
-    </div>
-    <div id="mid_right"></div>     
+            </div>
+            <div id="mid_left-4">
+            <h1>Payment Method</h1> 
+            <div style="display: flex; width: 100%">
+              <div id="tick1">
+                <span class="material-icons" style="font-weight: 900; font-size: 15px;">
+                  done
+                </span>
+                We use secure transmission
+              </div>
+              <div id="tick2">
+                <span class="material-icons" style="font-weight: 900; font-size: 15px;">
+                  done
+                </span>
+                We protect your personal information
+              </div>
+            </div>
+            <div style="padding-left: 3%; display: flex;">
+              <p id="debit" style="margin-left:0; font-size:16px; padding: 3px;" onclick="debitshow()">Debit/credit Card</p>
+              <p style="margin-left: 20px; font-size: 16px; padding: 3px;" id="paypal" onclick="paypal()">Paypal</p>
+              <p style="margin-left: 20px; font-size: 16px; padding: 3px;" id="click" onclick="clickon()">Click-to-pay</p>
+          </div>
+          <hr />
+          <div id="debit_div" >
+            <div id="four_1">
+              <a href="https://www.shift4shop.com/credit-card-logos.html"
+                ><img
+                  alt="Credit Card Logos"
+                  title="Credit Card Logos"
+                  src="https://www.shift4shop.com/images/credit-card-logos/cc-sm-5_b.png"
+              /></a>
+            </div>
+            <div id="four_3">
+              <label for=""
+                >Name on Card
+                <span style="color: red"><sup>*</sup></span></label
+              >
+              <input type="text" id="four_3in" style="width: 60%" />
+              <p id="wrong_name"></p>
+            </div>
+            <div id="four_4">
+              <label for=""
+                >Debit/Credit card number
+                <span style="color: red"><sup>*</sup></span></label
+              >
+              <input type="text" id="four_4in" style="width: 40%" />
+              <p id="wrong_carddetails"></p>
+            </div>
+            <div id="four_5">
+              <label for="" style="margin-top: 0%"
+                >Expiration date
+                <span style="color: red"><sup>*</sup></span></label
+              >
+              <p id="wrong_expirymonth"></p>
+              <select
+                id="four_5in"
+                name="dob-month"
+                class="datefield month"
+                style="
+                  width: 90px;
+                  height: 35px;
+                  background-color: rgb(234, 234, 234);
+                  padding: 6px 20px 6px 10px; ">
+                <option value="">Month</option>
+                <option value="01" style="color: blue;">01-Jan</option>
+                <option value="02" style="color: blue;">02-Feb</option>
+                <option value="03" style="color: blue;">03-Mar</option>
+                <option value="04" style="color: blue;">04-Apr</option>
+                <option value="05" style="color: blue;">05-May</option>
+                <option value="06" style="color: blue;">06-Jun</option>
+                <option value="07" style="color: blue;">07-Jul</option>
+                <option value="08" style="color: blue;">08-Aug</option>
+                <option value="09" style="color: blue;">09-Sep</option>
+                <option value="10" style="color: blue;">10-Oct</option>
+                <option value="11" style="color: blue;">11-Nov</option>
+                <option value="12" style="color: blue;">12-Dec</option>
+              </select>
+              <select id="four_5_2in"
+                name="dob-year"
+                class="datefield year"
+                style="
+                  width: 90px;
+                  height: 35px;
+                  background-color: rgb(234, 234, 234);
+                  padding: 6px 20px 6px 10px;
+                "
+              >
+                <option value="">Year</option>
+                <option value="2022" style="color: blue;">2022</option>
+                <option value="2023" style="color: blue;">2023</option>
+                <option value="2024" style="color: blue;">2024</option>
+                <option value="2025" style="color: blue;">2025</option>
+                <option value="2026" style="color: blue;">2026</option>
+                <option value="2027" style="color: blue;">2027</option>
+                <option value="2028" style="color: blue;">2028</option>
+                <option value="2029" style="color: blue;">2029</option>
+                <option value="2030" style="color: blue;">2030</option>
+                <option value="2031" style="color: blue;">2031</option>
+                <option value="2032" style="color: blue;">2032</option>
+                <option value="2033" style="color: blue;">2033</option>
+                <option value="2034" style="color: blue;">2034</option>
+                <option value="2035" style="color: blue;">2035</option>
+                <option value="2036" style="color: blue;">2036</option>
+                <option value="2037" style="color: blue;">2037</option>
+                <option value="2038" style="color: blue;">2038</option>
+                <option value="2039" style="color: blue;">2039</option>
+                <option value="2040" style="color: blue;">2040</option>
+                <option value="2040" style="color: blue;">2041</option>
+              </select>
+              <p id="wrong_expiryyear"></p>
+            </div>
+            <div id="four_6">
+              <div id="four_6_1">
+                <label for=""
+                  >Security code
+                  <span style="color: red"><sup>*</sup></span></label
+                >
+                <input type="text" id="four_6in" />
+                <p id="wrong_securitycode"></p>
+              </div>
+              <div id="four_6_2">
+                <label for=""
+                  >Billing ZIP code<span style="color: red"
+                    ><sup>*</sup></span
+                  ></label
+                >
+                <input type="text" name="" id="four_6_2in" />
+                <p id="wrong_zipcode"></p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div id="paypal_div" style="display: none;" >
+            <p><span style="font-weight: bold;">Important</span>: You will be redirected to PayPal's website to securely complete your payment.</p>
+          </div>
+
+          <div id="click_div" style="display: none;">
+            <img
+                  alt="Credit Card Logos"
+                  title="Credit Card Logos"
+                  src="https://www.shift4shop.com/images/credit-card-logos/cc-sm-5_b.png"
+              />
+              <p>Click-to-Pay is a secure way to pay online, powered by the global payments industry.</p>
+              <p>Add cards from participating networks to simply and securely use them wherever Click-to-Pay is supported.</p>
+          </div>
+          
+            </div>
+            <div id="mid_left-5">
+          <h1>Manage your booking</h1>
+          <hr />
+          <h4>Confirmation email</h4>
+          <p>
+            Please enter the email address where you would like to receive your
+            confirmation.
+          </p>
+            <label for="" id=""> Email address <span><sup style="color: red; font-size: 12px;">*</sup></span></label> 
+          <input type="text" name="" id="email_id" style="width: 50%;" placeholder="xyz@gmail.com" /> 
+          <p id="wrong_email" style="color: red;"></p>
+          <hr />
+          <h4>Create an account</h4>
+          <p>
+            Easily access your itinerary when you create an account using the
+            email address above.
+          </p>
+          <label for="">Create password</label>
+          <input type="password" name="" id="pass" placeholder="6 - 30 characyers, no spaces"/>
+          <label for="">Confirm password</label>
+          <input type="password" name="" id="cpass" />
+          <p>
+            By creating an account, I agree to the
+            <a href="">TravelPro Rewards Terms and Conditions.</a>
+          </p>
+            </div>
+            <div id="mid_left-6">
+        <h1 style="color: black; font-size: 25px;">Important information about your booking</h1>
+        <ul style="font-size: 13px;">
+        <li>Cancellations or changes made after 6:00pm (property local time) on Jan 30, 2022 or no-shows are subject to a property fee equal to 100% of the total amount paid for the reservation.
+        </li>
+         <li>Front desk staff will greet guests on arrival.</li>
+        <li>To register at this property, guests who are Indian citizens must provide a valid photo identity card issued by the Government of India; travelers who are not citizens of India must present a valid passport and visa.
+        </li>
+        <li> You'll be asked to pay the following charges at the property:</li>
+        <ul>The charges below are included in your overall room price:
+       <li>
+         New Year's Eve gala dinner fee
+       </li>
+       <li>Christmas Day gala dinner fee</li>
+       </ul>
+      </ul>
+       <p style="font-size: 13px;">By clicking on the button below, I acknowledge that I have reviewed the
+      <a href="" >Privacy Statement </a> and
+      <a href="Goverment Travel Advice"></a>and have reviewed and accept the
+      <a href=""> Rules and Restrictions</a> and <a href="">Terms of Use</a>
+      </p>
+      <p style="color: green;">Change of plans? No problem. You can cancel for free a day before</p>
+      <button id="btn" style="background-color: #d32d59; padding: 10px; border: none; border-radius: 10px;font-size: 20px; color: white;">Complete Booking ></button>
+      <p>
+     We use secure transmission and encrypted storage to protect your
+     personal information.
+      </p>
+      <p>
+     This payment will be processed in the U.S. This does not apply when the
+     travel provider (airline/hotel/rail, etc.) processes your payment.
+      </p> 
+            </div>
+        </div>
+        <div id="mid_right">
+          <div id="hotel_card">
+            <img id="hotel_img" src="" alt="">
+            <div id="hotel_info"> 
+            <h3 id="hotel_name">Pride Plaza Hotel Aerocity New Delhi</h3>
+            <p id="hotel_rating">7.6/10 Good (765 reviews)</p>
+            <p id="cus_rating">Guests rated this property 8.4/10 for cleanliness</p>
+            <p id="room_name"></p>
+            <p id="check_in">Check-in: Jan 1, 2023</p>
+            <p id="check_out">Check-out: Jan 2, 2023</p>
+            <p id="time">1-night stay</p>
+            </div>
+          </div>
+          <div id="hotel_price_card">
+            <h3 style="font-size: 25px;">Price details</h3>
+            <hr />
+            <p>1 room x 1 night:&nbsp $ <span id="r_price"></span> </p>
+            <p >Taxes and fees:&nbsp <span id="r_tax">$8</span></p>
+            <hr />
+            <h4  style="font-size: 20px;">Total:&nbsp $ <span id="total"></span></h4>
+            <hr />
+            <h5 style="font-size: 15px;">Not included in your total</h5>
+            <p style="font-size: 15px; color: grey;">Mandatory charge: Collected at property. <span style="color:rgb(84, 130, 203);">Details</span></p>
+            <p style="color:rgb(84, 130, 203);">Use a Coupon,credit or promotion code</p>
+            <p style="color:gray;">Taxes and Fees due at the property are based on current exchange rates, and are payable in local currency.</p>
+          </div>
+        </div>  
+    </div>     
     </div>
     <div id="end"></div>
     </div>

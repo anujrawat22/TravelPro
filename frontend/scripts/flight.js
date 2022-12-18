@@ -1,3 +1,12 @@
+import { navbar } from "../components/navbar.js";
+
+document.querySelector("#navbar").innerHTML=navbar()
+
+document.querySelector(".ancsearch").addEventListener("click",()=>{
+    console.log("1")
+    window.location.href='./flight.select.html'
+})
+
 let from=document.querySelector(".leavein");
 from.addEventListener("input",fun);
 let too=document.querySelector(".goin");
