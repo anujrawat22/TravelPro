@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/hom2.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/bar_code.css">
+    <!-- <link rel="stylesheet" href="./css/navbar.dropdown.css"> -->
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Home Page</title>
 </head>
@@ -62,6 +63,7 @@
                 <div>
                     <form action="" id="ak_form_stays">
                         <div id="input-section">
+                            <i class="fa-solid fa-location-dot"></i>
                             <input type="text" name="" id="select-Cont" placeholder="Going to">
                             <div class="date" id="d1">
                                 <i class="fa-regular fa-calendar"></i>
@@ -119,7 +121,8 @@
 
         <!-- ********** -->
         <form action="" id="ak_form_flight">
-            <div id="input-section">
+            <div id="input-section" class="input-section
+            ">
                 <input type="text" name="" id="select-Cont" placeholder="Leaving from">
                 <div class="date" id="d1">
 
@@ -160,7 +163,9 @@
                 </div>
             </div>
             <div id="checkbox">
-                <input id="flight-check" type="checkbox"> <label for="flight-check">Add a Flight</label>
+                <input id="flight-check" type="checkbox"> <label for="flight-check">Add a place to stay
+
+                </label>
                 <input id="car-check" type="checkbox"> <label for="car-check">Add a Car</label>
             </div>
             <div id="search-btn">
@@ -341,3 +346,4 @@
 
 </html>
 <script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/navbar.js" type="module"></script>
