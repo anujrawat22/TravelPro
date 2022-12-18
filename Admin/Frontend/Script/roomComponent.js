@@ -1,4 +1,4 @@
-import fun from '../COMPONENT/room.js'
+// import fun from '../COMPONENT/room.js'
 
 localStorage.setItem('room_count', 1)
 let room_count = 1

@@ -1,5 +1,5 @@
 :root {
-  --primary: #dc3545;
+  --primary1: #dc3545;
   --secondary: #627eea;
   --primary-hover: #bd2130;
   --primary-dark: #66121a;
@@ -58,7 +58,7 @@
   width: 18vw;
   /* height: 100vh; */
   /* border: 1px solid red; */
-  background-color: var(--primary);
+  background-color: var(--primary1);
   position: fixed;
   overflow-y: scroll;
   top: 0;
@@ -254,11 +254,11 @@
   font-size: 18px;
 }
 #mainbar > #navbar #user button:hover {
-  color: var(--primary);
+  color: var(--primary1);
   background-color: white;
 }
 #mainbar > #navbar #user span {
-  color: var(--primary);
+  color: var(--primary1);
 }
 #mainbar > #navbar > div > div {
   height: 50px;
@@ -296,7 +296,14 @@
 #mainbar
   > #main
   > div
-  > div:not(.rooms, #add-room > div, .material-symbols-outlined, .ignore),
+  > div:not(
+    .rooms,
+    #add-room > div,
+    #add-room,
+    #submitBtn,
+    .material-symbols-outlined,
+    .ignore
+  ),
 #rooms-detail > .rooms > div {
   background-color: var(--bs-search-bg);
   padding-left: 20px;
