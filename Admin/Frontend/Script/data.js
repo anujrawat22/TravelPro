@@ -2,7 +2,7 @@ const { send } = require("process")
 
 const sendToServer = async (body) => {
     const response = await fetch(
-        "https://sore-plum-spider-hem.cyclic.app/hotels/create",
+        "https://sore-plum-spider-hem.cyclic.app/admin/hotel/create",
         {
             method: "POST",
             mode: "cors",
