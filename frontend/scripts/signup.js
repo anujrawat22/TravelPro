@@ -23,8 +23,8 @@ SignUPbtn.onclick=async (e)=>{
     let email = document.getElementById("ak_email").value
     let password = document.getElementById("ak_password").value   
     if(first_name&&last_name&&email&&passwordCheck(password)){
-        let form={first_name, last_name,email,password }
-        const res=await fetch(`https://sore-plum-spider-hem.cyclic.app/user/signup`,{
+        let form={first_name,last_name,email,password }
+        const res=await fetch(`https://dull-ruby-cockroach-wrap.cyclic.app/signup`,{
             method:"POST",
             body:JSON.stringify(form),
             headers:{
