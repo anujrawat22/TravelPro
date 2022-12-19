@@ -24,7 +24,7 @@ SignUPbtn.onclick=async (e)=>{
     let password = document.getElementById("ak_password").value   
     if(first_name&&last_name&&email&&passwordCheck(password)){
         let form={first_name, last_name,email,password }
-        const res=await fetch(`https://sore-plum-spider-hem.cyclic.app/user/signup`,{
+        const res=await fetch(`https://dull-ruby-cockroach-wrap.cyclic.app/signup`,{
             method:"POST",
             body:JSON.stringify(form),
             headers:{
@@ -40,6 +40,9 @@ SignUPbtn.onclick=async (e)=>{
          }
         console.log(massage)
         alert(massage.MSG)
+        if(massage.MSG=='Account has been created successfully'){
+            window.location.href='index.html'
+        }
 
     }else if(!first_name||!last_name||!email||!password){
        alert("Please fill all details")
