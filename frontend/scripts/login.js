@@ -22,8 +22,6 @@ SignUPbtn.onclick=async (e)=>{
         localStorage.setItem('first_name',JSON.stringify(massage.userDetails[0].first_name))
          }
         console.log(massage)
-        alert(massage.msg)
-
         alert(massage.MSG)
         if(massage.MSG=='Login sueccesfull'){
             window.location.href='index.html'
