@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="./Style/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/loader.css" />
+    <!-- <link rel="stylesheet" href="./styles/loader.css" /> -->
+    <!-- <link rel="stylesheet" href="./styles/button.css" /> -->
+  </head>
+  <body>
+    <div>
+      <img src="./img/new logo.png" alt="" />
+    </div>
+    <form action="" id="signupform" onsubmit="Register(event)">
+      <h1>signup</h1>
+      <div id="error">Register fail user Alredy exist sorry</div>
+      <label for="name">Full name</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your full name"
+        required
+      />
+      <br />
+      <label for="email">Email</label>
+      <br />
+      <input type="email" id="email" placeholder="Enter email" required />
+
+      <br />
+      <label for="Password">Password</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        required
+      />
+      <br />
+      <p>
+        by signing up I accept the pacifico
+        <a href="">Terms of service</a> and acnowledge the
+        <a href="">Privacy policy</a>
+      </p>
+      <input
+        type="submit"
+        class="button-36"
+        placeholder="signup"
+        value="SignUp"
+      />
+      <p>Alredy have and account ? <a href="signin.html">sign in</a></p>
+    </form>
+    <div id="loder">
+      <div id="spin"></div>
+    </div>
+  </body>
+  <span class="spinner spinner-large"></span>
+</html>
+<!-- <script src="/script/signup.js"></script> -->
+<script src="./Script/auth.js"></script>

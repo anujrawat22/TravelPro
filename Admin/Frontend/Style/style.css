@@ -1,0 +1,347 @@
+:root {
+  --primary1: #dc3545;
+  --secondary: #627eea;
+  --primary-hover: #bd2130;
+  --primary-dark: #66121a;
+  --rgba-primary-1: rgba(220, 53, 69, 0.1);
+  --rgba-primary-2: rgba(220, 53, 69, 0.2);
+  --rgba-primary-3: rgba(220, 53, 69, 0.3);
+  --rgba-primary-4: rgba(220, 53, 69, 0.4);
+  --rgba-primary-5: rgba(220, 53, 69, 0.5);
+  --rgba-primary-6: rgba(220, 53, 69, 0.6);
+  --rgba-primary-7: rgba(220, 53, 69, 0.7);
+  --rgba-primary-8: rgba(220, 53, 69, 0.8);
+  --rgba-primary-9: rgba(220, 53, 69, 0.9);
+  --bs-blue: #5e72e4;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #e83e8c;
+  --bs-red: #ee3232;
+  --bs-orange: #ff9900;
+  --bs-yellow: #fffa6f;
+  --bs-green: #297f00;
+  --bs-teal: #20c997;
+  --bs-cyan: #3065d0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #1362fc;
+  --bs-secondary: #627eea;
+  --bs-success: #37d159;
+  --bs-info: #b48dd3;
+  --bs-warning: #ffc368;
+  --bs-danger: #ff6746;
+  --bs-light: #c8c8c8;
+  --bs-dark: #6e6e6e;
+  --bs-search-bg: #202030;
+  --bs-navbar-bg: #171622;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#sidebar {
+  color: white;
+  width: 18vw;
+  /* height: 100vh; */
+  /* border: 1px solid red; */
+  background-color: var(--primary1);
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#sidebar > #logo {
+  height: 85px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  /* border: 1px solid black; */
+}
+#sidebar > #sections {
+  /* border: 3px solid green; */
+  /* height: 520px; */
+}
+#sidebar > #footer {
+  /* border: 1px solid blue; */
+  /* height: 100px; */
+}
+#sidebar > #sections > div {
+  /* border: 1px solid green; */
+  padding-top: calc(0.9vw);
+  padding-bottom: calc(0.9vw);
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 18px;
+  padding-left: 1.5vw;
+  border-radius: 22px;
+  /* word-spacing: */
+  /* fle */
+  /* margin-left: ; */
+}
+#sidebar > #sections > div:hover {
+  background-color: rgba(233, 106, 106, 0.666);
+}
+#sidebar > #sections > div > span:first-child {
+  /* border: 1px solid black; */
+  width: 18px;
+  margin-right: 1.3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  /* padding-top: 5px; */
+}
+#sidebar > #sections > div > span:last-child {
+  /* display: flex; */
+
+  /* border: 1px solid black; */
+}
+#sidebar > #footer {
+  /* border: 2px solid yellow; */
+  margin-top: 30px;
+  font-size: 16px;
+}
+#sidebar > #footer > p {
+  margin-left: 25px;
+  font-size: 15px;
+}
+#sidebar > #footer > p:nth-child(2) {
+  margin-top: 4px;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+#sidebar > #footer > p:nth-child(3) {
+  font-size: 11px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  /* width: 2px;
+  height: 1px; */
+  font-size: 2px;
+}
+
+#sidebar > #logo img {
+  width: 70%;
+}
+#sidebar > #Logo {
+  width: 260px;
+}
+
+#sidebar > #logo > div {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* border: 1px solid green; */
+  /* align-items: center; */
+}
+#sidebar > #logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  /* border: 1px solid black; */
+}
+
+/* now time to work on main bar */
+/* navbar*/
+/* #main */
+#mainbar {
+  background-color: var(--bs-navbar-bg);
+}
+#mainbar > #navbar {
+  width: 80vw;
+  margin-left: 18vw;
+  padding-left: 2vw;
+  display: flex;
+  /* border: 1px solid green; */
+  justify-content: space-between;
+  height: 90px;
+  background-color: var(--bs-navbar-bg);
+  position: fixed;
+  top: 0;
+
+  /* flex-direction: column; */
+}
+/* #mainbar > #navbar #page-name {
+  width: 200px;
+} */
+#mainbar > #navbar > #left {
+  width: 200px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+#mainbar > #navbar > #left > #page-name {
+  /* border: 1px solid green; */
+  font-size: 29px;
+  color: white;
+  /* justify-content: center; */
+}
+#mainbar > #navbar > #right {
+  /* width: 200px; */
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 770px;
+}
+#mainbar > #navbar > #right #search {
+  width: 340px;
+  /* border: 1px solid green; */
+}
+
+#mainbar > #navbar #right {
+  display: flex;
+  justify-content: space-around;
+}
+#mainbar > #navbar #long-line {
+  width: 1px;
+  height: 55px;
+  background-color: white;
+}
+#mainbar > #navbar #messages {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  /* border: 1px solid green; */
+}
+#mainbar > #navbar #messages > div svg {
+  /* background-color: var(--bs-search-bg); */
+  fill: var(--bs-red);
+}
+
+#mainbar > #navbar #messages > div {
+  background-color: var(--bs-search-bg);
+  padding: 10px 13px;
+  border-radius: 15px;
+  position: relative;
+}
+#mainbar > #navbar #user {
+  /* display: flex; */
+  width: 160px;
+  /* border: 1px solid green; */
+}
+#mainbar > #navbar #user div:first-child {
+  display: flex;
+  padding-right: 8px;
+  margin-left: -5px;
+}
+#mainbar > #navbar #user button {
+  background-color: var(--bs-search-bg);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#mainbar > #navbar #user button:hover {
+  color: var(--primary1);
+  background-color: white;
+}
+#mainbar > #navbar #user span {
+  color: var(--primary1);
+}
+#mainbar > #navbar > div > div {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#mainbar > #navbar > #right #search input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  border-right: none;
+  padding-left: 18px;
+  color: rgb(238, 238, 238);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--bs-search-bg);
+}
+#right #search input:focus {
+  outline: none;
+}
+#mainbar > #navbar > #right #search span {
+  display: flex;
+  align-items: center;
+  color: var(--bs-red);
+  font-size: 29px;
+  /* border: 1px solid black; */
+  /* border-left: none; */
+  height: 100%;
+  margin-left: -35px;
+  /* background-color: var(--bs-gray-dark); */
+}
+#mainbar > #navbar > #right #search span {
+}
+#mainbar
+  > #main
+  > div
+  > div:not(
+    .rooms,
+    #add-room > div,
+    #add-room,
+    #submitBtn,
+    .material-symbols-outlined,
+    .ignore
+  ),
+#rooms-detail > .rooms > div {
+  background-color: var(--bs-search-bg);
+  padding-left: 20px;
+  color: white;
+  border-radius: 10px;
+}
+#mainbar > #main > div > div input,
+label > textarea {
+  background-color: var(--bs-search-bg);
+  font-size: 14px;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 96%;
+  outline-color: red;
+  /* outline-style: solid; */
+  /* border: 1px solid red; */
+}
+#mainbar > #main > div > div input::placeholder,
+label > textarea::placeholder {
+  color: rgb(144, 144, 144);
+  /* font-size: 18px; */
+}
+#mainbar > #main > div > div input:focus,
+label > textarea:focus {
+  outline: none;
+}
+#mainbar > #main > div > div:focus {
+  /* outline-color: red; */
+  outline-color: red;
+  outline-style: solid;
+}
+#mainbar > #main > div > div label {
+  display: block;
+  height: 100%;
+  cursor: text;
+}
+label > textarea {
+  height: 70%;
+  resize: none;
+}

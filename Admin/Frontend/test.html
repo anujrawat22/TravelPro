@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let body = {
+    name: "pratap",
+    email: "shlsd@mail.com",
+    password: "lkjl@d3e3l4l",
+    isadmin: true,
+  };
+
+  let fun = async () => {
+    console.log("jlk");
+    // let data = await fetch("https://sore-plum-spider-hem.cyclic.app/hotels");
+    const response = await fetch(
+      "https://sore-plum-spider-hem.cyclic.app/admin/signup",
+      {
+        method: "POST",
+        mode: "cors",
+        body: JSON.stringify(body),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    // const result = await JSON.parse(response)
+    const result = await response.text();
+    // console.log(result, "restult");
+    // let result = response;
+    console.log(result);
+  };
+  fun();
+</script>

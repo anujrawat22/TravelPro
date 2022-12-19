@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #e2fdff;
+}
+#error {
+  height: 50px;
+  border: 1px solid red;
+  width: 90%;
+  margin-bottom: 5px;
+  background-color: #ff3860;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
+  /* margin-top: -15px; */
+  /* visibility: hidden; */
+  display: none;
+}
+div {
+  /* border: 1px solid; */
+  /* margin: auto; */
+  text-align: center;
+  margin-bottom: 30px;
+  /* height: 500px; */
+}
+div > img {
+  width: 8%;
+}
+form {
+  /* transform: translateX(100px); */
+  /* animation: user 0.1s linear 5; */
+  /* transform: translateX(100px); */
+  /* height: 500px; */
+  width: 30%;
+  background-color: white;
+  /* height: 400px; */
+  /* border: 1px solid; */
+  margin: auto;
+  /* padding-left: 20px; */
+  padding: 20px 0px 20px 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  /* animation: user 0.1s linear 5; */
+  padding: 10px;
+  width: 90%;
+  margin: 10px 0px;
+  border: 1px solid;
+  border-color: rgb(236, 230, 230);
+}
+
+a {
+  color: rgb(40, 40, 238);
+}
+p,
+h1 {
+  text-align: center;
+  width: 90%;
+}
+h1 {
+  margin-bottom: 40px;
+}
+/* #signin {
+  background-color: rgb(95, 95, 243);
+  color: white;
+} */
+/* .loder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 48.5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+/* .spin {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 7.5px;
+  top: 7.5px;
+  align-items: center;
+  border: 3px solid pink;
+  border-top: none;
+  border-right: none;
+  animation: spinner 0.54s infinite linear;
+} */
+
+/* @keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes user {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: 10px;
+  }
+}
