@@ -1,0 +1,83 @@
+/* add room */
+#add-room {
+  cursor: pointer;
+  margin-left: 2vw;
+}
+#add-room h2 {
+  color: white;
+}
+
+#add-room {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#add-room span {
+  color: white;
+  padding-left: 10px;
+  margin-top: 7px;
+  /* font-size: 1px; */
+}
+
+#rooms-detail .material-symbols-outlined {
+  /* color: red; */
+
+  /* color: white; */
+  padding-left: 1vw;
+  /* padding-right: 1vw; */
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#rooms-detail .ignore {
+  display: flex;
+  /* border: 1px solid blue; */
+  align-items: center;
+  margin-top: 10px;
+}
+#rooms-detail .ignore > div:nth-child(2) {
+  font-size: 20px;
+  margin-left: 10px;
+  /* color: red; */
+  /* color: white; */
+}
+
+#rooms-detail button {
+  padding-right: 1vw;
+  background-color: var(--primary1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#rooms-detail button:hover {
+  background-color: rgb(143, 4, 4);
+  /* color: var(--primary); */
+  /* color: black; */
+}
+
+#extra {
+  display: flex;
+  align-items: center;
+}
+#submitBtn {
+  margin-bottom: -30px;
+  font-size: 25px;
+  margin-left: 20px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: var(--bs-search-bg);
+  /* border: none; */
+  border-radius: 5px;
+}
+#submitBtn:hover {
+  background-color: white;
+  color: var(--primary1);
+}

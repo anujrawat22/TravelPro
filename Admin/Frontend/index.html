@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>Travel Pro Admin</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./Style/animation.css" />
+    <link rel="stylesheet" href="./Style/addProduct.css" />
+    <link rel="stylesheet" href="./Style/addRoom.css">
+    <link rel="stylesheet" href="./Style/loader.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css" > -->
+
+    
+  </head>
+  <body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <div id="sidebar">
+      <div id="logo">
+        <div>
+          <img src="./img/travelProAdminLogo.png" alt="" />
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+      </div>
+      <div id="sections">
+        <div>
+          <span class="material-symbols-outlined"> dashboard </span>
+          <span>Dashboard</span>
+        </div>
+        <div>
+          <span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3V21"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M17 6H9.5C8.57174 6 7.6815 6.31607 7.02513 6.87868C6.36875 7.44129 6 8.20435 6 9C6 9.79565 6.36875 10.5587 7.02513 11.1213C7.6815 11.6839 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3161 16.9749 12.8787C17.6313 13.4413 18 14.2044 18 15C18 15.7956 17.6313 16.5587 16.9749 17.1213C16.3185 17.6839 15.4283 18 14.5 18H6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+          <span>Bookings</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> home </span>
+          <span>Rooms</span>
+        </div>
+        <div>
+          <span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+          <span>Customer</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> add_circle </span>
+          <span>Add Product</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> calendar_month </span>
+          <span>calender</span>
+        </div>
+        <div>
+          <span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.75 7.5H2.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3.75 12.5H2.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3.33366 10H1.66699"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M4.69727 4.6967C5.74616 3.64781 7.08253 2.9335 8.53739 2.64411C9.99225 2.35472 11.5002 2.50325 12.8707 3.07091C14.2411 3.63856 15.4125 4.59986 16.2366 5.83323C17.0607 7.0666 17.5006 8.51664 17.5006 10C17.5006 11.4834 17.0607 12.9334 16.2366 14.1668C15.4125 15.4001 14.2411 16.3614 12.8707 16.9291C11.5002 17.4968 9.99225 17.6453 8.53739 17.3559C7.08253 17.0665 5.74616 16.3522 4.69727 15.3033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M10 6.25V7.00737"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8.125 8.52196C8.17767 8.07456 8.40336 7.66555 8.75379 7.38246C9.10421 7.09936 9.55152 6.96468 10 7.00722"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M10 13.7501V12.9927"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M11.875 11.4778C11.8223 11.9252 11.5966 12.3343 11.2462 12.6174C10.8958 12.9004 10.4485 13.0351 10 12.9926"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M11.8273 8.19148C11.6899 7.8243 11.4381 7.51099 11.1091 7.29776C10.7801 7.08453 10.3913 6.98266 10 7.00718"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8.17188 11.8083C8.30928 12.1755 8.56105 12.4888 8.89004 12.702C9.21904 12.9152 9.60785 13.0171 9.99913 12.9926"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8.125 8.52216C8.125 8.83316 8.23276 9.13455 8.42993 9.37506C8.6271 9.61556 8.90151 9.78033 9.20647 9.84132L10.7935 10.1587C11.0985 10.2197 11.3729 10.3845 11.5701 10.625C11.7672 10.8655 11.875 11.1669 11.875 11.4779"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+          <span>Payments</span>
+        </div>
+        <div>
+          <span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1952 3H11.8048C11.3342 3 10.8829 3.18964 10.5502 3.52721C10.2174 3.86477 10.0305 4.32261 10.0305 4.8V4.962C10.0302 5.27765 9.94806 5.58767 9.79235 5.86095C9.63663 6.13424 9.41282 6.36117 9.14336 6.519L8.76188 6.744C8.49215 6.90198 8.18618 6.98515 7.87472 6.98515C7.56327 6.98515 7.2573 6.90198 6.98757 6.744L6.8545 6.672C6.44735 6.43374 5.96365 6.3691 5.50957 6.49228C5.05549 6.61546 4.66815 6.91638 4.43256 7.329L4.23739 7.671C4.00252 8.08404 3.93881 8.57475 4.06023 9.0354C4.18165 9.49605 4.47828 9.889 4.88501 10.128L5.01808 10.218C5.28625 10.3751 5.50923 10.6006 5.66486 10.8721C5.8205 11.1437 5.90337 11.4519 5.90524 11.766V12.225C5.90648 12.5422 5.82508 12.8541 5.66929 13.1291C5.5135 13.4041 5.28885 13.6324 5.01808 13.791L4.88501 13.872C4.47828 14.111 4.18165 14.5039 4.06023 14.9646C3.93881 15.4253 4.00252 15.916 4.23739 16.329L4.43256 16.671C4.66815 17.0836 5.05549 17.3845 5.50957 17.5077C5.96365 17.6309 6.44735 17.5663 6.8545 17.328L6.98757 17.256C7.2573 17.098 7.56327 17.0148 7.87472 17.0148C8.18618 17.0148 8.49215 17.098 8.76188 17.256L9.14336 17.481C9.41282 17.6388 9.63663 17.8658 9.79235 18.139C9.94806 18.4123 10.0302 18.7223 10.0305 19.038V19.2C10.0305 19.6774 10.2174 20.1352 10.5502 20.4728C10.8829 20.8104 11.3342 21 11.8048 21H12.1952C12.6658 21 13.1171 20.8104 13.4498 20.4728C13.7826 20.1352 13.9695 19.6774 13.9695 19.2V19.038C13.9698 18.7223 14.0519 18.4123 14.2077 18.139C14.3634 17.8658 14.5872 17.6388 14.8566 17.481L15.2381 17.256C15.5078 17.098 15.8138 17.0148 16.1253 17.0148C16.4367 17.0148 16.7427 17.098 17.0124 17.256L17.1455 17.328C17.5527 17.5663 18.0364 17.6309 18.4904 17.5077C18.9445 17.3845 19.3319 17.0836 19.5674 16.671L19.7626 16.32C19.9975 15.907 20.0612 15.4163 19.9398 14.9556C19.8184 14.4949 19.5217 14.102 19.115 13.863L18.9819 13.791C18.7111 13.6324 18.4865 13.4041 18.3307 13.1291C18.1749 12.8541 18.0935 12.5422 18.0948 12.225V11.775C18.0935 11.4578 18.1749 11.1459 18.3307 10.8709C18.4865 10.5959 18.7111 10.3676 18.9819 10.209L19.115 10.128C19.5217 9.889 19.8184 9.49605 19.9398 9.0354C20.0612 8.57475 19.9975 8.08404 19.7626 7.671L19.5674 7.329C19.3319 6.91638 18.9445 6.61546 18.4904 6.49228C18.0364 6.3691 17.5527 6.43374 17.1455 6.672L17.0124 6.744C16.7427 6.90198 16.4367 6.98515 16.1253 6.98515C15.8138 6.98515 15.5078 6.90198 15.2381 6.744L14.8566 6.519C14.5872 6.36117 14.3634 6.13424 14.2077 5.86095C14.0519 5.58767 13.9698 5.27765 13.9695 4.962V4.8C13.9695 4.32261 13.7826 3.86477 13.4498 3.52721C13.1171 3.18964 12.6658 3 12.1952 3Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+          <span>Settings</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> reviews </span>
+          <span>Reviews</span>
+        </div>
+      </div>
+      <div id="footer">
+        <p>Travel Pro Hotel Admin</p>
+        <p>&#169; 2021 All Rights Reserved</p>
+        <p>Made by devloper Pratap</p>
+      </div>
+    </div>
+    <div id="mainbar">
+      <div id="navbar">
+        <!-- left part of navbar -->
+        <div id="left">
+          <div id="page-name">Add Product</div>
+        </div>
+        <!-- right part of navbar -->
+        <div id="right">
+          <div id="search">
+            <input type="text" placeholder="Search here" />
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <div id="messages">
+            <div>
+              <svg
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.6667 5.16666C23.6667 2.5895 21.5772 0.5 19 0.5C15.1162 0.5 8.88387 0.5 5.00004 0.5C2.42287 0.5 0.333374 2.5895 0.333374 5.16666V20.3333C0.333374 20.8058 0.618046 21.2305 1.05321 21.4113C1.48955 21.5922 1.99121 21.4918 2.32487 21.1582C2.32487 21.1582 4.59287 18.8902 5.9672 17.517C6.4047 17.0795 6.99739 16.8333 7.61689 16.8333H19C21.5772 16.8333 23.6667 14.7438 23.6667 12.1667V5.16666ZM21.3334 5.16666C21.3334 3.87866 20.2892 2.83333 19 2.83333C15.1162 2.83333 8.88387 2.83333 5.00004 2.83333C3.71204 2.83333 2.66671 3.87866 2.66671 5.16666V17.517L4.31638 15.8673C5.19138 14.9923 6.37905 14.5 7.61689 14.5H19C20.2892 14.5 21.3334 13.4558 21.3334 12.1667V5.16666ZM6.16671 12.1667H15.5C16.144 12.1667 16.6667 11.644 16.6667 11C16.6667 10.356 16.144 9.83333 15.5 9.83333H6.16671C5.52271 9.83333 5.00004 10.356 5.00004 11C5.00004 11.644 5.52271 12.1667 6.16671 12.1667ZM6.16671 7.5H17.8334C18.4774 7.5 19 6.97733 19 6.33333C19 5.68933 18.4774 5.16666 17.8334 5.16666H6.16671C5.52271 5.16666 5.00004 5.68933 5.00004 6.33333C5.00004 6.97733 5.52271 7.5 6.16671 7.5Z"
+                ></path>
+              </svg>
+              <div class="blob"></div>
+            </div>
+            <div>
+              <svg
+                width="20"
+                height="24"
+                viewBox="0 0 20 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.83333 3.91738V1.50004C8.83333 0.856041 9.356 0.333374 10 0.333374C10.6428 0.333374 11.1667 0.856041 11.1667 1.50004V3.91738C12.9003 4.16704 14.5208 4.97204 15.7738 6.22504C17.3057 7.75687 18.1667 9.8347 18.1667 12V16.3914L19.1105 18.279C19.562 19.1832 19.5142 20.2565 18.9822 21.1164C18.4513 21.9762 17.5122 22.5 16.5018 22.5H11.1667C11.1667 23.144 10.6428 23.6667 10 23.6667C9.356 23.6667 8.83333 23.144 8.83333 22.5H3.49817C2.48667 22.5 1.54752 21.9762 1.01669 21.1164C0.484686 20.2565 0.436843 19.1832 0.889509 18.279L1.83333 16.3914V12C1.83333 9.8347 2.69319 7.75687 4.22502 6.22504C5.47919 4.97204 7.0985 4.16704 8.83333 3.91738ZM10 6.1667C8.45183 6.1667 6.96902 6.78154 5.87469 7.87587C4.78035 8.96904 4.16666 10.453 4.16666 12V16.6667C4.16666 16.8475 4.12351 17.026 4.04301 17.1882C4.04301 17.1882 3.52384 18.2265 2.9755 19.322C2.88567 19.5029 2.89501 19.7187 3.00117 19.8902C3.10734 20.0617 3.29517 20.1667 3.49817 20.1667H16.5018C16.7037 20.1667 16.8915 20.0617 16.9977 19.8902C17.1038 19.7187 17.1132 19.5029 17.0234 19.322C16.475 18.2265 15.9558 17.1882 15.9558 17.1882C15.8753 17.026 15.8333 16.8475 15.8333 16.6667V12C15.8333 10.453 15.2185 8.96904 14.1242 7.87587C13.0298 6.78154 11.547 6.1667 10 6.1667Z"
+                ></path>
+              </svg>
+              <div class="blob"></div>
+            </div>
+            <div>
+              <svg
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.15608 11.6592C0.937571 10.4299 0.253296 8.76839 0.253296 7.03607C0.253296 5.29415 0.944772 3.62306 2.17648 2.39134C3.4082 1.15963 5.0793 0.46814 6.82122 0.46814C8.56315 0.46814 10.2342 1.15963 11.466 2.39134L11.9149 2.84033L12.3639 2.39134C13.5956 1.15963 15.2655 0.46814 17.0075 0.46814C18.7506 0.46814 20.4205 1.15963 21.6522 2.39134C22.8839 3.62306 23.5766 5.29415 23.5766 7.03607C23.5766 8.76839 22.8923 10.4299 21.6726 11.6592L12.7625 21.0939C12.5428 21.3268 12.2355 21.4589 11.9149 21.4589C11.5944 21.4589 11.2871 21.3268 11.0674 21.0939L2.15608 11.6592ZM11.9149 18.5945L19.9799 10.0553L20.0039 10.0313C20.7974 9.23659 21.244 8.15974 21.244 7.03607C21.244 5.9124 20.7974 4.83556 20.0039 4.04083C19.2092 3.2461 18.1311 2.79951 17.0075 2.79951C15.885 2.79951 14.807 3.2461 14.0122 4.04083L12.7397 5.31456C12.2835 5.76955 11.5452 5.76955 11.0902 5.31456L9.81646 4.04083C9.02293 3.2461 7.94489 2.79951 6.82122 2.79951C5.69756 2.79951 4.62071 3.2461 3.82598 4.04083C3.03125 4.83556 2.58586 5.9124 2.58586 7.03607C2.58586 8.15974 3.03125 9.23659 3.82598 10.0313C3.83438 10.0397 3.84158 10.0469 3.84879 10.0553L11.9149 18.5945Z"
+                ></path>
+              </svg>
+              <div class="blob"></div>
+            </div>
+          </div>
+          <div id="long-line">
+            <div></div>
+          </div>
+          <div id="user">
+            <div>
+              <span class="material-symbols-outlined"> login </span>
+            </div>
+            <div>
+              <button>Login/signup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <h2 id="fst-header">General Details</h2>
+        <div id="genral-detail">
+          <div id="hotel_name">
+            <label for="hot_nm" name="hotel_name">
+              <div class="label">Name</div>
+              <input type="text" id="hot_nm" placeholder="Name of your hotel..." />
+            </label>
+          </div>
+
+          <div id="hotel_address">
+            <label for="ht_adr">
+              <div class="label">Address</div>
+              <input type="text" id="ht_adr" placeholder="Hotel address..." />
+            </label>
+          </div>
+          <div id="city">
+            <label for="cty">
+              <div class="label">City</div>
+              <input type="text" id="cty" placeholder="Enter city..." />
+            </label>
+          </div>
+          <div id="poster">
+            <label for="pst">
+              <div class="label">Image</div>
+              <input type="text" id="pst" placeholder="Single image..." />
+            </label>
+          </div>
+          <div id="reserve_Status">
+            <label for="rsSt">
+              <div class="label">Reserved</div>
+              <input type="text" id="rsSt" placeholder="Reserve status..." />
+            </label>
+          </div>
+          <div id="distance">
+            <label for="dst">
+              <div class="label">Distance</div>
+              <input type="text" id="dst" placeholder="Distance from nearby airport..." />
+            </label>
+          </div>
+          <div id="price">
+            <label for="lbl">
+              <div class="label">Price</div>
+              <input type="text" id="lbl" placeholder="Price in Dollor..." />
+            </label>
+          </div>
+          <div id="discount">
+            <label for="dsc">
+              <div class="label">Discount</div>
+              <input type="text" id="dsc" placeholder="Discount in percentage..." />
+            </label>
+          </div>
+        </div>
+
+        <h2>Other Details</h2>
+        <div id="extra-detail">
+          <div id="other_images">
+            <label for="oth_img">
+              <div class="label">Images</div>
+              <textarea id="oth_img" placeholder="List of images of your hotel..."></textarea>
+            </label>
+          </div>
+          <div id="explore_neighbourhood">
+            <label for="nebrhd">
+              <div class="label">Neighbourhood</div>
+              <textarea id="nebrhd" placeholder="Places near by..."></textarea>
+            </label>
+          </div>
+
+          <div id="amenities">
+            <label for="amenit">
+              <div class="label">Amenities</div>
+              <textarea id="amenit" placeholder="All amenities..."></textarea>
+            </label>
+          </div>
+          <div id="Accessibility">
+            <label for="accsblty">
+              <div class="label">Accessibility</div>
+              <textarea id="accsblty" placeholder="Accessibility..."></textarea>
+            </label>
+          </div>
+
+          <div id="room_left">
+            <label for="rm_left">
+              <div class="label">Count</div>
+              <input id="rm_left" type="text" placeholder="Total available room..." />
+            </label>
+          </div>
+          <div id="property_type">
+            <label for="prop_type">
+              <div class="label">Property Type</div>
+              <input id="prop_type" type="text" placeholder="Property type..." />
+            </label>
+          </div>
+          <div id="room_type">
+            <label for="rmm_type">
+              <div class="label">Room Type</div>
+              <input id="rmm_type" type="text" placeholder="Room type..." />
+            </label>
+          </div>
+
+          <div id="meals_type">
+            <label for="meal_type">
+              <div class="label">Meals</div>
+              <textarea id="meal_type" placeholder="Avilable Meals..."></textarea>
+            </label>
+          </div>
+          <div id="payment_type">
+            <label for="paym_type">
+              <div class="label">Payment</div>
+              <textarea id="paym_type" placeholder="Payment Methods..."></textarea>
+              <!-- <label>
+                Cash on deleivery
+                <input type="checkbox">
+              </label>
+              <label>
+                Online payment
+                <input type="checkbox">
+              </label>
+              <label>
+                Cart payment
+                <input type="checkbox">
+              </label> -->
+            </label>
+          </div>
+        </div>
+
+        <div id="rooms-detail">
+
+          <h2>Room 1</h2>
+          <div class="rooms">
+
+            <div class="room_title">
+              <label for="rmm_tit">
+                <div class="label">Name</div>
+                <input id="rmm_tit" type="text" placeholder="Name of the room..."></input>
+              </label>
+            </div>
+            <div class="room_size">
+              <label for="rmm_siz">
+                <div class="label">Size</div>
+                <input id="rmm_siz" type="text" placeholder="Give the room size..."></input>
+              </label>
+            </div>
+
+            <div class="room_image">
+              <label for="rmm_img">
+                <div class="label">Image</div>
+                <textarea id="rmm_img" placeholder="Give all the images of particular room..."></textarea>
+              </label>
+            </div>
+            <div class="room_amenities">
+              <label for="rmm_amen">
+                <div class="label">Amenities</div>
+                <textarea id="rmm_amen" placeholder="Amenities of particular room..."></textarea>
+              </label>
+            </div>
+            
+
+            <div class="member">
+              <label for="mem">
+                <div class="label">People count</div>
+                <input id="mem" type="text" placeholder="How many people can stay on single room..."></input>
+              </label>
+            </div>
+            <div class="room_price">
+              <label for="rmm_prc">
+                <div class="label">Price</div>
+                <input id="rmm_prc" type="text" placeholder="Price of particular room..."></input>
+              </label>
+            </div>
+            <div class="room_discount">
+              <label for="rmm_disc">
+                <div class="label">Discount</div>
+                <input id="rmm_disc" type="text" placeholder="Discount in percentage..."></input>
+              </label>
+            </div>
+            <div class="room_total_dis">
+              <label for="rm_tt_dis">
+                <div class="label">Total Discount</div>
+                <input id="rm_tt_dis" type="text" placeholder="Total discount..."></input>
+              </label>
+            </div>
+            
+            <div class="room_refund_policy">
+              <label for="rm_rf_p">
+                <div class="label">Refund</div>
+                <textarea id="rm_rf_p" placeholder="Room refund policy..."></textarea>
+              </label>
+            </div>
+            <div class="Reserve">
+              <label for="rsve">
+                <div class="label">Reserve</div>
+                <input id="rsve" type="text" placeholder="Is room reserved true/false..."></input>
+              </label>
+            </div>
+            <div class="room_avail">
+              <label for="rom_avl">
+                <div class="label">availability</div>
+                <input id="rom_avl" type="text" placeholder="Number of room of this category..."></input>
+              </label>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div id="extra">
+          <div id="add-room">
+            <div>
+              <h2>Add Room</h2>
+            </div>
+            <div>
+              <span class="material-symbols-outlined">
+                add_circle
+              </span>
+            </div>
+          </div>
+          <button id="submitBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <span class="spinner spinner-large"></span>
+
+    <!-- bootstrap -->
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <!-- <script src="sweetalert2.min.js"></script> -->
+
+  </body>
+</html>
+<!-- <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+<script src="sweetalert2/dist/sweetalert2.min.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- <script>
+ Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+  }
+})
+</script> -->
+
+<script src="./Script/data.js"></script>
+<script src="./Script/main.js"></script>
+<script type="module" src="./Script/roomComponent.js"></script>
