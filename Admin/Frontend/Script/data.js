@@ -1,4 +1,4 @@
-
+// const e = require("express");
 
 const sendToServer = async (body) => {
     const response = await fetch(
@@ -15,7 +15,15 @@ const sendToServer = async (body) => {
     );
     // const result = await JSON.parse(response)
     const result = await response.text();
-    console.log(result, 'added to databaseeeee');
+    console.log(result);
+    if (result == 'hoteldata created') {
+        console.log(true);
+        return true
+    } else {
+        console.log(false);
+        return false
+    }
+    // console.log(result, 'added to databaseeeee');
 }
 
 const sendData = {}
@@ -45,6 +53,14 @@ let allFeild = () => {
     return truth
 }
 
+let logdin = () => {
+    if (localStorage.getItem('token')) {
+        return true
+    } else {
+        return false
+    }
+}
+
 let loader = () => {
     if (document.querySelector('.spinner').style.visibility == 'visible') {
         document.querySelector('.spinner').style.visibility = 'hidden'
@@ -54,7 +70,7 @@ let loader = () => {
 }
 let lastDate
 
-let takeData = (obj) => {
+let takeData = async (obj) => {
 
     // adding general detail and extra detail of hotel
     for (let keys in obj) {
@@ -143,7 +159,9 @@ let takeData = (obj) => {
     sendData["rooms"] = rooms
     console.log(sendData);
 
-    sendToServer(sendData)
+    const tmpTruth = await sendToServer(sendData)
+    console.log(tmpTruth, 'tmptruth');
+    return tmpTruth
     // send the data to server
 
 }
@@ -152,55 +170,81 @@ let fetching = async () => {
     let data = await fetch('https://sore-plum-spider-hem.cyclic.app/hotels')
     data = await data.json()
     console.log(data[0]);
-    takeData(data[0])
+    let dataAdded = await takeData(data[0])
     loader()
+    console.log(dataAdded, 'dataadded');
     let dif = ((Date.now() - lastDate) / 1000).toFixed(1)
-    Swal.fire({
-        title: 'Hey, Good job!!',
-        text: `It takes only ${dif} s to add your hotel`,
-        textColor: "white",
-        icon: 'success',
-        color: 'white',
-        // iconColor: 'white',
-        showCancelButton: false,
-        background: '#202030',
-        confirmButtonColor: '#C6604C',
-        confirmButtonText: 'Ok'
-    })
-}
-
-// [1name,2name,3name] [1siz,2siz,3siz]
-document.getElementById('submitBtn').onclick = () => {
-    if (allFeild()) {
+    if (dataAdded) {
         Swal.fire({
-            title: 'Are you sure?',
-            text: "You want to add this hotel!",
-            icon: 'info',
-            showCancelButton: true,
+            title: 'Hey, Good job!!',
+            text: `It takes only ${dif} s to add your hotel`,
+            textColor: "white",
+            icon: 'success',
+            color: 'white',
+            // iconColor: 'white',
+            showCancelButton: false,
             background: '#202030',
             confirmButtonColor: '#C6604C',
-            cancelButtonColor: "#AAAAAA",
-            confirmButtonText: 'Yes, add this hotel!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                lastDate = Date.now()
-                loader()
-                fetching()
-                // Swal.fire(
-                //     'Deleted!',
-                //     'Your file has been deleted.',
-                //     'success'
-                // )
-            }
+            confirmButtonText: 'Ok'
         })
 
     } else {
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'All feilds are mandatory!',
+            title: 'Something went wrong!',
+            text: "don't add text data into number feild",
             background: '#202030',
             color: 'white'
         })
+    }
+}
+
+// [1name,2name,3name] [1siz,2siz,3siz]
+document.getElementById('submitBtn').onclick = () => {
+    if (logdin()) {
+        if (allFeild()) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You want to add this hotel!",
+                icon: 'info',
+                showCancelButton: true,
+                background: '#202030',
+                confirmButtonColor: '#C6604C',
+                cancelButtonColor: "#AAAAAA",
+                confirmButtonText: 'Yes, add this hotel!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    lastDate = Date.now()
+                    loader()
+                    fetching()
+                    // Swal.fire(
+                    //     'Deleted!',
+                    //     'Your file has been deleted.',
+                    //     'success'
+                    // )
+                }
+            })
+
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'All feilds are mandatory!',
+                background: '#202030',
+                color: 'white'
+            })
+        }
+
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'login First or create new account!',
+            background: '#202030',
+            color: 'white'
+        }).then((result) => {
+            location = './signin.html'
+        })
+
     }
 }

@@ -9,7 +9,7 @@ let loaderb = () => {
 console.log('khl');
 
 let signInPage = () => {
-    location = './signup.html'
+    location = './signin.html'
 }
 
 let sectionObj = document.getElementById("sections").children;
