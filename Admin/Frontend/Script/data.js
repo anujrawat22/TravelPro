@@ -9,7 +9,7 @@ const sendToServer = async (body) => {
             body: JSON.stringify(body),
             headers: {
                 "Content-Type": "application/json",
-                "token": `balel ${JSON.parse(localStorage.getItem('token'))}`
+                "authorization": `balel ${JSON.parse(localStorage.getItem('token'))}`
             },
         }
     );
