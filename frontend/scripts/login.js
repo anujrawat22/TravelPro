@@ -24,6 +24,11 @@ SignUPbtn.onclick=async (e)=>{
         console.log(massage)
         alert(massage.msg)
 
+        alert(massage.MSG)
+        if(massage.MSG=='Login sueccesfull'){
+            window.location.href='index.html'
+        }
+
     }else if(!email||!password){
        alert("Please fill all details")
     }
