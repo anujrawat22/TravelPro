@@ -12,6 +12,7 @@
           sans-serif;
         margin: 0px;
         padding: 0;
+        visibility: hidden;
       }
       p {
         margin: 0px;
@@ -149,13 +150,12 @@
         text-align: center;
       }
 
+      #midappend {
+        padding-top: 50px;
+      }
 
-       #midappend{
-          padding-top: 50px;
-       }
-
-      .carr-child{
-         border-radius: 12px;
+      .carr-child {
+        border-radius: 12px;
       }
       #dep > div > div:last-child {
         display: flex;
@@ -167,217 +167,214 @@
         width: 60px;
       }
       /* navbar css */
-      
-#navbar{
-    width: 100%;
-    height: 9vh;
-    background-color: rgb(0,37,60);
-    display: flex;
-    padding: 0px 10%;
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
 
-#logonddrpdn{
-    /* border: 1px solid red; */
-    width: 20vw;
-    display: flex;
-    
-}
+      #navbar {
+        width: 100%;
+        height: 9vh;
+        background-color: rgb(0, 37, 60);
+        display: flex;
+        padding: 0px 10%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
 
-#logo{
-    width: 12vw;
-    /* border: 1px solid white; */
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right,rgb(2, 43, 69),rgb(85, 157, 158),rgb(174, 211, 214),rgb(226,253,255),rgb(211, 247, 249),rgb(161, 202, 205),rgb(85, 157, 158),rgb(2, 43, 69));
-}
+      #logonddrpdn {
+        /* border: 1px solid red; */
+        width: 20vw;
+        display: flex;
+      }
 
-#logo:hover{
-    cursor: pointer;
-    
-}
-#logo>img{
-width: 4.5vw;
-height: 8vh;
-border-radius: 50%;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+      #logo {
+        width: 12vw;
+        /* border: 1px solid white; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          rgb(2, 43, 69),
+          rgb(85, 157, 158),
+          rgb(174, 211, 214),
+          rgb(226, 253, 255),
+          rgb(211, 247, 249),
+          rgb(161, 202, 205),
+          rgb(85, 157, 158),
+          rgb(2, 43, 69)
+        );
+      }
 
-#drpdwn{
-    width: 44%;
-    /* border: 1px solid white; */
-    height: 100%;
-    display: flex;
-align-items: center;
-}
+      #logo:hover {
+        cursor: pointer;
+      }
+      #logo > img {
+        width: 4.5vw;
+        height: 8vh;
+        border-radius: 50%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
 
-#drpdwn>button{
-    width: 100%;
-    height: 50%;
-    background-color: rgb(0,37,60);
-    border: none;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+      #drpdwn {
+        width: 44%;
+        /* border: 1px solid white; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
 
-#drpdwn>button:hover{
-    cursor: pointer;
-}
+      #drpdwn > button {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(0, 37, 60);
+        border: none;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-#drpdwn>button>:nth-child(1){
-    font-size: 1vw;
-}
-#drpdwn>button>:nth-child(2){
-    transform: rotate(270deg);
-    font-size: 1vw;
-    
-}
+      #drpdwn > button:hover {
+        cursor: pointer;
+      }
 
-#navigate{
-    /* border: 1px solid red; */
-    width: 34%;
-    display: flex;
-    justify-content: space-between;
-}
-#navigate>div{
- /* border: 1px solid white; */
- height: 100%;
- width: auto;
- box-sizing: border-box;
- color: white;
- padding: 0px 1.5%;
- display: flex;
- justify-content: center;
- align-items: center;
-}
+      #drpdwn > button > :nth-child(1) {
+        font-size: 1vw;
+      }
+      #drpdwn > button > :nth-child(2) {
+        transform: rotate(270deg);
+        font-size: 1vw;
+      }
 
-#navigate>div>p{
-font-size: 1vw;
-font-weight: 500;
-}
-#navigate>div>p:hover{
-    color: rgb(47, 113, 205);
-    cursor: pointer;
-}
-.top-btns{
-  margin-bottom: 30px;
-display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-btns>button{
-  margin-right: 8px;
-}
+      #navigate {
+        /* border: 1px solid red; */
+        width: 34%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #navigate > div {
+        /* border: 1px solid white; */
+        height: 100%;
+        width: auto;
+        box-sizing: border-box;
+        color: white;
+        padding: 0px 1.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-.time-btn{
- font-weight: 700;
-  font-size: 140%;
-  text-align: center;
-  color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+      #navigate > div > p {
+        font-size: 1vw;
+        font-weight: 500;
+      }
+      #navigate > div > p:hover {
+        color: rgb(47, 113, 205);
+        cursor: pointer;
+      }
+      .top-btns {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .top-btns > button {
+        margin-right: 8px;
+      }
 
+      .time-btn {
+        font-weight: 700;
+        font-size: 140%;
+        text-align: center;
+        color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
+      /* footer css */
+      #vs-footer {
+        padding: 12px 8px;
+      }
+      #vs-footer {
+        border: 0;
+        border-top: 1px solid #e0e0e0;
+        clear: both;
+        display: block;
+        height: 1px;
+        padding: 0;
+      }
+      #vs-footer-con {
+        width: 1224px;
+        margin: auto;
+        padding: 24px 12px;
+      }
+      #vs-footer-con img {
+        margin-left: 75px;
+      }
 
+      #vs-footer-ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
 
-/* footer css */
-#vs-footer{
-    padding: 12px 8px;
-}
-#vs-footer {
-    border: 0;
-    border-top: 1px solid #e0e0e0;
-    clear: both;
-    display: block;
-    height: 1px;
-    padding: 0;
-}
-#vs-footer-con{
-    width: 1224px;
-    margin: auto;
-    padding: 24px 12px;
+      #vs-footer-ul li {
+        list-style: none;
+        padding-top: 8px;
+        width: 230.4px;
+      }
+      #vs-footer-ul h2 {
+        margin-left: 40px;
+        font-size: 15px;
+        font-weight: bold;
+      }
 
-}
-#vs-footer-con img{
-    margin-left: 75px;
-}
+      #vs-footer-ul li > div:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
 
-#vs-footer-ul{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+      #vs-footer-ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #007e8f;
+        margin-left: 0px;
+      }
+      #vs-bottom-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 3rem;
+      }
+      #vs-bottom-ul > li {
+        list-style: none;
+        margin-top: 8px;
+        font-size: 12px;
+        color: #616161;
+      }
 
-}
+      /* custom scroll bar */
+      body {
+        overflow-x: hidden;
+      }
 
-#vs-footer-ul li{
-    list-style: none;
-    padding-top: 8px;
-    width: 230.4px;
-    
-}
-#vs-footer-ul h2{
-    margin-left: 40px;
-    font-size: 15px;
-    font-weight: bold;
-}
+      ::-webkit-scrollbar {
+        width: 1rem;
+      }
 
-#vs-footer-ul li>div:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+      ::-webkit-scrollbar-track {
+        background-color: grey;
+      }
 
-#vs-footer-ul li a{
-    text-decoration: none;
-    font-size: 14px;
-    color:#007E8F;
-    margin-left: 0px;
-}
-#vs-bottom-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 3rem;
-}
-#vs-bottom-ul>li{
-    list-style: none;
-    margin-top: 8px;
-    font-size: 12px;
-    color: #616161;
-
-}
-
-
-
-/* custom scroll bar */
-body{
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar{
-  width: 1rem;
-}
-
-::-webkit-scrollbar-track{
-  background-color: grey;
-}
-
-::-webkit-scrollbar-thumb{
-  background-color: white;
-  border-radius: 1rem;
-  border: 5px solid transparent;
-  background-clip: content-box;
-}
+      ::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 1rem;
+        border: 5px solid transparent;
+        background-clip: content-box;
+      }
     </style>
-    <link rel="stylesheet" href="./css/navbar.css">
-   
+    <link rel="stylesheet" href="./css/navbar.css" />
   </head>
   <body>
     <div id="navbar">
@@ -411,11 +408,12 @@ body{
         </button>
         <button class="time-btn">
           <div>
-            <img src="https://w7.pngwing.com/pngs/137/929/png-transparent-calendar-icon-calendar-date-computer-icons-calendar-miscellaneous-blue-text.png" alt="">
+            <img
+              src="https://w7.pngwing.com/pngs/137/929/png-transparent-calendar-icon-calendar-date-computer-icons-calendar-miscellaneous-blue-text.png"
+              alt=""
+            />
           </div>
-          <div>
-
-          </div>
+          <div></div>
           <!-- <input type="date" name="" id="" class="time"> -->
         </button>
       </div>
@@ -485,7 +483,11 @@ body{
             </div>
             <div>
               <div>
-                <img src="./Images/logo-removebg-preview.png" alt="" class="day_shine">
+                <img
+                  src="./Images/logo-removebg-preview.png"
+                  alt=""
+                  class="day_shine"
+                />
               </div>
               <div>
                 <p>Durning Evening</p>
@@ -494,7 +496,11 @@ body{
             </div>
             <div>
               <div>
-                <img src="./Images/logo-removebg-preview.png" alt="" class="day_shine">
+                <img
+                  src="./Images/logo-removebg-preview.png"
+                  alt=""
+                  class="day_shine"
+                />
               </div>
               <div>
                 <p>Late Night</p>
@@ -508,7 +514,11 @@ body{
           <div id="dep">
             <div>
               <div>
-                <img src="./Images/logo-removebg-preview.png" alt="" class="day_shine">
+                <img
+                  src="./Images/logo-removebg-preview.png"
+                  alt=""
+                  class="day_shine"
+                />
               </div>
               <div>
                 <p>Early Morning</p>
@@ -517,21 +527,29 @@ body{
             </div>
             <div>
               <div>
-                <img src="./Images/logo-removebg-preview.png" alt="" class="day_shine">
+                <img
+                  src="./Images/logo-removebg-preview.png"
+                  alt=""
+                  class="day_shine"
+                />
               </div>
-             <div>
-              <p>Durning Evening</p>
-              <p>(4pm-9pm)</p>
-             </div>
+              <div>
+                <p>Durning Evening</p>
+                <p>(4pm-9pm)</p>
+              </div>
             </div>
             <div>
               <div>
-                <img src="./Images/logo-removebg-preview.png" alt="" class="day_shine">
+                <img
+                  src="./Images/logo-removebg-preview.png"
+                  alt=""
+                  class="day_shine"
+                />
               </div>
-             <div>
-              <p>Late Night</p>
-              <p>(12am-2am)</p>
-             </div>
+              <div>
+                <p>Late Night</p>
+                <p>(12am-2am)</p>
+              </div>
             </div>
           </div>
         </div>
@@ -549,7 +567,6 @@ body{
       </div>
     </div>
 
-
     <div class="foot">
       <!-- appending the footer here -->
     </div>
@@ -557,3 +574,4 @@ body{
 </html>
 <script src="./scripts/flight2.js" type="module"></script>
 <script src="./scripts/navbar.js"></script>
+<!-- <script src="./scripts/signin.check.js"></script> -->

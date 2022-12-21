@@ -1,464 +1,489 @@
 body {
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 #ak_footer {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 #ak_home_con {
-    height: 800px;
-    width: 90%;
-    margin: auto;
-    margin-top: 60px;
+  height: 800px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
 }
 
 #ak_top_card {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 #ak_top_card img {
-    width: 100%;
-    background: transparents;
-
+  width: 100%;
+  background: transparents;
 }
 
 #ak_top_card div {
-    background-repeat: no-repeat;
-    margin: auto;
-    color: #FFFFFF;
-    inset-block-end: 0;
-    inset-inline-end: 0;
-    inset-inline-start: 0;
-    margin: 0;
-    background: transparent;
-    /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 1rem, rgba(0, 0, 0, 0.11) 2rem, rgba(0, 0, 0, 0.32) 3.1rem, rgba(0, 0, 0, 0.5) 4.625rem); */
+  background-repeat: no-repeat;
+  margin: auto;
+  color: #ffffff;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
+  margin: 0;
+  background: transparent;
+  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 1rem, rgba(0, 0, 0, 0.11) 2rem, rgba(0, 0, 0, 0.32) 3.1rem, rgba(0, 0, 0, 0.5) 4.625rem); */
 }
 
 /*  */
 #ak_head h2 {
-    color: #1F1F1F;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1f1f1f;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 #ak_featured_off {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-top: -15px;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: -15px;
 }
 
 .ak_box1 {
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh');
-    width: 100%;
-    color: white;
-    background-size: cover;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh");
+  width: 100%;
+  color: white;
+  background-size: cover;
 }
 
 .ak_box2 {
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh');
-    background-size: cover;
-    color: white;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh");
+  background-size: cover;
+  color: white;
 }
 
 .ak_box3 {
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh');
-    color: white;
-    background-size: cover;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh");
+  color: white;
+  background-size: cover;
 }
 
 .ak_box4 {
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh');
-    background-size: cover;
-    color: white;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh");
+  background-size: cover;
+  color: white;
 }
 
 #ak_featured_off h2 {
-    margin-top: 110px;
-    margin-left: 20px;
-    font-size: 1.75rem;
-    font-weight: 700;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 110px;
+  margin-left: 20px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 #ak_featured_off p {
-    margin-top: -10px;
-    margin-left: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: -10px;
+  margin-left: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 /*  */
 
 #ak_middle_card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 #ak_middle_card p {
-    font-size: 12px;
-    color: #787878;
-    margin-left: 4px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    margin-top: 0px;
+  font-size: 12px;
+  color: #787878;
+  margin-left: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin-top: 0px;
 }
 
 #ak_middle_card h4 {
-    margin-left: 4px;
-    line-height: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 4px;
+  line-height: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
-#ak_middle_card>div {
-    display: flex;
-    background-color: #ffffff;
-    justify-content: space-between;
-    border: 1px solid rgb(112, 112, 112);
+#ak_middle_card > div {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  border: 1px solid rgb(112, 112, 112);
 }
 
 #ak_middle_card img {
-    width: 30%;
-    margin-top: 10px;
-    margin-right: 10px;
+  width: 30%;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .ak_middile_child:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.ak_middile_child>div:nth-child(2) {
-    width: 16%;
-    text-align: right;
+.ak_middile_child > div:nth-child(2) {
+  width: 16%;
+  text-align: right;
 }
 
-.ak_middile_child>div:nth-child(1) {
-    width: 83%;
-    text-align: left;
-    padding: 5px;
+.ak_middile_child > div:nth-child(1) {
+  width: 83%;
+  text-align: left;
+  padding: 5px;
 }
 
 /*  */
 
 #ak_travel_div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
-
 #ak_travel_child1 {
-    height: 240px;
-    background-size: cover;
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg');
-    background-color: rgb(75, 75, 75);
-    color: white;
-    background-blend-mode: overlay;
+  height: 240px;
+  background-size: cover;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg");
+  background-color: rgb(75, 75, 75);
+  color: white;
+  background-blend-mode: overlay;
 }
 
 #ak_travel_child2 {
-    color: white;
-    height: 240px;
-    background-size: cover;
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg');
-    background-color: rgb(75, 75, 75);
-    background-blend-mode: overlay;
+  color: white;
+  height: 240px;
+  background-size: cover;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg");
+  background-color: rgb(75, 75, 75);
+  background-blend-mode: overlay;
 }
 
 .ak_btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: white;
-    color: rgb(88, 143, 161);
-    font-size: 15px;
-    font-weight: bolder;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: white;
+  color: rgb(88, 143, 161);
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .ak_btn:hover {
-    background-color: rgb(198, 241, 255);
-    color: rgb(75, 73, 73);
+  background-color: rgb(198, 241, 255);
+  color: rgb(75, 73, 73);
 }
 
 #ak_travel_div h2,
 #ak_travel_div p {
-    margin-left: 15px;
-    line-height: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: 15px;
+  line-height: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 /*  */
-
 
 /*  */
 
 .flex_div {
-    display: flex;
+  display: flex;
 }
 
 .flex_div select {
-    outline: none;
-    border: none;
-
+  outline: none;
+  border: none;
 }
 
 .flex_div option {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .flex_div select {
-    padding: 15px 5px;
-    width: 370px;
-    font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 15px 5px;
+  width: 370px;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 .flex_div div {
-    margin: 10px;
+  margin: 10px;
 }
 
 #ak_more_des {
-    margin: auto;
+  margin: auto;
 }
 
-
-
-
-
-
-*{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
-#ak_bg_img{
-    background: white;
-    background-repeat: no-repeat;
-    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
-    max-width: 100%;
-    height: 350px;
-    background-size: 100% 500px;
-    padding-top: 25px;
+#ak_bg_img {
+  background: white;
+  background-repeat: no-repeat;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  max-width: 100%;
+  height: 350px;
+  background-size: 100% 500px;
+  padding-top: 25px;
 }
-#search-box{
-    background-color: #FFFFFF;
-    height: 300px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 0px 1px 15px 1px #7a7a7a;
-    padding-top:15px;
+#search-box {
+  background-color: #ffffff;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 1px 15px 1px #7a7a7a;
+  padding-top: 15px;
 }
-#travel-category{
-    margin: auto;
-    max-width: 92%;
-    text-align: center;
+#travel-category {
+  margin: auto;
+  max-width: 92%;
+  text-align: center;
 }
-#travel-category>ul{
-    margin: auto;
-    margin-top: 10px;
-    max-width: 50%;
-    line-height: 30px;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+#travel-category > ul {
+  margin: auto;
+  margin-top: 10px;
+  max-width: 50%;
+  line-height: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
-#travel-category li{
-    cursor: pointer;
+#travel-category li {
+  cursor: pointer;
 }
-#travel-category p{
-    text-decoration: none;
-    color: #616161;
-    font-size: 14px;
-    font-weight: 700;
+#travel-category p {
+  text-decoration: none;
+  color: #616161;
+  font-size: 14px;
+  font-weight: 700;
 }
-#travel-category p:hover{
-    color: #187e93;
-
+#travel-category p:hover {
+  color: #187e93;
 }
 
-form{
-    margin: auto;
-    max-width: 90%;
-    height: 250px;
-    margin-top: -10px;
+form {
+  margin: auto;
+  max-width: 90%;
+  height: 250px;
+  margin-top: -10px;
 }
-#input-section{
-    margin-top: 20px;
-    display: flex;
-    color: #777575;
+#input-section {
+  margin-top: 20px;
+  display: flex;
+  color: #777575;
 }
-#select-Cont, .date{
-    margin: 7px;
-    height: 48px;
-    text-align: start;
-    background-color: #FFFFFF;
-    border: 1px solid #999999;
-    cursor: pointer;
+#select-Cont,
+.date {
+  margin: 7px;
+  height: 48px;
+  text-align: start;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  cursor: pointer;
 }
-#ak_trv_child2 p{
-    font-size: 11px;
+#ak_trv_child2 p {
+  font-size: 11px;
 }
-#travelers{
-    border: 1px solid #999999;
-    margin: 7px;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    cursor: pointer;
+#travelers {
+  border: 1px solid #999999;
+  margin: 7px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  cursor: pointer;
 }
-#select-Cont{
-    min-width: 40%;
+#select-Cont {
+  min-width: 40%;
 }
-.date{
-    width: 15%;
-    display: flex;
-    align-items: center;
-    cursor: default;
+.date {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
-.date>div, #travelers>div{
-    line-height: 3px;
+.date > div,
+#travelers > div {
+  line-height: 3px;
 }
-.date>div>input{
-    border: none;
-    margin-top: -10px;
-    cursor: pointer;
+.date > div > input {
+  border: none;
+  margin-top: -10px;
+  cursor: pointer;
 }
-.date>i, #travelers>i{
-    width: 15%;
-    margin-left: 8px;
+.date > i,
+#travelers > i {
+  width: 15%;
+  margin-left: 8px;
 }
-.date>div>p, #travelers>div>p, #counters{
-    font-size:small;
-    letter-spacing: 0.5px;
+.date > div > p,
+#travelers > div > p,
+#counters {
+  font-size: small;
+  letter-spacing: 0.5px;
 }
-#travelers{
-    width: 23%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-right: 25px;
-    cursor: default;
+#travelers {
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 25px;
+  cursor: default;
 }
-#travelers>div>div{
-    display: flex;
+#travelers > div > div {
+  display: flex;
 }
-#counters>div{
-    margin-top: 4px;
-    display: flex;
-
-}
-
-#counters p{
-    margin-top: 0px;
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
+#counters > div {
+  margin-top: 4px;
+  display: flex;
 }
 
-#checkbox>input:last-child{
-    margin-left: 20px;
-}
-#checkbox{
-    margin-top: 10px;
-}
-#checkbox>input{
-    cursor: pointer;
+#counters p {
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
 }
 
-#search-btn{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 16px;
+#checkbox > input:last-child {
+  margin-left: 20px;
+}
+#checkbox {
+  margin-top: 10px;
+}
+#checkbox > input {
+  cursor: pointer;
 }
 
-#search-btn>input{
-    background-color: #C83259;
-    color: #FFFFFF;
-    border-radius: 2px;
-    width: 15%;
-    font-size: 16px;
-    min-height: 45px;
-    cursor: pointer;
-    font-weight: 600;
-    border: none;
+#search-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
 }
-#search-btn>input:hover{
-    background-color: #cc5171;
+
+#search-btn > input {
+  background-color: #c83259;
+  color: #ffffff;
+  border-radius: 2px;
+  width: 15%;
+  font-size: 16px;
+  min-height: 45px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
 }
-#ak_hr_line{
-    margin-top: -5px;
-    border-top: 1px solid rgb(166, 166, 166);
+#search-btn > input:hover {
+  background-color: #cc5171;
+}
+#ak_hr_line {
+  margin-top: -5px;
+  border-top: 1px solid rgb(166, 166, 166);
 }
 /* for underlining */
 .ak_animation {
-    display: inline-block;
-    position: relative;
-  }
-  .ak_animation:after {
-    content: "";
-    position: absolute;
-    width: 140%;
-    transform: scaleX(0);
-    height: 2.5px;
-    bottom: -9px;
-    left: -6px;
-    background-color: #6e919e;
-    /* color: #000000; */
-    transform-origin: center;
-    transition: transform 0.05s ease-out;
-  }
-  .ak_animation:hover:after {
-    transform: scaleX(1);
-  }
-
-
-#ak_form_flight{
-    display: none;
-    /* border: 5px solid green; */
-    position: absolute;
-    top: 162px;
-    left: 127px;
-    width:80%
-
+  display: inline-block;
+  position: relative;
 }
-#ak_stays span{
-    /* border: 2px solid rebeccapurple; */
-    color: #187e93;
+.ak_animation:after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: -9px;
+  left: -6px;
+  background-color: #6e919e;
+  /* color: #000000; */
+  transform-origin: center;
+  transition: transform 0.05s ease-out;
+}
+.ak_animation:hover:after {
+  transform: scaleX(1);
 }
 
-#input-section>i{
-    position: absolute;
-    top: 30%;
-    left: 11%;
-    font-size: 23px;
+#ak_form_flight {
+  display: none;
+  /* border: 5px solid green; */
+  position: absolute;
+  top: 162px;
+  left: 127px;
+  width: 80%;
 }
-#select-Cont::placeholder{
-    padding: 35px;
-    font-size: 16px;
- }
- 
+#ak_stays span {
+  /* border: 2px solid rebeccapurple; */
+  color: #187e93;
+}
 
+#input-section > i {
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  font-size: 23px;
+}
+#select-Cont::placeholder {
+  padding: 35px;
+  font-size: 16px;
+}
 
 /* ****************************** */
 
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1rem;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
 
-body{
-    overflow-x: hidden;
-  }
-  ::-webkit-scrollbar{
-    width: 1rem;
-  }
-  ::-webkit-scrollbar-track{
-    background-color: black;
-  }
-  ::-webkit-scrollbar-thumb{
-    background-color: gray;
-    border-radius: 1rem;
-    border: 5px solid transparent;
-    background-clip: content-box;
-  }
+#going-to {
+  margin: 7px;
+  height: 48px;
+  text-align: start;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 40%;
+}
+#going-to input {
+  width: 100%;
+  height: 35px;
+  /* border: 1px solid grey; */
+  border: none;
+}
+#going-to input:focus {
+  outline: none;
+}
+#going-to #icon {
+  margin-left: 8px;
+}
+#going-to div:last-child {
+  width: 90%;
+  /* height: 50%; */
+}

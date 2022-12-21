@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create an account</title>
-    <link rel="stylesheet" href="./css/signup.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./css/pratap.loader.css" />
+  </head>
+  <body>
     <div id="ak_logo_div">
-        <a href="index.html">
-        <svg class="uitk-icon uitk-icon-directional uitk-icon-medium" aria-label="Go back" 
-        role="img" 
-        id="ak_back"
-        width="25"
-        heigth="25"
-        fill="#007e8f"
-        viewBox="0 0 24 24" 
-        xmlns="http://www.w3.org/2000/svg" 
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title id="loginFormHeader-arrow_back-toolbar-title">Go back</title>
-        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
-        </path>
-      </svg>
+      <a href="index.html">
+        <svg
+          class="uitk-icon uitk-icon-directional uitk-icon-medium"
+          aria-label="Go back"
+          role="img"
+          id="ak_back"
+          width="25"
+          heigth="25"
+          fill="#007e8f"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title id="loginFormHeader-arrow_back-toolbar-title">Go back</title>
+          <path
+            d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+          ></path>
+        </svg>
       </a>
-        <img alt="Travel Pro" src="./Images/logo-removebg-preview.png">
+      <img alt="Travel Pro" src="./Images/logo-removebg-preview.png" />
     </div>
     <!-- create acc -->
     <div id="ak_signup">
-        <p class="text">Create an account</p>
-        <form id="ak_signUp_form">
-            <input id="ak_email" type="email" placeholder="Email address" required/>
-            <input id="ak_first_name" type="text" placeholder="First Name" required/>
-            <input id="ak_last_name" type="text" placeholder="Last Name"required />
-            <input id="ak_password" type="password" placeholder="Password" required>
-            <div id="ak_password_check"></div>
-            <label for="" class="ak_text">
-                <p>By signing in, I agree to the Travel Pro 
-                    <a href="#">Terms and Conditions </a>,
-                    <a href="#">Privacy Statement </a> and
-                    <a href="#">Travel Pro Rewards Terms and Conditions</a>
-              </p>
-            </label>
-             <label id="ak_login_text" for="">
-            <p>Already have an account?<a href="login.html">  Sign in  </a></p>
-             </label>
-            <button id="ak_signup_btn">Continue</button>
-        </form>
+      <p class="text">Create an account</p>
+      <form id="ak_signUp_form">
+        <input
+          id="ak_email"
+          type="email"
+          placeholder="Email address"
+          required
+        />
+        <input
+          id="ak_first_name"
+          type="text"
+          placeholder="First Name"
+          required
+        />
+        <input id="ak_last_name" type="text" placeholder="Last Name" required />
+        <input
+          id="ak_password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <div id="ak_password_check"></div>
+        <label for="" class="ak_text">
+          <p>
+            By signing in, I agree to the Travel Pro
+            <a href="#">Terms and Conditions </a>,
+            <a href="#">Privacy Statement </a> and
+            <a href="#">Travel Pro Rewards Terms and Conditions</a>
+          </p>
+        </label>
+        <label id="ak_login_text" for="">
+          <p>Already have an account?<a href="login.html"> Sign in </a></p>
+        </label>
+        <button id="ak_signup_btn">Continue</button>
+      </form>
     </div>
-</body>
+    <span class="spinner spinner-large"></span>
+  </body>
 </html>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+
 <script src="./scripts/signup.js"></script>

@@ -1,6 +1,6 @@
-const navbar =  ()=>{
+const navbar = () => {
     return `<div id="logonddrpdn">
-    <div id="logo">
+    <div id="logo" >
         <img src="./logo/new logo.png" alt="">
     </div>
     <div id="drpdwn">
@@ -94,7 +94,7 @@ const navbar =  ()=>{
  </div>
 <div id="navigate">
     <div>
-        <p>Espanol</p>
+        <p>Español</p>
     </div>
     <div>
         <p>List your property</p>
@@ -111,4 +111,4 @@ const navbar =  ()=>{
 </div>`
 }
 
-export {navbar}
+export { navbar }
