@@ -6,12 +6,12 @@
 ### It was a collaborative project of five members which was completed in five
 
 
-
-- Ekta
+- Priyanshu
+- Pratap
 - Anuj Rawat
 - Ankesh Kewat
-- Pratap
-- Priyanshu
+- Ekta
+
 
 ### We have used HTML,CSS,JAVASCRIPT as frontend and NodeJs,Express,MongoDB as Backend.
 
