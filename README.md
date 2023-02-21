@@ -3,7 +3,7 @@
 <img width="217" alt="Screenshot 2022-12-13 114754" src="https://user-images.githubusercontent.com/51295793/217544111-665fe493-2a42-44fc-aad6-d2a18137c284.png">
 
 ### TravelPro a hotel and flight booking website that manages the whole trip of a user.
-### It was a collaborative project of five members which was completed in five
+### It was a collaborative project of five members which was completed in five days.
 
 
 - Ekta
