@@ -1,3 +1,9 @@
+
+
+document.getElementById('index').onclick=()=>{
+  window.location='index.html'
+}
+
 function show1() {
     var x = document.getElementById("hide1");
     if (x.style.display === "none") {

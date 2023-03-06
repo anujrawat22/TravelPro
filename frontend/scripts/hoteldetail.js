@@ -189,6 +189,8 @@ function reserveroom(el) {
 
   localStorage.setItem("roomsdata", JSON.stringify(el))
 }
+
+/*
 window.onload = () => {
   document.getElementById('logo').onclick = () => {
     console.log('clicking on');
@@ -223,3 +225,5 @@ window.onload = () => {
     location.reload()
   }
 }
+
+*/

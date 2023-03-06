@@ -82,7 +82,7 @@ SignUPbtn.onclick = async (e) => {
 const passwordCheck = (p) => {
     let passdiv = document.getElementById("ak_password_check")
     passdiv.innerHTML = null
-    let a = ["Includes 8-64 characters", "Combines letters and numbers", "A special character ~#@$%&!*_?^-"]
+    let a = ["Includes 8-16 characters", "Combines letters and numbers", "A special character ~#@$%&!*_?^-"]
     let len = document.createElement("p")
     let ULcase = document.createElement("p")
     let SpecialCharNum = document.createElement("p")

@@ -330,6 +330,7 @@ document.querySelector('#sign-in').onclick = () => {
     window.location.href = 'signup.html'
 }
 
+/*
 window.onload = () => {
     document.getElementById('logo').onclick = () => {
         console.log('clicking on');
@@ -365,3 +366,4 @@ window.onload = () => {
     }
 }
 
+*/
