@@ -82,7 +82,7 @@ btn.innerText = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`
 document.querySelector(".foot").innerHTML = footer()
 
 
-
+/*
 window.onload = () => {
     document.getElementById('logo').onclick = () => {
         console.log('clicking on');
@@ -117,3 +117,4 @@ window.onload = () => {
         location.reload()
     }
 }
+*/
