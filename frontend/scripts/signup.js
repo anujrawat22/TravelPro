@@ -47,7 +47,7 @@ SignUPbtn.onclick = async (e) => {
         const massage = await res.json()
         loader()
         console.log(massage);
-        if (massage.MSG == 'Account has been already created') {
+        if (massage.MSG!='Account has been created successfully') {
             Swal.fire({
                 title: 'User Already Exist!!',
                 text: "Try with diffrent Email Id!",
