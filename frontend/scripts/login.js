@@ -1,4 +1,8 @@
-
+window.onload = () => {
+    if(localStorage.getItem('loginWithGoogle')){
+        loginWithGoogle()
+      }
+}
 
 
 let loader = () => {
@@ -19,7 +23,7 @@ SignUPbtn.onclick = async (e) => {
     if (email && password) {
         loader()
         let form = { email, password }
-        const res = await fetch(`https://dull-ruby-cockroach-wrap.cyclic.app/login`, {
+        const res = await fetch(`https://travel-pro-user.onrender.com/login`, {
             method: "POST",
             body: JSON.stringify(form),
             headers: {
@@ -27,6 +31,7 @@ SignUPbtn.onclick = async (e) => {
             }
         })
         const massage = await res.json()
+        console.log(massage)
      loader()
         if (massage.MSG == 'Login sueccesfull') {
             Swal.fire({
@@ -71,4 +76,45 @@ SignUPbtn.onclick = async (e) => {
 
 
 
+}
+
+
+
+
+let googleButton = document.getElementById('google')
+googleButton.onclick = () => {
+    signupBygoogle()
+}
+async function signupBygoogle() {
+    localStorage.setItem('loginWithGoogle',true)
+    localStorage.setItem('login',true)
+    localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
+   window.open('https://travel-pro-user.onrender.com/auth/google');
+
+}
+
+let github=document.getElementById('github')
+github.onclick=()=>{
+    signUpByGithub()
+}
+async function signUpByGithub() {
+
+    localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
+    localStorage.setItem('loginWithGoogle',true)
+    localStorage.setItem('login',true)
+}
+
+
+function loginWithGoogle() {
+    const url = window.location.search;
+    const query = new URLSearchParams(url);
+    const token = query.get('token');
+    const name = query.get('name')
+    console.log(token, name)
+    if (token && name) {
+        localStorage.setItem('token', token)
+        localStorage.setItem('first_name', JSON.stringify(name))
+    }
+    localStorage.removeItem('loginWithGoogle')
+   location.href='index.html'
 }

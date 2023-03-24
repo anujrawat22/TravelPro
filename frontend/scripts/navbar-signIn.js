@@ -6,7 +6,7 @@ document.getElementById('logo').onclick = () => {
         let dom = document.getElementById('navigate')
         let div=document.createElement('div');
         let p=document.createElement('p');
-        p.innerText='logout'
+        p.innerText='Logout'
         p.id='logout'
         div.append(p);
         dom.append(div)
