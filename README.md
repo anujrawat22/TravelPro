@@ -33,6 +33,6 @@
 
 
 
-### client side :- https://enchanting-pegasus-5127db.netlify.app/ 
+### client side :-https://mellow-moonbeam-a459bf.netlify.app/ 
 ### admin side :- https://fabulous-biscotti-99e4f3.netlify.app/
 
