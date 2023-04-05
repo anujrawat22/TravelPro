@@ -7,7 +7,7 @@ import barcode from "../components/bar_code.js";
 document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("footer").innerHTML = footer()
 document.getElementById("barcode").innerHTML = barcode()
-const url = "https://sore-plum-spider-hem.cyclic.app/hotels"
+const url = "https://staybackend.onrender.com/hotels"
 
 
 hoteldata()

@@ -1,4 +1,4 @@
-//let url= https://dull-ruby-cockroach-wrap.cyclic.app/
+//let url= https://staybackend.onrender.com/
 
 
 
@@ -43,7 +43,7 @@ SignUPbtn.onclick = async (e) => {
         //loader will start
         loader()
 
-        const res = await fetch(`https://travel-pro-user.onrender.com/signup`, {
+        const res = await fetch(`https://staybackend.onrender.com/signup`, {
             method: "POST",
             body: JSON.stringify(form),
             headers: {
@@ -203,7 +203,7 @@ async function signupBygoogle() {
     localStorage.setItem('loginWithGoogle',true)
     localStorage.setItem('login',true)
     localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
-   window.open('https://travel-pro-user.onrender.com/auth/google');
+   window.open('https://staybackend.onrender.com/auth/google');
 
 }
 

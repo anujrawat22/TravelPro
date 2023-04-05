@@ -23,7 +23,7 @@ SignUPbtn.onclick = async (e) => {
     if (email && password) {
         loader()
         let form = { email, password }
-        const res = await fetch(`https://travel-pro-user.onrender.com/login`, {
+        const res = await fetch(`https://staybackend.onrender.com/login`, {
             method: "POST",
             body: JSON.stringify(form),
             headers: {
@@ -89,7 +89,7 @@ async function signupBygoogle() {
     localStorage.setItem('loginWithGoogle',true)
     localStorage.setItem('login',true)
     localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
-   window.open('https://travel-pro-user.onrender.com/auth/google');
+   window.open('https://staybackend.onrender.com/auth/google');
 
 }
 
