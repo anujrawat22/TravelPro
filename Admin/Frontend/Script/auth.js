@@ -39,7 +39,7 @@ class user {
             // now userData is stored and now we can send it to server show we can register our new user
 
             loader()
-            const register_api = 'https://sore-plum-spider-hem.cyclic.app/admin/signup'
+            const register_api = 'https://staybackend.onrender.com/admin/signup'
 
             try {
                 const response = await fetch(register_api, {
@@ -110,7 +110,7 @@ class user {
             }
 
             loader()
-            const login_api = 'https://sore-plum-spider-hem.cyclic.app/admin/login'
+            const login_api = 'https://staybackend.onrender.com/admin/login'
 
             const response = await fetch(login_api, {
                 method: 'POST',

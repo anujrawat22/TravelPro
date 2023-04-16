@@ -61,4 +61,20 @@ window.onload = () => {
             }, 2000);
         }
     }
+
+    document.getElementById('hamberger').onclick = () => {
+        document.getElementById('main').style.marginLeft = '2vw'
+        document.getElementById('navbar').style.marginLeft = '0'
+        document.getElementById('navbar').style.width = '100vw'
+        document.getElementById('sidebar').style.display = 'none'
+        document.getElementById('nav-hamberger').style.visibility = 'visible'
+
+    }
+    document.getElementById('nav-hamberger').onclick = () => {
+        // document.getElementById('main').style.marginLeft = '20vw'
+        // document.getElementById('navbar').style.marginLeft = '18vw'
+        // document.getElementById('navbar').style.width = '80vw'
+        document.getElementById('sidebar').style.display = 'block'
+        document.getElementById('nav-hamberger').style.visibility = 'hidden'
+    }
 }

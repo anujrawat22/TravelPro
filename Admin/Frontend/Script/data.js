@@ -2,7 +2,7 @@
 
 const sendToServer = async (body) => {
     const response = await fetch(
-        "https://sore-plum-spider-hem.cyclic.app/admin/hotel/create",
+        "https://staybackend.onrender.com/admin/hotel/create",
         {
             method: "POST",
             mode: "cors",
@@ -167,7 +167,7 @@ let takeData = async (obj) => {
 }
 
 let fetching = async () => {
-    let data = await fetch('https://sore-plum-spider-hem.cyclic.app/hotels')
+    let data = await fetch('https://staybackend.onrender.com/hotels')
     data = await data.json()
     console.log(data[0]);
     let dataAdded = await takeData(data[0])
