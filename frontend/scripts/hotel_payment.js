@@ -1,3 +1,9 @@
+
+
+document.getElementById('index').onclick=()=>{
+  window.location='index.html'
+}
+
 function show1() {
     var x = document.getElementById("hide1");
     if (x.style.display === "none") {
@@ -154,7 +160,7 @@ btn.onclick=()=>{
     }
     console.log(obj)
 
-    fetch("https://sore-plum-spider-hem.cyclic.app/payment/create",{
+    fetch("https://staybackend.onrender.com/payment/create",{
         method:"POST",
         body : JSON.stringify(obj),
         headers : {

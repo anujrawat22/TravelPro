@@ -1,5 +1,11 @@
-//let url= https://dull-ruby-cockroach-wrap.cyclic.app/
+//let url= https://staybackend.onrender.com/
+
+
+
 window.onload = () => {
+    if(localStorage.getItem('loginWithGoogle')){
+        loginWithGoogle()
+      }
     let password = document.getElementById("ak_password")
     password.oninput = () => {
         passwordCheck(password.value)
@@ -37,7 +43,7 @@ SignUPbtn.onclick = async (e) => {
         //loader will start
         loader()
 
-        const res = await fetch(`https://dull-ruby-cockroach-wrap.cyclic.app/signup`, {
+        const res = await fetch(`https://staybackend.onrender.com/signup`, {
             method: "POST",
             body: JSON.stringify(form),
             headers: {
@@ -47,7 +53,7 @@ SignUPbtn.onclick = async (e) => {
         const massage = await res.json()
         loader()
         console.log(massage);
-        if (massage.MSG == 'Account has been already created') {
+        if (massage.MSG=='User Already Exist') {
             Swal.fire({
                 title: 'User Already Exist!!',
                 text: "Try with diffrent Email Id!",
@@ -79,10 +85,13 @@ SignUPbtn.onclick = async (e) => {
         alert("Please choose Strong password")
     }
 }
+
+
+
 const passwordCheck = (p) => {
     let passdiv = document.getElementById("ak_password_check")
     passdiv.innerHTML = null
-    let a = ["Includes 8-64 characters", "Combines letters and numbers", "A special character ~#@$%&!*_?^-"]
+    let a = ["Includes 8-16 characters", "Combines letters and numbers", "A special character ~#@$%&!*_?^-"]
     let len = document.createElement("p")
     let ULcase = document.createElement("p")
     let SpecialCharNum = document.createElement("p")
@@ -182,4 +191,44 @@ const containsSpecialAndNumber = (p) => {
     } else {
         return false
     }
+}
+
+
+
+let googleButton = document.getElementById('google')
+googleButton.onclick = () => {
+    signupBygoogle()
+}
+async function signupBygoogle() {
+    localStorage.setItem('loginWithGoogle',true)
+    localStorage.setItem('login',true)
+    localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
+   window.open('https://staybackend.onrender.com/auth/google');
+
+}
+
+let github=document.getElementById('github')
+github.onclick=()=>{
+    signUpByGithub()
+}
+async function signUpByGithub() {
+
+    localStorage.setItem('firstTimeLogdin', JSON.stringify(true))
+    localStorage.setItem('loginWithGoogle',true)
+    localStorage.setItem('login',true)
+}
+
+
+function loginWithGoogle() {
+    const url = window.location.search;
+    const query = new URLSearchParams(url);
+    const token = query.get('token');
+    const name = query.get('name')
+    console.log(token, name)
+    if (token && name) {
+        localStorage.setItem('token', token)
+        localStorage.setItem('first_name', JSON.stringify(name))
+    }
+    localStorage.removeItem('loginWithGoogle')
+   location.href='index.html'
 }

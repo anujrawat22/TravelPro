@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/pratap.loader.css">
 </head>
+
 <body>
     <div id="ak_logo_div">
-        <a href="car.html">
-        <svg class="uitk-icon uitk-icon-directional uitk-icon-medium" aria-label="Go back" 
-        role="img" 
-        id="ak_back"
-        width="25"
-        heigth="25"
-        fill="#007e8f"
-        viewBox="0 0 24 24" 
-        xmlns="http://www.w3.org/2000/svg" 
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title id="loginFormHeader-arrow_back-toolbar-title">Go back</title>
-        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
-        </path>
-      </svg>
-      </a>
+        <a href="signup.html">
+            <svg class="uitk-icon uitk-icon-directional uitk-icon-medium" aria-label="Go back" role="img" id="ak_back"
+                width="25" heigth="25" fill="#007e8f" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title id="loginFormHeader-arrow_back-toolbar-title">Go back</title>
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
+                </path>
+            </svg>
+        </a>
         <img alt="Travel Pro" src="./Images/logo-removebg-preview.png">
     </div>
     <!-- create acc -->
     <div id="ak_signup">
         <p class="text">Sign In</p>
         <form id="ak_signUp_form">
-            <input id="ak_email" type="email" placeholder="Email address" required/>
+            <input id="ak_email" type="email" placeholder="Email address" required />
             <input id="ak_password" type="password" placeholder="Password" required>
             <div id="ak_password_check"></div>
             <label for="" class="ak_text">
-                <p>By signing in, I agree to the Travel Pro 
+                <p>By signing in, I agree to the Travel Pro
                     <a href="#">Terms and Conditions </a>,
                     <a href="#">Privacy Statement </a> and
                     <a href="#">Travel Pro Rewards Terms and Conditions</a>
-              </p>
+                </p>
             </label>
-             <label id="ak_login_text" for="">
-            <p>Don't have an account?<a href="signup.html">  Create one</a></p>
-             </label>
+            <div id="imglogo">
+                <span>Continue with</span>
+                <img id="google" src="./images/1534129544.png" alt="google">
+              <!-- <img id="facebook" src="./images/facebook2.jpg" alt="google"> -->
+                <a id="github" href="https://github.com/login/oauth/authorize?client_id=1af92260791c6268d488"><img src="./images/download.png"
+                    alt="github"> </a>
+              </div>
+            <label id="ak_login_text" for="">
+                <p>Don't have an account?<a href="signup.html"> Create one</a></p>
+            </label>
+            
             <button id="ak_signup_btn">Sign In</button>
+            <span class="spinner spinner-large"></span>
+
         </form>
     </div>
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+
 </html>
 <script src="./scripts/login.js"></script>

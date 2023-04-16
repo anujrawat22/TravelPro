@@ -9,8 +9,8 @@ body {
 }
 
 #ak_logo_div img {
-  width: 180px;
-  margin-left: 40%;
+  width: 120px;
+  margin-left: 42%;
 }
 
 #ak_logo_div a {
@@ -118,4 +118,16 @@ form input {
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+}
+#imglogo {
+  width: 100%;
+  align-items: left;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+#imglogo img {
+  width: 40px;
+  margin-left: 10px;
 }

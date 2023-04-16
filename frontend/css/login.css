@@ -8,15 +8,16 @@ body {
     border: 1px solid rgb(203, 203, 203)
 }
 
-#ak_logo_div img {
-    height: 100px;
-    width: 200px;
-    margin-left: 40%;
-}
-
-#ak_logo_div a {
-    margin-left: 1%;
-}
+#ak_logo_div {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(203, 203, 203);
+  }
+  
+  #ak_logo_div img {
+    width: 120px;
+    margin-left: 42%;
+  }
 
 .text {
     display: flex;
@@ -48,14 +49,17 @@ body {
     color: #616161;
 
 }
-#ak_login_text a{
+
+#ak_login_text a {
     margin-left: 10px;
     font-size: 15px;
     text-decoration: none;
 }
-#ak_login_text a:hover{
+
+#ak_login_text a:hover {
     text-decoration: underline;
 }
+
 .ak_text {
     margin-top: -20px;
 }
@@ -100,19 +104,36 @@ form input {
     box-sizing: border-box;
     width: 100%;
 }
+
 #ak_password_check p {
     margin-left: 20px;
     margin-top: -15px;
     color: red;
     fill: red;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  #ak_password_check svg {
+}
+
+#ak_password_check svg {
     width: 2%;
     display: inline;
-  }
-  ::placeholder{
+}
+
+::placeholder {
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  }
+}
+
+
+#imglogo {
+    width: 100%;
+    align-items: left;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#imglogo img {
+    width: 40px;
+    margin-left: 10px;
+}
